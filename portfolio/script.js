@@ -185,3 +185,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Maintenance modal behavior — show on every visit
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('maintenance-modal');
+    if (!modal) return;
+    const backdrop = modal.querySelector('.maintenance-backdrop');
+    const closeBtn = modal.querySelector('.maintenance-close');
+    const okBtn = modal.querySelector('.maintenance-ok');
+
+    function openModal() {
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+        // prevent background scroll when modal open
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    // Close handlers
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (okBtn) okBtn.addEventListener('click', closeModal);
+    if (backdrop) backdrop.addEventListener('click', closeModal);
+
+    // Show the modal on every visit (page load)
+    openModal();
+});
