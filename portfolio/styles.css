@@ -303,36 +303,94 @@ body::before {
 }
 
 /* Quick Links Section */
+#quick-links {
+    width: 100%;
+    padding: 60px 0 100px;
+}
+
 .quick-links-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .quick-link-card {
-    background: var(--card-bg);
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px 30px;
+    border-radius: 18px;
     text-decoration: none;
     color: var(--text-color);
-    transition: transform 0.3s;
-    backdrop-filter: blur(10px);
+    text-align: left;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .quick-link-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-6px);
+    border-color: rgba(0, 255, 157, 0.4);
 }
 
 .quick-link-card i {
-    font-size: 2.5rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: rgba(0, 255, 157, 0.12);
     color: var(--primary-color);
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin: 0;
+    flex-shrink: 0;
 }
 
 .quick-link-card h3 {
-    margin-bottom: 15px;
+    margin-bottom: 6px;
+    font-size: 1.25rem;
+}
+
+.quick-link-card p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 900px) {
+    .quick-links-grid {
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+    }
+
+    .quick-link-card {
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .quick-link-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quick-link-card i {
+        margin-bottom: 10px;
+    }
+
+    .quick-link-card h3,
+    .quick-link-card p {
+        text-align: center;
+    }
 }
 
 /* Resume Page Styles */
