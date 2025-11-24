@@ -1,0 +1,34 @@
+:root {
+      --brand-1: #1e3a8a; /* indigo-900 */
+      --brand-2: #0ea5e9; /* sky-500 */
+      --brand-3: #22d3ee; /* cyan-400 */
+      --brand-4: #60a5fa; /* blue-400 */
+      --ink-1: #0b1020;
+    }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .glass {
+      background: linear-gradient(180deg, rgba(255,255,255,0.16), rgba(255,255,255,0.08));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+    .shine {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .shine::after{
+      content:'';
+      position:absolute;
+      inset:-150% -10%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+      transform: translateX(-100%);
+      animation: sweep 6s infinite;
+    }
+    @keyframes sweep {
+      0% { transform: translateX(-120%); }
+      30% { transform: translateX(120%); }
+      100% { transform: translateX(120%); }
+    }
+    .badge-dot { box-shadow: 0 0 0 3px rgba(34,211,238,0.25); }
+    html { scroll-behavior: smooth; }
