@@ -115,13 +115,15 @@ sections.forEach(section => {
 // Form Submission
 const contactForm = document.querySelector('.contact-form');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // Add your form submission logic here
-    // For now, we'll just show an alert
-    alert('Thank you for your message! I will get back to you soon.');
-    contactForm.reset();
-});
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // Add your form submission logic here
+        // For now, we'll just show an alert
+        alert('Thank you for your message! I will get back to you soon.');
+        contactForm.reset();
+    });
+}
 
 // 3D Carousel Functionality
 document.addEventListener('DOMContentLoaded', () => {
@@ -195,10 +197,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const okBtn = modal.querySelector('.maintenance-ok');
 
     function openModal() {
+        if (modal.classList.contains('open')) return;
         modal.classList.add('open');
         modal.setAttribute('aria-hidden', 'false');
         // prevent background scroll when modal open
         document.body.style.overflow = 'hidden';
+        localStorage.setItem('maintenanceModalLastShown', Date.now().toString());
     }
 
     function closeModal() {
@@ -212,6 +216,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (okBtn) okBtn.addEventListener('click', closeModal);
     if (backdrop) backdrop.addEventListener('click', closeModal);
 
-    // Show the modal on every visit (page load)
+    // Show immediately on each load
     openModal();
+
+    // Reopen every hour (3600000 ms)
+    const ONE_HOUR = 60 * 60 * 1000;
+    setInterval(() => {
+        const lastShown = Number(localStorage.getItem('maintenanceModalLastShown')) || 0;
+        if (Date.now() - lastShown >= ONE_HOUR) {
+            openModal();
+        }
+    }, ONE_HOUR);
 });

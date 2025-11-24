@@ -1,0 +1,524 @@
+[
+  {
+    "id": 1,
+    "question": "A technology that allows multiple virtual machines to run on a single physical computer",
+    "options": [],
+    "correctAnswer": "virtualization"
+  },
+  {
+    "id": 2,
+    "question": "A technology that allows organization to reduce hardware cost, improve flexibility and quick deploy or scale system as needed.",
+    "options": [],
+    "correctAnswer": "virtualization"
+  },
+  {
+    "id": 3,
+    "question": "A key component of virtualization",
+    "options": [],
+    "correctAnswer": "hypervisor"
+  },
+  {
+    "id": 4,
+    "question": "a software or hardware program that allows to run mutiple independent operating systems on one physical system",
+    "options": [],
+    "correctAnswer": "hypervisor"
+  },
+  {
+    "id": 5,
+    "question": "guest os that runs directly on hrdware platform under a control of host system",
+    "options": [],
+    "correctAnswer": "type 1 hypervisor"
+  },
+  {
+    "id": 6,
+    "question": "common in data center and enterprise server",
+    "options": [],
+    "correctAnswer": "type 1 hypervisor"
+  },
+  {
+    "id": 7,
+    "question": "app that runs on host machine and is used to create virtual machine that consist of entirely of software and contain no hardware components",
+    "options": [],
+    "correctAnswer": "type 2 hypervisor"
+  },
+  {
+    "id": 8,
+    "question": "common in personal computer and test environment",
+    "options": [],
+    "correctAnswer": "type 2 hypervisor"
+  },
+  {
+    "id": 9,
+    "question": "it plays a crucial role in creating and managing vms",
+    "options": [],
+    "correctAnswer": "hypervisor"
+  },
+  {
+    "id": 10,
+    "question": "a software base emulation  of physical computer created and managed by a hyper visor",
+    "options": [],
+    "correctAnswer": "virtual machine"
+  },
+  {
+    "id": 11,
+    "question": "it operates on independent system complete with its own os, app and virtual hardware components",
+    "options": [],
+    "correctAnswer": "virtual machine"
+  },
+  {
+    "id": 12,
+    "question": "vm's provide flexibility, effiency and scalability enabling users to test multiple different os, consolidate server and optimize resource usage",
+    "options": [],
+    "correctAnswer": "True"
+  },
+  {
+    "id": 13,
+    "question": "key component of modern IT infastructure and serve as foundation for cloud computing and virtualized environment",
+    "options": [],
+    "correctAnswer": "virtual machine"
+  },
+  {
+    "id": 14,
+    "question": "consists of just the application and dependencies and uses an engine for os emulation",
+    "options": [],
+    "correctAnswer": "container"
+  },
+  {
+    "id": 15,
+    "question": "open platform that uses OS-level virtualization to deliver software in packages",
+    "options": [],
+    "correctAnswer": "docker"
+  },
+  {
+    "id": 16,
+    "question": "specialized software  that allows you to manage your containers",
+    "options": [],
+    "correctAnswer": "kubernetes"
+  },
+  {
+    "id": 17,
+    "question": "if a user or app has elevated privileges within container the os can be compremised",
+    "options": [],
+    "correctAnswer": "True"
+  },
+  {
+    "id": 18,
+    "question": "desktop environments can be stored remotely on a server using thin client or virtual desktops which requires high availability and storage capacity",
+    "options": [],
+    "correctAnswer": "desktop virtualization"
+  },
+  {
+    "id": 19,
+    "question": "it is build on virtualization that delivers a comptuing resources such as servers, storage, datbases and apps over the internet",
+    "options": [],
+    "correctAnswer": "cloud computing"
+  },
+  {
+    "id": 20,
+    "question": "instead of owning and maintaining physical infrastructure user can access and pay for there resources on demand",
+    "options": [],
+    "correctAnswer": "cloud computing"
+  },
+  {
+    "id": 21,
+    "question": "this approachs provide _ _ and _ which makes it essential for modern businesses and technologies that require flexibility and high availability",
+    "options": [],
+    "correctAnswer": "scalability accessibility cost efficiency"
+  },
+  {
+    "id": 22,
+    "question": "according to NIST the cloud computing is a model for enabling ubiquitous, convenient, and on demand network access to a shared pool",
+    "options": [],
+    "correctAnswer": "True"
+  },
+  {
+    "id": 23,
+    "question": "in cloud computing if the ownership is you own and manage what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "on premise"
+  },
+  {
+    "id": 24,
+    "question": "in cloud computing if the location is local data centers what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "on premise"
+  },
+  {
+    "id": 25,
+    "question": "in cloud computing if the cost type is one time upfront cost what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "on premise"
+  },
+  {
+    "id": 26,
+    "question": "in cloud computing if the scalability is limited and slow what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "on premise"
+  },
+  {
+    "id": 27,
+    "question": "in cloud computing if the maintenance are your it team what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "on premise"
+  },
+  {
+    "id": 28,
+    "question": "in cloud computing if the access is your local network what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "on premise"
+  },
+  {
+    "id": 29,
+    "question": "in cloud computing if the ownership is not yours and its provider and you just rent what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 30,
+    "question": "in cloud computing if the location is remote data centers what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 31,
+    "question": "in cloud computing if the cost type is ongoing pay as you use cost what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 32,
+    "question": "in cloud computing if the scalability is fast and flexible what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 33,
+    "question": "in cloud computing if the maintenance are the cloud provider what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 34,
+    "question": "in cloud computing if the access is your internet/anywhere access what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 35,
+    "question": "Users can access computing resources automatically without requiring human interaction with the service provider.",
+    "options": [],
+    "correctAnswer": "on demand self service"
+  },
+  {
+    "id": 36,
+    "question": "Cloud services are available over the internet and accessible from various devices like smartphones, tablets, and laptops.",
+    "options": [],
+    "correctAnswer": "broad network access"
+  },
+  {
+    "id": 37,
+    "question": "Resources are pooled and shared among multiple users, dynamically assigned and reassigned according to demand.",
+    "options": [],
+    "correctAnswer": "resource pooling"
+  },
+  {
+    "id": 38,
+    "question": "Easily adaptable to different workloads. Businesses can scale resources up or down based on traffic or needs.",
+    "options": [],
+    "correctAnswer": "scalability"
+  },
+  {
+    "id": 39,
+    "question": "Cloud systems are designed to ensure continuous availability and minimal downtime, often backed by multiple data centers.",
+    "options": [],
+    "correctAnswer": "high availability"
+  },
+  {
+    "id": 40,
+    "question": "Cloud providers offer various security features such as encryption, identity management, and compliance certifications, though security is a shared responsibility.",
+    "options": [],
+    "correctAnswer": "security"
+  },
+  {
+    "id": 41,
+    "question": "Resources can be quickly scaled up or down to meet user needs.",
+    "options": [],
+    "correctAnswer": "rapid elasticity"
+  },
+  {
+    "id": 42,
+    "question": "the umbrella term for cloud computing or known as anything as a service",
+    "options": [],
+    "correctAnswer": "XaaS"
+  },
+  {
+    "id": 43,
+    "question": "allows user to access app software and database. Cloud providers manage the infrastructure whileuser store data on the cloud",
+    "options": [],
+    "correctAnswer": "SaaS"
+  },
+  {
+    "id": 44,
+    "question": "Provides virtualized computing resources over the Internet. The provider hosts the hardware, software, servers and storage components.",
+    "options": [],
+    "correctAnswer": "IaaS"
+  },
+  {
+    "id": 45,
+    "question": "Lets an organization remotely access the development tools and services used to deliver such applications, on a subscription basis.",
+    "options": [],
+    "correctAnswer": "PaaS"
+  },
+  {
+    "id": 46,
+    "question": "Offers ready-made backend features such as databases, authentication, and server management so developers can focus on building the frontend of mobile or web apps.",
+    "options": [],
+    "correctAnswer": "BaaS"
+  },
+  {
+    "id": 47,
+    "question": "Delivers AI tools and frameworks like machine learning, chatbots, and analytics via the cloud, without needing in- house expertise.",
+    "options": [],
+    "correctAnswer": "AiaaS"
+  },
+  {
+    "id": 48,
+    "question": "Provides cloud-based security services such as antivirus protection, data encryption, authentication, and threat monitoring.",
+    "options": [],
+    "correctAnswer": "SECaaS"
+  },
+  {
+    "id": 49,
+    "question": "three primary cloud delivery model",
+    "options": [],
+    "correctAnswer": "SaaS Paas SaaS"
+  },
+  {
+    "id": 50,
+    "question": "what cloud delivery model where the client maintains the app, data, runtime, middleware and os",
+    "options": [],
+    "correctAnswer": "IaaS"
+  },
+  {
+    "id": 51,
+    "question": "what cloud delivery model where the client maintains the app, and data",
+    "options": [],
+    "correctAnswer": "PaaS"
+  },
+  {
+    "id": 52,
+    "question": "what cloud delivery model where the procider maintain everything",
+    "options": [],
+    "correctAnswer": "saas"
+  },
+  {
+    "id": 53,
+    "question": "it can be deployed thru different scale or projects depending on ownership of the infrastructure and data center",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 54,
+    "question": "also called an internal, corporate or enterprise cloud,offers organization more control over its data, but it may be more expensive than other cloud services due to infrastructure, maintenance and administration costs.",
+    "options": [],
+    "correctAnswer": "private cloud"
+  },
+  {
+    "id": 55,
+    "question": "is hosted by a service provider at an offsite facility. Users pay a monthly or yearly usage fee to access the cloud. This option costs the organization less for infrastructure, maintenance and administration, however, the organization has less control over its data.",
+    "options": [],
+    "correctAnswer": "public cloud"
+  },
+  {
+    "id": 56,
+    "question": "combines the private and public cloud by offering control of organizational data, which is still hosted in a public cloud.",
+    "options": [],
+    "correctAnswer": "hybrid cloud"
+  },
+  {
+    "id": 57,
+    "question": "is a collaborative effort in which more than one organization share and use the same platform. This type of cloud is geared toward the needs of an industry such as healthcare or energy.",
+    "options": [],
+    "correctAnswer": "community cloud"
+  },
+  {
+    "id": 58,
+    "question": "the process of scrambling data so that unauthorized people cannot easily read it.",
+    "options": [],
+    "correctAnswer": "encryption"
+  },
+  {
+    "id": 59,
+    "question": "the science of making and breaking secret codes.",
+    "options": [],
+    "correctAnswer": "cryptography"
+  },
+  {
+    "id": 60,
+    "question": "When enabling encryption, readable data is called",
+    "options": [],
+    "correctAnswer": "plaintext"
+  },
+  {
+    "id": 61,
+    "question": "the encrypted version of data which is unreadable, disguised message is called",
+    "options": [],
+    "correctAnswer": "ciphertext"
+  },
+  {
+    "id": 62,
+    "question": "uses the same pre-shared key to encrypt and decrypt data and a method known as private key encryption",
+    "options": [],
+    "correctAnswer": "symmetric encryption algorithm"
+  },
+  {
+    "id": 63,
+    "question": "a symmetric encrytion that has a fixed block size of 128 bits with a key sized of 128, 192 or 256 bits",
+    "options": [],
+    "correctAnswer": "Advance encryption standard"
+  },
+  {
+    "id": 64,
+    "question": "AES meaning",
+    "options": [],
+    "correctAnswer": "Advance encryption standard"
+  },
+  {
+    "id": 65,
+    "question": "use one key for encryption that is different from the key used for decryption.",
+    "options": [],
+    "correctAnswer": "asymmetric encryption algorithm"
+  },
+  {
+    "id": 66,
+    "question": "Asymmetric encryption algorithms include Diffie-Hellman and _ _",
+    "options": [],
+    "correctAnswer": "RSA ECC"
+  },
+  {
+    "id": 67,
+    "question": "a tool that ensures data integrity by taking binary data (like the message) and producing a fixed-length representation",
+    "options": [],
+    "correctAnswer": "hashing"
+  },
+  {
+    "id": 68,
+    "question": "a value of hashing which produced a like a message digest",
+    "options": [],
+    "correctAnswer": "hash value"
+  },
+  {
+    "id": 69,
+    "question": "one-way functions used to verify and ensure data integrity.",
+    "options": [],
+    "correctAnswer": "hash function"
+  },
+  {
+    "id": 70,
+    "question": "The U.S. National Institute of Standards and Technology (NIST) developed",
+    "options": [],
+    "correctAnswer": "SHA"
+  },
+  {
+    "id": 71,
+    "question": "SHS meaning",
+    "options": [],
+    "correctAnswer": "Secure Hash Standard"
+  },
+  {
+    "id": 72,
+    "question": "the next-generation algorithms.",
+    "options": [],
+    "correctAnswer": "SHA 512"
+  },
+  {
+    "id": 73,
+    "question": "defined by several key characteristics, often summarized as the “5 V’s”.",
+    "options": [],
+    "correctAnswer": "Big Data Characeristics"
+  },
+  {
+    "id": 74,
+    "question": "completely intertwined and inseparable with cloud computing. Cloud platforms provide the scalable storage, computing power, and flexible infrastructure needed to collect, process, and analyze massive volumes of data efficiently.",
+    "options": [],
+    "correctAnswer": "Big data"
+  },
+  {
+    "id": 75,
+    "question": "rely on cloud services to handle the information generated from diverse sources.",
+    "options": [],
+    "correctAnswer": "Big data"
+  },
+  {
+    "id": 76,
+    "question": "this leverages these cloud resources to extract insights, detect patterns, and support data-driven decision-making.",
+    "options": [],
+    "correctAnswer": "big data analytics"
+  },
+  {
+    "id": 77,
+    "question": "Refers to the massive amount of data generated from sources",
+    "options": [],
+    "correctAnswer": "volumn"
+  },
+  {
+    "id": 78,
+    "question": "The speed at which data is created, collected, and processed",
+    "options": [],
+    "correctAnswer": "velocity"
+  },
+  {
+    "id": 79,
+    "question": "The diversity of data types, including structured, semi-structured, and unstructured",
+    "options": [],
+    "correctAnswer": "variety"
+  },
+  {
+    "id": 80,
+    "question": "The trustworthiness, accuracy, and quality of the data, which affects reliability of insights.",
+    "options": [],
+    "correctAnswer": "veracity"
+  },
+  {
+    "id": 81,
+    "question": "The potential to extract meaningful insights and actionable intelligence from data.",
+    "options": [],
+    "correctAnswer": "value"
+  },
+  {
+    "id": 82,
+    "question": "In the context of big data, it refer to how information is organized and stored.",
+    "options": [],
+    "correctAnswer": "structured unstructured semi-structured"
+  },
+  {
+    "id": 83,
+    "question": "highly organized and easily stored in relational databases, consisting of rows and columns with clearly defined fields, such as customer names, transaction amounts, or inventory records.",
+    "options": [],
+    "correctAnswer": "structured data"
+  },
+  {
+    "id": 84,
+    "question": "lacks a predefined format and includes text documents, social media posts, images, videos, and sensor data, making it more difficult to store, process, and analyze.",
+    "options": [],
+    "correctAnswer": "unstructured data"
+  },
+  {
+    "id": 85,
+    "question": "falls between these two types of big data structure, containing some organizational elements, like tags or markers, that allow partial processing, as seen in XML, JSON files, or log data.",
+    "options": [],
+    "correctAnswer": "semi structured"
+  },
+  {
+    "id": 86,
+    "question": "refers to the design and structure of systems used to collect, store, process, and analyze massive volumes of data efficiently.",
+    "options": [],
+    "correctAnswer": "big data structure"
+  },
+  {
+    "id": 87,
+    "question": "It typically consists of multiple layers to handle the complexity and scale of big data. The data sources layer collects data from various origins, including social media, IoT devices, sensors, logs, and transactional systems.",
+    "options": [],
+    "correctAnswer": "big data structure"
+  }
+]
