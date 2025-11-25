@@ -1116,6 +1116,30 @@ footer {
     transition-delay: 0.15s;
 }
 
+@media (hover: none) {
+    .project-card.mobile-flipped .card-inner {
+        transform: rotateY(180deg) scale(1.1);
+    }
+
+    .project-card.mobile-flipped .card-front,
+    .project-card.mobile-flipped .card-back {
+        border-color: rgba(0, 255, 157, 0.6);
+        box-shadow: 0 0 25px rgba(0, 255, 157, 0.25), 0 0 40px rgba(0, 255, 157, 0.15);
+        transition-delay: 0.15s;
+    }
+
+    .other-project-card.mobile-flipped .card-inner {
+        transform: rotateY(180deg) scale(1.1);
+    }
+
+    .other-project-card.mobile-flipped .card-front,
+    .other-project-card.mobile-flipped .card-back {
+        border-color: rgba(0, 255, 157, 0.6);
+        box-shadow: 0 0 25px rgba(0, 255, 157, 0.25), 0 0 40px rgba(0, 255, 157, 0.15);
+        transition-delay: 0.15s;
+    }
+}
+
 .other-project-card .card-back {
     transform: rotateY(180deg);
     display: flex;
@@ -1203,15 +1227,33 @@ footer {
     box-shadow: 0 0 15px rgba(0, 255, 157, 0.5);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .other-projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
         gap: 1rem;
+        padding: 0 12px;
     }
 
     .other-project-card {
         width: 100%;
-        max-width: 233px;
+        max-width: 220px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .other-projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 0.85rem;
+        padding: 0 10px;
+        justify-items: center;
+    }
+
+    .other-project-card {
+        width: 90%;
+        max-width: 240px;
+        margin: 0 auto;
+        height: 300px;
     }
 }
 
@@ -2225,13 +2267,29 @@ footer {
 @media (max-width: 480px) {
     .other-projects-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 0 10px;
+        gap: 0.85rem;
+        padding: 0 14px;
+        justify-items: center;
     }
 
     .other-project-card {
-        width: 100%;
-        max-width: 100%;
+        width: 90%;
+        max-width: 210px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .other-project-card .card-inner {
+        min-height: 320px;
+    }
+
+    .other-project-card .project-image {
+        height: 135px;
+        padding: 18px;
+    }
+
+    .other-project-card .project-content {
+        padding: 0.95rem;
     }
 }
 

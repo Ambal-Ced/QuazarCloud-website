@@ -392,5 +392,53 @@
         </footer>
 
         <script src="script.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const isTouchDevice = window.matchMedia('(hover: none)').matches;
+                if (!isTouchDevice) return;
+
+                const featuredCards = Array.from(document.querySelectorAll('.projects-grid .project-card'));
+                const otherCards = Array.from(document.querySelectorAll('.other-projects-grid .other-project-card'));
+
+                function resetCards(cards, shouldResumeOrbit = false) {
+                    cards.forEach(card => {
+                        card.classList.remove('mobile-flipped');
+                        if (shouldResumeOrbit) {
+                            card.style.animationPlayState = '';
+                        }
+                    });
+                }
+
+                function setupCardInteractions(cards, { orbiting = false } = {}) {
+                    cards.forEach(card => {
+                        card.addEventListener('click', function (event) {
+                            if (!window.matchMedia('(hover: none)').matches) return;
+                            if (event.target.closest('a')) return; // allow links on card backs
+
+                            const alreadyFlipped = card.classList.contains('mobile-flipped');
+
+                            resetCards(cards, orbiting);
+
+                            if (!alreadyFlipped) {
+                                card.classList.add('mobile-flipped');
+                                if (orbiting) {
+                                    card.style.animationPlayState = 'paused';
+                                }
+                            }
+                        });
+                    });
+                }
+
+                setupCardInteractions(featuredCards, { orbiting: true });
+                setupCardInteractions(otherCards, { orbiting: false });
+
+                document.addEventListener('click', function (event) {
+                    if (!window.matchMedia('(hover: none)').matches) return;
+                    if (event.target.closest('.project-card, .other-project-card')) return;
+                    resetCards(featuredCards, true);
+                    resetCards(otherCards, false);
+                });
+            });
+        </script>
     </body>
 </html> 
