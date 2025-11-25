@@ -112,16 +112,57 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
-// Form Submission
+// Form Submission with EmailJS
+// To set up EmailJS:
+// 1. Go to https://www.emailjs.com/ and create a free account
+// 2. Create an email service (Gmail, Outlook, etc.)
+// 3. Create an email template with variables: {{from_name}}, {{from_email}}, {{subject}}, {{message}}
+// 4. Get your Public Key, Service ID, and Template ID from the dashboard
+// 5. Replace the values below with your actual IDs
+
 const contactForm = document.querySelector('.contact-form');
 
 if (contactForm) {
+    // Initialize EmailJS with your Public Key
+    // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS Public Key
+    emailjs.init('YOUR_PUBLIC_KEY');
+    
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        // Add your form submission logic here
-        // For now, we'll just show an alert
-        alert('Thank you for your message! I will get back to you soon.');
-        contactForm.reset();
+        
+        // Get form values
+        const inputs = contactForm.querySelectorAll('input, textarea');
+        const formData = {
+            from_name: inputs[0].value, // Name field
+            from_email: inputs[1].value, // Email field
+            subject: inputs[2].value, // Subject field
+            message: inputs[3].value, // Message textarea
+            to_email: 'justineambal32@gmail.com' // Your email
+        };
+        
+        // Disable submit button during sending
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        
+        // Send email using EmailJS
+        // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual IDs
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+            .then(() => {
+                // Success
+                alert('Thank you for your message! I will get back to you soon.');
+                contactForm.reset();
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            })
+            .catch((error) => {
+                // Error
+                console.error('EmailJS Error:', error);
+                alert('Sorry, there was an error sending your message. Please try again or contact me directly at justineambal32@gmail.com');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            });
     });
 }
 
