@@ -693,25 +693,25 @@ footer {
 }
 
 /* Social Links Section at Bottom (mobile only) */
-#social-links {
+.social-links-section {
     padding: 40px 0;
     text-align: center;
     display: none;
 }
 
-#social-links .social-links-bottom {
+.social-links-bottom {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 24px;
 }
 
-#social-links .social-links-bottom a {
-    font-size: 2rem;
+.social-links-bottom a {
+    font-size: 2.1rem;
     color: var(--text-color);
     transition: color 0.3s, transform 0.3s;
 }
 
-#social-links .social-links-bottom a:hover {
+.social-links-bottom a:hover {
     color: var(--primary-color);
     transform: translateY(-5px);
 }
@@ -1304,6 +1304,10 @@ footer {
     margin: 2.5rem 0;
 }
 
+#skills .right-section {
+    padding: 0 30px;
+}
+
 .skill-category {
     background: rgba(255, 255, 255, 0.08);
     padding: 1.5rem;
@@ -1344,6 +1348,10 @@ footer {
     .skills-grid {
         grid-template-columns: 1fr;
         gap: 1.25rem;
+    }
+
+    #skills .right-section {
+        padding: 0 20px;
     }
 
     .skill-category {
@@ -2003,17 +2011,17 @@ footer {
         font-size: 1.5rem;
     }
 
-    #social-links {
+    .social-links-section {
         display: block;
-        padding: 30px 0;
+        padding: 30px 0 20px;
     }
 
-    #social-links .social-links-bottom {
-        gap: 25px;
+    .social-links-bottom {
+        gap: 18px;
     }
 
-    #social-links .social-links-bottom a {
-        font-size: 1.8rem;
+    .social-links-bottom a {
+        font-size: 2.3rem;
     }
 
     .hero-content-index .left-section .social-links {
@@ -2032,17 +2040,16 @@ footer {
         font-size: 1.3rem;
     }
 
-    #social-links {
-        display: block;
-        padding: 25px 0;
+    .social-links-section {
+        padding: 20px 0 10px;
     }
 
-    #social-links .social-links-bottom {
-        gap: 20px;
+    .social-links-bottom {
+        gap: 12px;
     }
 
-    #social-links .social-links-bottom a {
-        font-size: 1.5rem;
+    .social-links-bottom a {
+        font-size: 2rem;
     }
 }
 
@@ -2059,6 +2066,10 @@ footer {
 @media (max-width: 480px) {
     .hero-content-about .left-section {
         max-width: 100%;
+    }
+
+    #skills .right-section {
+        padding: 0 15px;
     }
 
     .hero-image {
