@@ -459,7 +459,7 @@
     "id": 77,
     "question": "Refers to the massive amount of data generated from sources",
     "options": [],
-    "correctAnswer": "volumn"
+    "correctAnswer": "volume"
   },
   {
     "id": 78,
@@ -520,5 +520,255 @@
     "question": "It typically consists of multiple layers to handle the complexity and scale of big data. The data sources layer collects data from various origins, including social media, IoT devices, sensors, logs, and transactional systems.",
     "options": [],
     "correctAnswer": "big data structure"
+  },
+  {
+    "id": 88,
+    "question": "Which of the following distinguishes Type 1 and Type 2 hypervisor",
+    "options": [
+      "Type 1 run with the OS while Type 2 run directly on hardware",
+      "Type 1 require guest OS, while Type 2 does not have such requirement",
+      "Type 1 hypervisor cannot perform hardware abstraction, unlike Type 2"
+    ],
+    "correctAnswer": "Type 1 hypervisor run directly on hardware, while type 2 run on Host OS"
+  },
+  {
+    "id": 89,
+    "question": "Which of the following risk is the most associated with hypervisor-level attack",
+    "options": [
+      "VM sprawl",
+      "Data leakage",
+      "Data duplication"
+    ],
+    "correctAnswer": "VM escape"
+  },
+  {
+    "id": 90,
+    "question": "Which of the following is not a benefit of virtualization",
+    "options": [
+      "Improved hardware utilization",
+      "Simplified disaster recovery",
+      "Reduced dependency on physical networking"
+    ],
+    "correctAnswer": "Elimination of all security vulnerabilities"
+  },
+  {
+    "id": 91,
+    "question": "Which is described by Type 2 hypervisor",
+    "options": [
+      "Hardware virtualization",
+      "Core systems virtualization",
+      "Hardware emulation"
+    ],
+    "correctAnswer": "Hosted virtualization"
+  },
+  {
+    "id": 92,
+    "question": "In container-based virtualization, how is isolation achieved compare to hypervisor-based virtualization",
+    "options": [
+      "Containers use hardware emulation to isolate resources on computer",
+      "Containers use separate kernel per application for stronger isolation",
+      "Containers utilize hypervisors to manage host operating systems and infra"
+    ],
+    "correctAnswer": "Containers rely on kernel-level isolationrather than hardware virtualization"
+  },
+  {
+    "id": 93,
+    "question": "In the process of encryption, the encypted version of data is called",
+    "options": [
+      "Symmetric",
+      "Hashkey",
+      "Plain text"
+    ],
+    "correctAnswer": "Cyphertext"
+  },
+  {
+    "id": 94,
+    "question": "one-way functions used to verify and ensure data integrity.",
+    "options": [
+      "Cryptography",
+      "Salting",
+      "Encryption"
+    ],
+    "correctAnswer": "Hash"
+  },
+  {
+    "id": 95,
+    "question": "Which of the following is not an asymetric encription algorithm",
+    "options": [
+      "Rivest--Shamir-Adleman",
+      "Diffie-Hellman",
+      "Elliptic curve cryptography"
+    ],
+    "correctAnswer": "Advance encryption standard"
+  },
+  {
+    "id": 96,
+    "question": "What is the foundational basis of SHA developed by NIST",
+    "options": [
+      "Cryptographic Hashing Standard",
+      "Advance Encryption Standard",
+      "Secure Encryption Standard"
+    ],
+    "correctAnswer": "Secure Hash Standard"
+  },
+  {
+    "id": 97,
+    "question": "In the proces of encryption, the readable version of data is called",
+    "options": [
+      "Symmetric",
+      "Hashkey",
+      "Cyphertext"
+    ],
+    "correctAnswer": "plaintext"
+  },
+  {
+    "id": 98,
+    "question": "what do containers share that virtual machines do not",
+    "options": [
+      "hypervisor",
+      "OS",
+      "Virtual hardware"
+    ],
+    "correctAnswer": "Kernel"
+  },
+  {
+    "id": 99,
+    "question": "Open platform that uses virtualization to deliver software in package",
+    "options": [
+      "Kubernetes",
+      "Oracle Vmware",
+      "VirtualBox"
+    ],
+    "correctAnswer": "Docker"
+  },
+  {
+    "id": 100,
+    "question": "What type of virtualization does Docker use",
+    "options": [
+      "Hardware level",
+      "Network level",
+      "Application level"
+    ],
+    "correctAnswer": "OS-level"
+  },
+  {
+    "id": 101,
+    "question": "Which tool is used to manage and scalecontainers",
+    "options": [
+      "Docker",
+      "VirtualBox",
+      "Oracle Vmware"
+    ],
+    "correctAnswer": "kubernetes"
+  },
+  {
+    "id": 102,
+    "question": "It is said to be the foundation for cloud computing",
+    "options": [
+      "OS",
+      "Big Data",
+      "Containers"
+    ],
+    "correctAnswer": "VM"
+  },
+  {
+    "id": 103,
+    "question": "Incloud computing what do you call SaaS, PaaS and IaaS",
+    "options": [
+      "Deployment Models",
+      "Distribtion Models",
+      "Development Models"
+    ],
+    "correctAnswer": "Delivery Models"
+  },
+  {
+    "id": 104,
+    "question": "Coud services are available over the internet and accessible from various devices:",
+    "options": [
+      "On-Demad Self-Services",
+      "Rapid Elasicity",
+      "High Availability"
+    ],
+    "correctAnswer": "broad network access"
+  },
+  {
+    "id": 105,
+    "question": "Which challenge is primarily addressed by cloud computing vis-à-vis on premise",
+    "options": [
+      "Reliance on local data centers",
+      "Needs to train own IT team",
+      "One-time upfront cost"
+    ],
+    "correctAnswer": "Limited and low scalibility"
+  },
+  {
+    "id": 106,
+    "question": "Which portion of resources is CSP solely responsible for IaaS",
+    "options": [
+      "Runtime",
+      "Middleware",
+      "Application"
+    ],
+    "correctAnswer": "Virtualization"
+  },
+  {
+    "id": 107,
+    "question": "Users can access resources automatically without human interaction with the CSP",
+    "options": [
+      "Rapid Elasticity",
+      "High Availability",
+      "Broad Network Access"
+    ],
+    "correctAnswer": "On-Demand Self-Service"
+  },
+  {
+    "id": 108,
+    "question": "It I concerned about being able to use big data for prediction or recommendation",
+    "options": [
+      "Variety",
+      "Veracity",
+      "Volume"
+    ],
+    "correctAnswer": "Value"
+  },
+  {
+    "id": 109,
+    "question": "Which \"V\" is challenge when firm struggle to verify authenticity of massive data",
+    "options": [
+      "value",
+      "Volume",
+      "Variety"
+    ],
+    "correctAnswer": "veracity"
+  },
+  {
+    "id": 110,
+    "question": "Which of the following best illustrate the veracity aspect of big data",
+    "options": [
+      "A retail chian extracts insight from purchase trends to improve marketing",
+      "A data warehouse stores structured, semi-structured and unstructured data",
+      "A company processes millions of social media post per second"
+    ],
+    "correctAnswer": "A dataset contains conflicting customer records that reduce analysis reliability"
+  },
+  {
+    "id": 111,
+    "question": "A data analyst is focused on transforming vast, fast-moving and diverse datasets into useful business intelligence. Which two V's of big data are most critical in this process",
+    "options": [
+      "Volume and Veracity",
+      "Variety and Volume",
+      "Volume and Value"
+    ],
+    "correctAnswer": "Velocity and Variety"
+  },
+  {
+    "id": 112,
+    "question": "It refers to diversity of big data",
+    "options": [
+      "Value",
+      "Volume",
+      "Veracity"
+    ],
+    "correctAnswer": "Variety"
   }
 ]
