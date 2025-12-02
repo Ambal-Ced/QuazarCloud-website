@@ -1,0 +1,1446 @@
+[
+  {
+    "id": 1,
+    "question": "A technology that allows multiple virtual machines to run on a single physical computer",
+    "options": [],
+    "correctAnswer": "virtualization"
+  },
+  {
+    "id": 2,
+    "question": "A technology that allows organization to reduce hardware cost, improve flexibility and quick deploy or scale system as needed.",
+    "options": [],
+    "correctAnswer": "virtualization"
+  },
+  {
+    "id": 3,
+    "question": "A key component of virtualization",
+    "options": [],
+    "correctAnswer": "hypervisor"
+  },
+  {
+    "id": 4,
+    "question": "a software or hardware program that allows to run mutiple independent operating systems on one physical system",
+    "options": [],
+    "correctAnswer": "hypervisor"
+  },
+  {
+    "id": 5,
+    "question": "guest os that runs directly on hrdware platform under a control of host system",
+    "options": [],
+    "correctAnswer": "type 1 hypervisor"
+  },
+  {
+    "id": 6,
+    "question": "common in data center and enterprise server",
+    "options": [],
+    "correctAnswer": "type 1 hypervisor"
+  },
+  {
+    "id": 7,
+    "question": "app that runs on host machine and is used to create virtual machine that consist of entirely of software and contain no hardware components",
+    "options": [],
+    "correctAnswer": "type 2 hypervisor"
+  },
+  {
+    "id": 8,
+    "question": "common in personal computer and test environment",
+    "options": [],
+    "correctAnswer": "type 2 hypervisor"
+  },
+  {
+    "id": 9,
+    "question": "it plays a crucial role in creating and managing vms",
+    "options": [],
+    "correctAnswer": "hypervisor"
+  },
+  {
+    "id": 10,
+    "question": "a software base emulation  of physical computer created and managed by a hyper visor",
+    "options": [],
+    "correctAnswer": "virtual machine"
+  },
+  {
+    "id": 11,
+    "question": "it operates on independent system complete with its own os, app and virtual hardware components",
+    "options": [],
+    "correctAnswer": "virtual machine"
+  },
+  {
+    "id": 12,
+    "question": "vm's provide flexibility, effiency and scalability enabling users to test multiple different os, consolidate server and optimize resource usage",
+    "options": [],
+    "correctAnswer": "True"
+  },
+  {
+    "id": 13,
+    "question": "key component of modern IT infastructure and serve as foundation for cloud computing and virtualized environment",
+    "options": [],
+    "correctAnswer": "virtual machine"
+  },
+  {
+    "id": 14,
+    "question": "consists of just the application and dependencies and uses an engine for os emulation",
+    "options": [],
+    "correctAnswer": "container"
+  },
+  {
+    "id": 15,
+    "question": "open platform that uses OS-level virtualization to deliver software in packages",
+    "options": [],
+    "correctAnswer": "docker"
+  },
+  {
+    "id": 16,
+    "question": "specialized software  that allows you to manage your containers",
+    "options": [],
+    "correctAnswer": "kubernetes"
+  },
+  {
+    "id": 17,
+    "question": "if a user or app has elevated privileges within container the os can be compremised",
+    "options": [],
+    "correctAnswer": "True"
+  },
+  {
+    "id": 18,
+    "question": "desktop environments can be stored remotely on a server using thin client or virtual desktops which requires high availability and storage capacity",
+    "options": [],
+    "correctAnswer": "desktop virtualization"
+  },
+  {
+    "id": 19,
+    "question": "it is build on virtualization that delivers a comptuing resources such as servers, storage, datbases and apps over the internet",
+    "options": [],
+    "correctAnswer": "cloud computing"
+  },
+  {
+    "id": 20,
+    "question": "instead of owning and maintaining physical infrastructure user can access and pay for there resources on demand",
+    "options": [],
+    "correctAnswer": "cloud computing"
+  },
+  {
+    "id": 21,
+    "question": "this approachs provide _ _ and _ which makes it essential for modern businesses and technologies that require flexibility and high availability",
+    "options": [],
+    "correctAnswer": "scalability accessibility cost efficiency"
+  },
+  {
+    "id": 22,
+    "question": "according to NIST the cloud computing is a model for enabling ubiquitous, convenient, and on demand network access to a shared pool",
+    "options": [],
+    "correctAnswer": "True"
+  },
+  {
+    "id": 23,
+    "question": "in cloud computing if the ownership is you own and manage what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "on premise"
+  },
+  {
+    "id": 24,
+    "question": "in cloud computing if the location is local data centers what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "on premise"
+  },
+  {
+    "id": 25,
+    "question": "in cloud computing if the cost type is one time upfront cost what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "on premise"
+  },
+  {
+    "id": 26,
+    "question": "in cloud computing if the scalability is limited and slow what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "on premise"
+  },
+  {
+    "id": 27,
+    "question": "in cloud computing if the maintenance are your it team what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "on premise"
+  },
+  {
+    "id": 28,
+    "question": "in cloud computing if the access is your local network what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "on premise"
+  },
+  {
+    "id": 29,
+    "question": "in cloud computing if the ownership is not yours and its provider and you just rent what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 30,
+    "question": "in cloud computing if the location is remote data centers what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 31,
+    "question": "in cloud computing if the cost type is ongoing pay as you use cost what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 32,
+    "question": "in cloud computing if the scalability is fast and flexible what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 33,
+    "question": "in cloud computing if the maintenance are the cloud provider what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 34,
+    "question": "in cloud computing if the access is your internet/anywhere access what cloud solution or traditional solution is it",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 35,
+    "question": "Users can access computing resources automatically without requiring human interaction with the service provider.",
+    "options": [],
+    "correctAnswer": "on demand self service"
+  },
+  {
+    "id": 36,
+    "question": "Cloud services are available over the internet and accessible from various devices like smartphones, tablets, and laptops.",
+    "options": [],
+    "correctAnswer": "broad network access"
+  },
+  {
+    "id": 37,
+    "question": "Resources are pooled and shared among multiple users, dynamically assigned and reassigned according to demand.",
+    "options": [],
+    "correctAnswer": "resource pooling"
+  },
+  {
+    "id": 38,
+    "question": "Easily adaptable to different workloads. Businesses can scale resources up or down based on traffic or needs.",
+    "options": [],
+    "correctAnswer": "scalability"
+  },
+  {
+    "id": 39,
+    "question": "Cloud systems are designed to ensure continuous availability and minimal downtime, often backed by multiple data centers.",
+    "options": [],
+    "correctAnswer": "high availability"
+  },
+  {
+    "id": 40,
+    "question": "Cloud providers offer various security features such as encryption, identity management, and compliance certifications, though security is a shared responsibility.",
+    "options": [],
+    "correctAnswer": "security"
+  },
+  {
+    "id": 41,
+    "question": "Resources can be quickly scaled up or down to meet user needs.",
+    "options": [],
+    "correctAnswer": "rapid elasticity"
+  },
+  {
+    "id": 42,
+    "question": "the umbrella term for cloud computing or known as anything as a service",
+    "options": [],
+    "correctAnswer": "XaaS"
+  },
+  {
+    "id": 43,
+    "question": "allows user to access app software and database. Cloud providers manage the infrastructure whileuser store data on the cloud",
+    "options": [],
+    "correctAnswer": "SaaS"
+  },
+  {
+    "id": 44,
+    "question": "Provides virtualized computing resources over the Internet. The provider hosts the hardware, software, servers and storage components.",
+    "options": [],
+    "correctAnswer": "IaaS"
+  },
+  {
+    "id": 45,
+    "question": "Lets an organization remotely access the development tools and services used to deliver such applications, on a subscription basis.",
+    "options": [],
+    "correctAnswer": "PaaS"
+  },
+  {
+    "id": 46,
+    "question": "Offers ready-made backend features such as databases, authentication, and server management so developers can focus on building the frontend of mobile or web apps.",
+    "options": [],
+    "correctAnswer": "BaaS"
+  },
+  {
+    "id": 47,
+    "question": "Delivers AI tools and frameworks like machine learning, chatbots, and analytics via the cloud, without needing in- house expertise.",
+    "options": [],
+    "correctAnswer": "AiaaS"
+  },
+  {
+    "id": 48,
+    "question": "Provides cloud-based security services such as antivirus protection, data encryption, authentication, and threat monitoring.",
+    "options": [],
+    "correctAnswer": "SECaaS"
+  },
+  {
+    "id": 49,
+    "question": "three primary cloud delivery model",
+    "options": [],
+    "correctAnswer": "SaaS Paas SaaS"
+  },
+  {
+    "id": 50,
+    "question": "what cloud delivery model where the client maintains the app, data, runtime, middleware and os",
+    "options": [],
+    "correctAnswer": "IaaS"
+  },
+  {
+    "id": 51,
+    "question": "what cloud delivery model where the client maintains the app, and data",
+    "options": [],
+    "correctAnswer": "PaaS"
+  },
+  {
+    "id": 52,
+    "question": "what cloud delivery model where the procider maintain everything",
+    "options": [],
+    "correctAnswer": "saas"
+  },
+  {
+    "id": 53,
+    "question": "it can be deployed thru different scale or projects depending on ownership of the infrastructure and data center",
+    "options": [],
+    "correctAnswer": "cloud"
+  },
+  {
+    "id": 54,
+    "question": "also called an internal, corporate or enterprise cloud,offers organization more control over its data, but it may be more expensive than other cloud services due to infrastructure, maintenance and administration costs.",
+    "options": [],
+    "correctAnswer": "private cloud"
+  },
+  {
+    "id": 55,
+    "question": "is hosted by a service provider at an offsite facility. Users pay a monthly or yearly usage fee to access the cloud. This option costs the organization less for infrastructure, maintenance and administration, however, the organization has less control over its data.",
+    "options": [],
+    "correctAnswer": "public cloud"
+  },
+  {
+    "id": 56,
+    "question": "combines the private and public cloud by offering control of organizational data, which is still hosted in a public cloud.",
+    "options": [],
+    "correctAnswer": "hybrid cloud"
+  },
+  {
+    "id": 57,
+    "question": "is a collaborative effort in which more than one organization share and use the same platform. This type of cloud is geared toward the needs of an industry such as healthcare or energy.",
+    "options": [],
+    "correctAnswer": "community cloud"
+  },
+  {
+    "id": 58,
+    "question": "the process of scrambling data so that unauthorized people cannot easily read it.",
+    "options": [],
+    "correctAnswer": "encryption"
+  },
+  {
+    "id": 59,
+    "question": "the science of making and breaking secret codes.",
+    "options": [],
+    "correctAnswer": "cryptography"
+  },
+  {
+    "id": 60,
+    "question": "When enabling encryption, readable data is called",
+    "options": [],
+    "correctAnswer": "plaintext"
+  },
+  {
+    "id": 61,
+    "question": "the encrypted version of data which is unreadable, disguised message is called",
+    "options": [],
+    "correctAnswer": "ciphertext"
+  },
+  {
+    "id": 62,
+    "question": "uses the same pre-shared key to encrypt and decrypt data and a method known as private key encryption",
+    "options": [],
+    "correctAnswer": "symmetric encryption algorithm"
+  },
+  {
+    "id": 63,
+    "question": "a symmetric encrytion that has a fixed block size of 128 bits with a key sized of 128, 192 or 256 bits",
+    "options": [],
+    "correctAnswer": "Advance encryption standard"
+  },
+  {
+    "id": 64,
+    "question": "AES meaning",
+    "options": [],
+    "correctAnswer": "Advance encryption standard"
+  },
+  {
+    "id": 65,
+    "question": "use one key for encryption that is different from the key used for decryption.",
+    "options": [],
+    "correctAnswer": "asymmetric encryption algorithm"
+  },
+  {
+    "id": 66,
+    "question": "Asymmetric encryption algorithms include Diffie-Hellman and _ _",
+    "options": [],
+    "correctAnswer": "RSA ECC"
+  },
+  {
+    "id": 67,
+    "question": "a tool that ensures data integrity by taking binary data (like the message) and producing a fixed-length representation",
+    "options": [],
+    "correctAnswer": "hashing"
+  },
+  {
+    "id": 68,
+    "question": "a value of hashing which produced a like a message digest",
+    "options": [],
+    "correctAnswer": "hash value"
+  },
+  {
+    "id": 69,
+    "question": "one-way functions used to verify and ensure data integrity.",
+    "options": [],
+    "correctAnswer": "hash function"
+  },
+  {
+    "id": 70,
+    "question": "The U.S. National Institute of Standards and Technology (NIST) developed",
+    "options": [],
+    "correctAnswer": "SHA"
+  },
+  {
+    "id": 71,
+    "question": "SHS meaning",
+    "options": [],
+    "correctAnswer": "Secure Hash Standard"
+  },
+  {
+    "id": 72,
+    "question": "the next-generation algorithms.",
+    "options": [],
+    "correctAnswer": "SHA 512"
+  },
+  {
+    "id": 73,
+    "question": "defined by several key characteristics, often summarized as the “5 V’s”.",
+    "options": [],
+    "correctAnswer": "Big Data Characeristics"
+  },
+  {
+    "id": 74,
+    "question": "completely intertwined and inseparable with cloud computing. Cloud platforms provide the scalable storage, computing power, and flexible infrastructure needed to collect, process, and analyze massive volumes of data efficiently.",
+    "options": [],
+    "correctAnswer": "Big data"
+  },
+  {
+    "id": 75,
+    "question": "rely on cloud services to handle the information generated from diverse sources.",
+    "options": [],
+    "correctAnswer": "Big data"
+  },
+  {
+    "id": 76,
+    "question": "this leverages these cloud resources to extract insights, detect patterns, and support data-driven decision-making.",
+    "options": [],
+    "correctAnswer": "big data analytics"
+  },
+  {
+    "id": 77,
+    "question": "Refers to the massive amount of data generated from sources",
+    "options": [],
+    "correctAnswer": "volume"
+  },
+  {
+    "id": 78,
+    "question": "The speed at which data is created, collected, and processed",
+    "options": [],
+    "correctAnswer": "velocity"
+  },
+  {
+    "id": 79,
+    "question": "The diversity of data types, including structured, semi-structured, and unstructured",
+    "options": [],
+    "correctAnswer": "variety"
+  },
+  {
+    "id": 80,
+    "question": "The trustworthiness, accuracy, and quality of the data, which affects reliability of insights.",
+    "options": [],
+    "correctAnswer": "veracity"
+  },
+  {
+    "id": 81,
+    "question": "The potential to extract meaningful insights and actionable intelligence from data.",
+    "options": [],
+    "correctAnswer": "value"
+  },
+  {
+    "id": 82,
+    "question": "In the context of big data, it refer to how information is organized and stored.",
+    "options": [],
+    "correctAnswer": "structured unstructured semi-structured"
+  },
+  {
+    "id": 83,
+    "question": "highly organized and easily stored in relational databases, consisting of rows and columns with clearly defined fields, such as customer names, transaction amounts, or inventory records.",
+    "options": [],
+    "correctAnswer": "structured data"
+  },
+  {
+    "id": 84,
+    "question": "lacks a predefined format and includes text documents, social media posts, images, videos, and sensor data, making it more difficult to store, process, and analyze.",
+    "options": [],
+    "correctAnswer": "unstructured data"
+  },
+  {
+    "id": 85,
+    "question": "falls between these two types of big data structure, containing some organizational elements, like tags or markers, that allow partial processing, as seen in XML, JSON files, or log data.",
+    "options": [],
+    "correctAnswer": "semi structured"
+  },
+  {
+    "id": 86,
+    "question": "refers to the design and structure of systems used to collect, store, process, and analyze massive volumes of data efficiently.",
+    "options": [],
+    "correctAnswer": "big data structure"
+  },
+  {
+    "id": 87,
+    "question": "It typically consists of multiple layers to handle the complexity and scale of big data. The data sources layer collects data from various origins, including social media, IoT devices, sensors, logs, and transactional systems.",
+    "options": [],
+    "correctAnswer": "big data structure"
+  },
+  {
+    "id": 88,
+    "question": "Which of the following distinguishes Type 1 and Type 2 hypervisor",
+    "options": [
+      "Type 1 run with the OS while Type 2 run directly on hardware",
+      "Type 1 require guest OS, while Type 2 does not have such requirement",
+      "Type 1 hypervisor cannot perform hardware abstraction, unlike Type 2"
+    ],
+    "correctAnswer": "Type 1 hypervisor run directly on hardware, while type 2 run on Host OS"
+  },
+  {
+    "id": 89,
+    "question": "Which of the following risk is the most associated with hypervisor-level attack",
+    "options": [
+      "VM sprawl",
+      "Data leakage",
+      "Data duplication"
+    ],
+    "correctAnswer": "VM escape"
+  },
+  {
+    "id": 90,
+    "question": "Which of the following is not a benefit of virtualization",
+    "options": [
+      "Improved hardware utilization",
+      "Simplified disaster recovery",
+      "Reduced dependency on physical networking"
+    ],
+    "correctAnswer": "Elimination of all security vulnerabilities"
+  },
+  {
+    "id": 91,
+    "question": "Which is described by Type 2 hypervisor",
+    "options": [
+      "Hardware virtualization",
+      "Core systems virtualization",
+      "Hardware emulation"
+    ],
+    "correctAnswer": "Hosted virtualization"
+  },
+  {
+    "id": 92,
+    "question": "In container-based virtualization, how is isolation achieved compare to hypervisor-based virtualization",
+    "options": [
+      "Containers use hardware emulation to isolate resources on computer",
+      "Containers use separate kernel per application for stronger isolation",
+      "Containers utilize hypervisors to manage host operating systems and infra"
+    ],
+    "correctAnswer": "Containers rely on kernel-level isolationrather than hardware virtualization"
+  },
+  {
+    "id": 93,
+    "question": "In the process of encryption, the encypted version of data is called",
+    "options": [
+      "Symmetric",
+      "Hashkey",
+      "Plain text"
+    ],
+    "correctAnswer": "Cyphertext"
+  },
+  {
+    "id": 94,
+    "question": "one-way functions used to verify and ensure data integrity.",
+    "options": [
+      "Cryptography",
+      "Salting",
+      "Encryption"
+    ],
+    "correctAnswer": "Hash"
+  },
+  {
+    "id": 95,
+    "question": "Which of the following is not an asymetric encription algorithm",
+    "options": [
+      "Rivest--Shamir-Adleman",
+      "Diffie-Hellman",
+      "Elliptic curve cryptography"
+    ],
+    "correctAnswer": "Advance encryption standard"
+  },
+  {
+    "id": 96,
+    "question": "What is the foundational basis of SHA developed by NIST",
+    "options": [
+      "Cryptographic Hashing Standard",
+      "Advance Encryption Standard",
+      "Secure Encryption Standard"
+    ],
+    "correctAnswer": "Secure Hash Standard"
+  },
+  {
+    "id": 97,
+    "question": "In the proces of encryption, the readable version of data is called",
+    "options": [
+      "Symmetric",
+      "Hashkey",
+      "Cyphertext"
+    ],
+    "correctAnswer": "plaintext"
+  },
+  {
+    "id": 98,
+    "question": "what do containers share that virtual machines do not",
+    "options": [
+      "hypervisor",
+      "OS",
+      "Virtual hardware"
+    ],
+    "correctAnswer": "Kernel"
+  },
+  {
+    "id": 99,
+    "question": "Open platform that uses virtualization to deliver software in package",
+    "options": [
+      "Kubernetes",
+      "Oracle Vmware",
+      "VirtualBox"
+    ],
+    "correctAnswer": "Docker"
+  },
+  {
+    "id": 100,
+    "question": "What type of virtualization does Docker use",
+    "options": [
+      "Hardware level",
+      "Network level",
+      "Application level"
+    ],
+    "correctAnswer": "OS-level"
+  },
+  {
+    "id": 101,
+    "question": "Which tool is used to manage and scalecontainers",
+    "options": [
+      "Docker",
+      "VirtualBox",
+      "Oracle Vmware"
+    ],
+    "correctAnswer": "kubernetes"
+  },
+  {
+    "id": 102,
+    "question": "It is said to be the foundation for cloud computing",
+    "options": [
+      "OS",
+      "Big Data",
+      "Containers"
+    ],
+    "correctAnswer": "VM"
+  },
+  {
+    "id": 103,
+    "question": "Incloud computing what do you call SaaS, PaaS and IaaS",
+    "options": [
+      "Deployment Models",
+      "Distribtion Models",
+      "Development Models"
+    ],
+    "correctAnswer": "Delivery Models"
+  },
+  {
+    "id": 104,
+    "question": "Coud services are available over the internet and accessible from various devices:",
+    "options": [
+      "On-Demad Self-Services",
+      "Rapid Elasicity",
+      "High Availability"
+    ],
+    "correctAnswer": "broad network access"
+  },
+  {
+    "id": 105,
+    "question": "Which challenge is primarily addressed by cloud computing vis-à-vis on premise",
+    "options": [
+      "Reliance on local data centers",
+      "Needs to train own IT team",
+      "One-time upfront cost"
+    ],
+    "correctAnswer": "Limited and low scalibility"
+  },
+  {
+    "id": 106,
+    "question": "Which portion of resources is CSP solely responsible for IaaS",
+    "options": [
+      "Runtime",
+      "Middleware",
+      "Application"
+    ],
+    "correctAnswer": "Virtualization"
+  },
+  {
+    "id": 107,
+    "question": "Users can access resources automatically without human interaction with the CSP",
+    "options": [
+      "Rapid Elasticity",
+      "High Availability",
+      "Broad Network Access"
+    ],
+    "correctAnswer": "On-Demand Self-Service"
+  },
+  {
+    "id": 108,
+    "question": "It I concerned about being able to use big data for prediction or recommendation",
+    "options": [
+      "Variety",
+      "Veracity",
+      "Volume"
+    ],
+    "correctAnswer": "Value"
+  },
+  {
+    "id": 109,
+    "question": "Which \"V\" is challenge when firm struggle to verify authenticity of massive data",
+    "options": [
+      "value",
+      "Volume",
+      "Variety"
+    ],
+    "correctAnswer": "veracity"
+  },
+  {
+    "id": 110,
+    "question": "Which of the following best illustrate the veracity aspect of big data",
+    "options": [
+      "A retail chian extracts insight from purchase trends to improve marketing",
+      "A data warehouse stores structured, semi-structured and unstructured data",
+      "A company processes millions of social media post per second"
+    ],
+    "correctAnswer": "A dataset contains conflicting customer records that reduce analysis reliability"
+  },
+  {
+    "id": 111,
+    "question": "A data analyst is focused on transforming vast, fast-moving and diverse datasets into useful business intelligence. Which two V's of big data are most critical in this process",
+    "options": [
+      "Volume and Veracity",
+      "Variety and Volume",
+      "Volume and Value"
+    ],
+    "correctAnswer": "Velocity and Variety"
+  },
+  {
+    "id": 112,
+    "question": "It refers to diversity of big data",
+    "options": [
+      "Value",
+      "Volume",
+      "Veracity"
+    ],
+    "correctAnswer": "Variety"
+  },
+  {
+    "id": 113,
+    "question": "in cybersecurity refers to the process of managing who is access specific resources, systems, or data within an organization. allowed to",
+    "options": [],
+    "correctAnswer": "Access control"
+  },
+  {
+    "id": 114,
+    "question": "It ensures thatonly authorized users can view or modify sensitive information, reducing the risk of data breaches and insider threats.",
+    "options": [],
+    "correctAnswer": "Access control"
+  },
+  {
+    "id": 115,
+    "question": "Typically involves two main component which is authentication and authorization",
+    "options": [],
+    "correctAnswer": "Access control"
+  },
+  {
+    "id": 116,
+    "question": "Verifies a user's identity through passwords, biometrics of multi-factor athentication",
+    "options": [],
+    "correctAnswer": "Authentication"
+  },
+  {
+    "id": 117,
+    "question": "Determines what actions the authenticated user is allowed to perform",
+    "options": [],
+    "correctAnswer": "Authorization"
+  },
+  {
+    "id": 118,
+    "question": "Three main principle of cybersecurity",
+    "options": [],
+    "correctAnswer": "Confidentiality, Integrity, and Availability"
+  },
+  {
+    "id": 119,
+    "question": "assigns permissions based on user's job roles and responsibilities",
+    "options": [],
+    "correctAnswer": "RBAC - Role-Based Access Control"
+  },
+  {
+    "id": 120,
+    "question": "Uses predefiend rules setby admin, often applied in government",
+    "options": [],
+    "correctAnswer": "MAC - Mandatory Access Control"
+  },
+  {
+    "id": 121,
+    "question": "Allows resource owners to decide who can access their resources",
+    "options": [],
+    "correctAnswer": "DAC - Discretionary Access Control"
+  },
+  {
+    "id": 122,
+    "question": "Makes decision based on user attribtes and contextual factors",
+    "options": [],
+    "correctAnswer": "ABAC - Attribute-Based Access Control"
+  },
+  {
+    "id": 123,
+    "question": "Grants or restricts access to network based on specific periods or days",
+    "options": [],
+    "correctAnswer": "TAC - Time-Based Access Control"
+  },
+  {
+    "id": 124,
+    "question": "An organization must implement proper ___ to protect its network resources, information system resources and sensitive information.",
+    "options": [],
+    "correctAnswer": "Access control"
+  },
+  {
+    "id": 125,
+    "question": "The least restrictive model, allowing data owners to control access to their own information",
+    "options": [],
+    "correctAnswer": "DAC - Discretionary Access Control"
+  },
+  {
+    "id": 126,
+    "question": "It often uses access control list (ACLs) or other mechanism to specify which users or groups have permision to acces certan data",
+    "options": [],
+    "correctAnswer": "DAC - Discretionary Access Control"
+  },
+  {
+    "id": 127,
+    "question": "The strictest model, commonly used in military or mission critical environments",
+    "options": [],
+    "correctAnswer": "MAC - Mandatory Access Control"
+  },
+  {
+    "id": 128,
+    "question": "It assign security labels to information and grant acces based on user's security clearances",
+    "options": [],
+    "correctAnswer": "MAC - Mandatory Access Control"
+  },
+  {
+    "id": 129,
+    "question": "It determines access rights based on an individual's role or responsibility within organization",
+    "options": [],
+    "correctAnswer": "RBAC - Role-Based Access Control"
+  },
+  {
+    "id": 130,
+    "question": "Each role is assigned specific privilleges and user are given access based on their job position or classification. This model is also know as form of non-discretionary access control",
+    "options": [],
+    "correctAnswer": "RBAC - Role-Based Access Control"
+  },
+  {
+    "id": 131,
+    "question": "Allows access according to a combination of attributes related to the user (subject), the resource(object), and contextual factors, such as tme of day or location",
+    "options": [],
+    "correctAnswer": "ABAC - Attribute-Based Access Control"
+  },
+  {
+    "id": 132,
+    "question": "Uses predefined rules set by network administrators, sch as permitted IP addresses, protocols, or conditions for access",
+    "options": [],
+    "correctAnswer": "RBAC - Role-Based Access Control"
+  },
+  {
+    "id": 133,
+    "question": "Restrict access to network resources based on specific time frames or days",
+    "options": [],
+    "correctAnswer": "TAC - Time-Based Access Control"
+  },
+  {
+    "id": 134,
+    "question": "Principle of least privillege which ensures that users and processes are granted only the minimum access necessary to perform their task.",
+    "options": [],
+    "correctAnswer": "TAC - Time-Based Access Control"
+  },
+  {
+    "id": 135,
+    "question": "When this principle is violated, it can lead to privilege escalation attacks, where threat actors exploit system vulnerabilities to gain unauthorized access or control over sensitive data and systems",
+    "options": [],
+    "correctAnswer": "TAC - Time-Based Access Control"
+  },
+  {
+    "id": 136,
+    "question": "Regulates entry to physical spaces such as buildings, server rooms or data center",
+    "options": [],
+    "correctAnswer": "Physical access control"
+  },
+  {
+    "id": 137,
+    "question": "It uses mechanism like security guards, locks, key cards, and biometric scanners to ensure that only authorized individuals can access sensitive or restricted areas",
+    "options": [],
+    "correctAnswer": "Physical access control"
+  },
+  {
+    "id": 138,
+    "question": "This helps prevent theft, damage, or tampering with hardware and network infrastructure, which could compromise an organization’s information systems.",
+    "options": [],
+    "correctAnswer": "Physical access control"
+  },
+  {
+    "id": 139,
+    "question": "focuses on regulating access to digital resources such as computer systems, databases, and networks.",
+    "options": [],
+    "correctAnswer": "Logical access control"
+  },
+  {
+    "id": 140,
+    "question": "It relies on authentication and authorization processes that may include passwords, multi-factor authentication, user permissions, and encryption.",
+    "options": [],
+    "correctAnswer": "Logical access control"
+  },
+  {
+    "id": 141,
+    "question": "ensures that only legitimate users can access or modify data according to their assigned privileges.",
+    "options": [],
+    "correctAnswer": "Logical access control"
+  },
+  {
+    "id": 142,
+    "question": "Focuses on verifying user identities and controlling their access to systems and resources.",
+    "options": [],
+    "correctAnswer": "IAM"
+  },
+  {
+    "id": 143,
+    "question": "Three Access control principle",
+    "options": [],
+    "correctAnswer": "IAM, NAC, ZTP"
+  },
+  {
+    "id": 144,
+    "question": "Manages and monitors devices attempting to connect to a network.",
+    "options": [],
+    "correctAnswer": "NAC"
+  },
+  {
+    "id": 145,
+    "question": "Based on the concept of “never trust, always verify.” Every user, device, and connection must be continuously verified.",
+    "options": [],
+    "correctAnswer": "ZTP"
+  },
+  {
+    "id": 146,
+    "question": "Enforces the rules estabished by authorization policy",
+    "options": [],
+    "correctAnswer": "Identification"
+  },
+  {
+    "id": 147,
+    "question": "Ensures the proper association between allowed activities and subjects",
+    "options": [],
+    "correctAnswer": "Unique identifier"
+  },
+  {
+    "id": 148,
+    "question": "Ensures that a system can identify each user individuall therefore allowing an authorized user to perform the appropriate actions on a particular resource",
+    "options": [],
+    "correctAnswer": "Unique identifier"
+  },
+  {
+    "id": 149,
+    "question": "Meanwhile ___ systems support access management by enforcing organizational policies regarding the people and devices that are attempting to access the network",
+    "options": [],
+    "correctAnswer": "NAC"
+  },
+  {
+    "id": 150,
+    "question": "A system allow cybersecurity professionals to monitor the users and devices that are attached to the network, and maally control acces as required",
+    "options": [],
+    "correctAnswer": "NAC"
+  },
+  {
+    "id": 151,
+    "question": "Because BYOD and IoT networking greatly expand the network attack surface, NAC system automation features make focused control of network access by such devices practical.",
+    "options": [],
+    "correctAnswer": "NAC"
+  },
+  {
+    "id": 152,
+    "question": "___ system is configured to enforce organizational policies. The relevant policies are enacted to permit or deny network access according to a wide range of factors that the ___ system detects on the devices that are attempting access.",
+    "options": [],
+    "correctAnswer": "NAC"
+  },
+  {
+    "id": 153,
+    "question": "Acronym meaning of NAC",
+    "options": [],
+    "correctAnswer": "Network Access Control"
+  },
+  {
+    "id": 154,
+    "question": "Acronym meaning of IAM",
+    "options": [],
+    "correctAnswer": "Identity and Access Manageemnt"
+  },
+  {
+    "id": 155,
+    "question": "Acronym meaning of ZTP",
+    "options": [],
+    "correctAnswer": "Zero Trust Policy"
+  },
+  {
+    "id": 156,
+    "question": "comprehensive approach to securing all access across networks, applications, and environments. This approach helps secure access from users, end-user devices, APIs, IoT, microservices, containers, and more.",
+    "options": [],
+    "correctAnswer": "ZTP"
+  },
+  {
+    "id": 157,
+    "question": "The principle of a ___ approach is, “never trust, always verify.” Assume zero trust any time someone or something requests access to assets.",
+    "options": [],
+    "correctAnswer": "ZTP"
+  },
+  {
+    "id": 158,
+    "question": "A security framework helps to prevent unauthorized access, contain breaches, and reduce the risk of an attacker's lateral movement through a network.",
+    "options": [],
+    "correctAnswer": "ZTP"
+  },
+  {
+    "id": 159,
+    "question": "any place at which an access control decision is required should be considered a perimeter. This means that although a user or other entity may have successfully passed access control previously, they are not trusted to access another area or resource until they are authenticated.",
+    "options": [],
+    "correctAnswer": "ZTP"
+  },
+  {
+    "id": 160,
+    "question": "This pillar consists of people who access work applications by using their personal or corporate-managed devices. This pillar ensures only the right users and secure devices can access applications, regardless of location",
+    "options": [],
+    "correctAnswer": "Zero Trust for the Workforce"
+  },
+  {
+    "id": 161,
+    "question": "This pillar is concerned with applications that are running in the cloud, in data centers, and other virtualized environments that interact with one another. It focuses on secure access when an API, microservice, or container is accessing a database.",
+    "options": [],
+    "correctAnswer": "Zero Trust for Workloads"
+  },
+  {
+    "id": 162,
+    "question": "This pillar focuses on secure access for any and all devices, including on the internet of things (IoT), that connect to enterprise networks, such as user endpoints, physical and virtual servers, printers, cameras, HVAC systems, kiosks, infusion pumps, industrial control systems, and more.",
+    "options": [],
+    "correctAnswer": "Zero Trust for the Workplace"
+  },
+  {
+    "id": 163,
+    "question": "A series of IOS commands that are used to filter packets based on information found in the packet header.",
+    "options": [],
+    "correctAnswer": "Access control List"
+  },
+  {
+    "id": 164,
+    "question": "when an ___ is applied to an interface, the router performs the additional task of evaluating all network packets as they pass through the interface to determine if the packet can be forwarded.",
+    "options": [],
+    "correctAnswer": "Access control List"
+  },
+  {
+    "id": 165,
+    "question": "uses a sequential list of permit or deny statements, known as access control entries.",
+    "options": [],
+    "correctAnswer": "Access control List"
+  },
+  {
+    "id": 166,
+    "question": "Acronym meaning of ACE",
+    "options": [],
+    "correctAnswer": "Access Control Entry"
+  },
+  {
+    "id": 167,
+    "question": "is the process of creating, maintaining, and controlling user accounts within an organization’s information systems to ensure secure and efficient access to resources. It includes activities such as adding new users, assigning appropriate permissions, updating account details, and removing accounts that are no longer needed.",
+    "options": [],
+    "correctAnswer": "Account Management"
+  },
+  {
+    "id": 168,
+    "question": "enforces the principle of least privilege, ensuring that users have only the access necessary to perform their duties. This is especially important because cybercriminals often target privileged accounts, which are the most powerful accounts in an organization with elevated, unrestricted access to systems.",
+    "options": [],
+    "correctAnswer": "Account Management"
+  },
+  {
+    "id": 169,
+    "question": "are rules configured to limit folder or file access for an individual or a group. Users should be limited to only the resources they need on a computer system or network. For example, they should not be able to access all files on a server if they only need access to a single folder.",
+    "options": [],
+    "correctAnswer": "Account Management"
+  },
+  {
+    "id": 170,
+    "question": "Users can see the contents of files and folders, change and delete existing files and folders, create new files and folders, and run programs in a folder.",
+    "options": [],
+    "correctAnswer": "Full Control"
+  },
+  {
+    "id": 171,
+    "question": "Users can change and delete existing files and folders but cannot create new ones.",
+    "options": [],
+    "correctAnswer": "Modify"
+  },
+  {
+    "id": 172,
+    "question": "Users can see the contents of existing files and folders and can run programs in a folder.",
+    "options": [],
+    "correctAnswer": "Read and execute"
+  },
+  {
+    "id": 173,
+    "question": "Users can create new files and folders and make changes to existing files and folders.",
+    "options": [],
+    "correctAnswer": "Write"
+  },
+  {
+    "id": 174,
+    "question": "Users can see the contents of a folder and open files and folders.",
+    "options": [],
+    "correctAnswer": "Read"
+  },
+  {
+    "id": 175,
+    "question": "Applies to all domain members. For example, account policies are automatically set when a user logs in to Windows. When a computer is not part of an Active Directory domain, the user configures policies through Windows Local Security Policy.",
+    "options": [],
+    "correctAnswer": "Domain Security Policy"
+  },
+  {
+    "id": 176,
+    "question": "A domain security policy which can be configured by administrator  which can be set depending on organizational requirement and needs for example users must change their password every 90 days and use each new password for atleast one day",
+    "options": [],
+    "correctAnswer": "Password Policy"
+  },
+  {
+    "id": 177,
+    "question": "A domain security policy which can be configured to locks an account for a set of duration when too many incorrect login attempts occur",
+    "options": [],
+    "correctAnswer": "Account Lockout Policy"
+  },
+  {
+    "id": 178,
+    "question": "A domain security policy which offers more security settings are available by selecting 'local policies' folder in windows which creates a security log file used to track the different types of events",
+    "options": [],
+    "correctAnswer": "Audit Policies"
+  },
+  {
+    "id": 179,
+    "question": "An administrative access control embodies the policies, procedures, and guidelines that govern how access to information system is managed and enforced within an organization",
+    "options": [],
+    "correctAnswer": "AAA operations"
+  },
+  {
+    "id": 180,
+    "question": "Unlike physical or logical access controls which focuses on technical or tangible barries this defines how access decision are made, assigned and monitored.",
+    "options": [],
+    "correctAnswer": "AAA operations"
+  },
+  {
+    "id": 181,
+    "question": "An administrative controls which includes creating securit policies, conducting background checks, setting user roles and responsibilities, training employees on security practices and enforcing compliance with regulatory standards.",
+    "options": [],
+    "correctAnswer": "AAA operations"
+  },
+  {
+    "id": 182,
+    "question": "Verifies the identity of a user or device before granting access to a network or system.",
+    "options": [],
+    "correctAnswer": "Authentication"
+  },
+  {
+    "id": 183,
+    "question": "Determines what resources or actions an authenticated user or device is allowed to access.",
+    "options": [],
+    "correctAnswer": "Authorization"
+  },
+  {
+    "id": 184,
+    "question": "Tracks and records user activities on a network for monitoring, auditing, and security analysis.",
+    "options": [],
+    "correctAnswer": "Accounting"
+  },
+  {
+    "id": 185,
+    "question": "Its importance AAA lies in its ability to provide a structured and secure approach to managing access and activity within a network.",
+    "options": [],
+    "correctAnswer": "AAA"
+  },
+  {
+    "id": 186,
+    "question": "These services provide the primary framework to control access, preventing unauthorized access to a computer, network, database or other data resource.",
+    "options": [],
+    "correctAnswer": "AAA"
+  },
+  {
+    "id": 187,
+    "question": "The first A in AAA which verifies the identity of each user, to prevent unauthorized access. Users prove their identity with a username or ID.",
+    "options": [],
+    "correctAnswer": "Authentication"
+  },
+  {
+    "id": 188,
+    "question": "It is an authentication which is increasingly becoming the norm, the system requires a combination of identity verification rather than just one to verify someones identity.",
+    "options": [],
+    "correctAnswer": "Two Factor Authentication"
+  },
+  {
+    "id": 189,
+    "question": "An aurthentication which can reduce the incidence of online identity theft because it means knowing a password will not give cybercriminals access to a user’s account.",
+    "options": [],
+    "correctAnswer": "Multi-factor authentication"
+  },
+  {
+    "id": 190,
+    "question": "An online banking website might require a password and a one-off PIN that the user receives on his or her smartphone. In this case, your first factor is your password, and your second factor the temporary PIN, because it proves you have access to what is registered as your phone. What authentication type is used by the online banking website",
+    "options": [],
+    "correctAnswer": "Multi-factor authentication"
+  },
+  {
+    "id": 191,
+    "question": "A services determine which resources users can access, along with the operations that users can perform. Some systems accomplish this by using an access control list, or an ACL. An ACL determines whether a user has certain access privileges once the user authenticates.",
+    "options": [],
+    "correctAnswer": "Authorization"
+  },
+  {
+    "id": 192,
+    "question": "What AAA is used in example: employees may have access to a sales database during work hours, but the system locks them out afterhours.",
+    "options": [],
+    "correctAnswer": "Authorization"
+  },
+  {
+    "id": 193,
+    "question": "It controls what a user can and cannot do on the network after successful authentication. After a user proves their identity, the system checks to see what network resources the user can access and what they can do with the resources.",
+    "options": [],
+    "correctAnswer": "Authorization"
+  },
+  {
+    "id": 194,
+    "question": "It uses a set of attributes that describes the user’s access to the network, to answer the question, ‘What read, copy, edit, create and delete privileges does this user have?’ The system compares these attributes to the information contained within the authentication database, determines a set of restrictions for that user, and delivers it to the local device where the user is connected.",
+    "options": [],
+    "correctAnswer": "Authorization"
+  },
+  {
+    "id": 195,
+    "question": "Not related to financial accounting, ___ in AAA keeps track of what users do, including what they access, the amount of time they access resources, and any changes they make.",
+    "options": [],
+    "correctAnswer": "Accounting"
+  },
+  {
+    "id": 196,
+    "question": "A bank keeps track of each customer account. An audit of that system can reveal the time and amount of all transactions and the employee or system that executed the transactions. What AAA concept is being used in example",
+    "options": [],
+    "correctAnswer": "Accounting"
+  },
+  {
+    "id": 197,
+    "question": "It traces an action back to a person or process making this change to a system. Accountability then collects this information and reports the usage data.",
+    "options": [],
+    "correctAnswer": "Accountability"
+  },
+  {
+    "id": 198,
+    "question": "It consists of technologies, policies, procedures and education. Log files provide detailed information based on the parameters chosen. For example, an organization may look at the log for login failures and successes. Login failures can indicate that a criminal tried to hack an account, and login successes tell an organization which users are using what resources and when.",
+    "options": [],
+    "correctAnswer": "Accountability"
+  },
+  {
+    "id": 199,
+    "question": "allows the user to use one set of login credentials to authenticate across multiple applications. This way, the user only needs to remember one strong password.",
+    "options": [],
+    "correctAnswer": "Single Sign On"
+  },
+  {
+    "id": 200,
+    "question": "is a standard that enables a user’s account information to be used by third-party services such as Facebook or Google.",
+    "options": [],
+    "correctAnswer": "Oauth"
+  },
+  {
+    "id": 201,
+    "question": "can protect and store the user’s credentials with a single strong password required to access them.",
+    "options": [],
+    "correctAnswer": "Password vault"
+  },
+  {
+    "id": 202,
+    "question": "provides a password reset should a user forget their password. KBA is based on personal information known by the user or a series of questions",
+    "options": [],
+    "correctAnswer": "Knowledge Base Authentication"
+  },
+  {
+    "id": 203,
+    "question": "Evolving technologies in authentication combines the power and practice of encryption Authentication Code (HMAC) which uses an encryption key with a hash function to authenticate a web user.",
+    "options": [],
+    "correctAnswer": "Hash Based Message Authentication Code"
+  },
+  {
+    "id": 204,
+    "question": "A products that uses hashing for entity authentication, data integrity and data authenticit purposes",
+    "options": [],
+    "correctAnswer": "Cisco"
+  },
+  {
+    "id": 205,
+    "question": "A password from the client is sent using a hash to the authentication server. The authentication server has a certificate.",
+    "options": [],
+    "correctAnswer": "Extensible Authentication Protocol"
+  },
+  {
+    "id": 206,
+    "question": "A username and password are sent to a remote access server in plaintext. Most network operating system remote servers support PAP.",
+    "options": [],
+    "correctAnswer": "Password Authentication Protocol"
+  },
+  {
+    "id": 207,
+    "question": "Validates the identity of remote clients using a one-way hashing function created by the client. The service also calculates the expected hash value.",
+    "options": [],
+    "correctAnswer": "Challenge Handshake Authentication Protocol"
+  },
+  {
+    "id": 208,
+    "question": "An organization authenticates your identity and authorizes access to the network. Your identity is determined based on credentials or a certificate which is confirmed by a RADIUS server.",
+    "options": [],
+    "correctAnswer": "802.1x NAC standard of IEEE"
+  },
+  {
+    "id": 209,
+    "question": "When simple username/password authentication is needed, use ___ to either accept or deny access. ____ only encrypts the user’s password from the ___ client to the ____ server. The username, accounting and authorized services are transmitted in cleartext. When ____ is integrated into a product, security measures that protect against replay attacks are necessary.",
+    "options": [],
+    "correctAnswer": "RADIUS"
+  },
+  {
+    "id": 210,
+    "question": "Encrypts all of the data between the client and the server. Since network administrators can define ACLs, filters and user privileges, TACACS+ is a better choice for corporate networks requiring more sophisticated authentication steps and control over authorization activities.",
+    "options": [],
+    "correctAnswer": "TACACS+"
+  },
+  {
+    "id": 211,
+    "question": "RADIUS Acronym meaning",
+    "options": [],
+    "correctAnswer": "Remote Authentication Dial-In User Service"
+  },
+  {
+    "id": 212,
+    "question": "TACACS+ Acronym meaning",
+    "options": [],
+    "correctAnswer": "Terminal Access Controller Access Control System"
+  },
+  {
+    "id": 213,
+    "question": "play vital roles in maintaining secure network access, but they differ in how they handle authentication and communication.",
+    "options": [],
+    "correctAnswer": "RADIUS TACACS+"
+  },
+  {
+    "id": 214,
+    "question": "Is widely used for user access to network services such as VPNs and Wi-Fi, combining authentication and authorization in a single process, which makes it efficient for large-scale user management.",
+    "options": [],
+    "correctAnswer": "RADIUS"
+  },
+  {
+    "id": 215,
+    "question": "Administrative access to network devices because it separates authentication, authorization, and accounting into distinct processes, allowing for more precise control and detailed auditing of administrator actions.",
+    "options": [],
+    "correctAnswer": "TACACS+"
+  },
+  {
+    "id": 216,
+    "question": "can be used to authenticate users for administrative access or it can be used to authenticate users for remote network access.",
+    "options": [],
+    "correctAnswer": "AAA Authentication"
+  },
+  {
+    "id": 217,
+    "question": "This method is sometimes known as self-contained authentication because it authenticates users against locally stored usernames and passwords,",
+    "options": [],
+    "correctAnswer": "Local AAA Authentication"
+  },
+  {
+    "id": 218,
+    "question": "This method authenticates against a central AAA server that contains the usernames and passwords for all users, as shown in the figure. Server-based AAA authentication is appropriate for medium-to-large networks.",
+    "options": [],
+    "correctAnswer": "Server-Based AAA Authentication"
+  },
+  {
+    "id": 219,
+    "question": "Captures information for all Point-to-Point Protocol (PPP) sessions, including packet and byte counts, to monitor and record data usage across the network.",
+    "options": [],
+    "correctAnswer": "Network Accounting"
+  },
+  {
+    "id": 220,
+    "question": "Captures information about all outbound connections made from the AAA client, such as SSH sessions, and tracks when and how these connections occur.",
+    "options": [],
+    "correctAnswer": "Connection Accounting"
+  },
+  {
+    "id": 221,
+    "question": "Captures information about user EXEC terminal sessions on the network access server, including the username, date, start and stop times, and the access server IP address.",
+    "options": [],
+    "correctAnswer": "EXEC Accounting"
+  },
+  {
+    "id": 222,
+    "question": "Captures information about all system-level events, such as when the device reboots, user sessions begin or end, or when accounting services are enabled or disabled.",
+    "options": [],
+    "correctAnswer": "System Accounting"
+  },
+  {
+    "id": 223,
+    "question": "Captures information about EXEC shell commands for a specified privilege level, recording the date, time, user, and details of each command executed.",
+    "options": [],
+    "correctAnswer": "Command Accounting"
+  },
+  {
+    "id": 224,
+    "question": "Captures detailed records of user connections that have passed authentication, as well as failed connection attempts, to help administrators track and manage network resource usage.",
+    "options": [],
+    "correctAnswer": "Resource Accounting"
+  }
+]
