@@ -1,0 +1,1318 @@
+[
+  {
+    "id": 1,
+    "question": "It works by creating virtual versions of hardware or software environments, enabling better utilization of computing resources and easier management",
+    "options": [],
+    "correctAnswer": "Virtualization"
+  },
+  {
+    "id": 2,
+    "question": "A key component of virtualization",
+    "options": [],
+    "correctAnswer": "Hypervisor"
+  },
+  {
+    "id": 3,
+    "question": "A software or hardware program that allows you to run multiple independent operating systems on one physical system",
+    "options": [],
+    "correctAnswer": "Hypervisor"
+  },
+  {
+    "id": 4,
+    "question": "The guest operating system runs directly on a hardware platform, under the control of the host system.",
+    "options": [],
+    "correctAnswer": "Type 1 Hypervisor"
+  },
+  {
+    "id": 5,
+    "question": "The Hardware virtualization",
+    "options": [],
+    "correctAnswer": "Type 1 Hypervisor"
+  },
+  {
+    "id": 6,
+    "question": "Common in data centers and enterprise servers.",
+    "options": [],
+    "correctAnswer": "Type 1 Hypervisor"
+  },
+  {
+    "id": 7,
+    "question": "The Hosted virtualization",
+    "options": [],
+    "correctAnswer": "Type 2 Hypervisor"
+  },
+  {
+    "id": 8,
+    "question": "An application running on the host machine is used to create virtual machines that consist entirely of software and contain no hardware components.",
+    "options": [],
+    "correctAnswer": "Type 2 Hypervisor"
+  },
+  {
+    "id": 9,
+    "question": "Common in personal computers and testing environments.",
+    "options": [],
+    "correctAnswer": "Type 2 Hypervisor"
+  },
+  {
+    "id": 10,
+    "question": "Play a crucial role in creating and managing virtual machines (VMs)",
+    "options": [],
+    "correctAnswer": ""
+  },
+  {
+    "id": 11,
+    "question": "A software layer that allows multiple virtual machines to run on a single physical computer by dividing and allocating resources such as CPU, memory, and storage",
+    "options": [],
+    "correctAnswer": "Hypervisor"
+  },
+  {
+    "id": 12,
+    "question": "A software-based emulation of a physical\ncomputer created and managed by a hypervisor",
+    "options": [],
+    "correctAnswer": "Virtual Machine"
+  },
+  {
+    "id": 13,
+    "question": "operates as an independent system, complete with its own operating system, applications, and virtual hardware components",
+    "options": [],
+    "correctAnswer": "Virtual Machine"
+  },
+  {
+    "id": 14,
+    "question": "Allows multiple VMs to run on the same physical machine without interfering with one another",
+    "options": [],
+    "correctAnswer": "Isolation"
+  },
+  {
+    "id": 15,
+    "question": "Provide flexibility, efficiency, and scalability, enabling users to test different operating systems, consolidate servers, and optimize resource usage. They are a key component of modern IT infrastructure and serve as the foundation for cloud computing and virtualized environments",
+    "options": [],
+    "correctAnswer": "Virtual Machine"
+  },
+  {
+    "id": 16,
+    "question": "Consists of just the application and its dependencies",
+    "options": [],
+    "correctAnswer": "Container"
+  },
+  {
+    "id": 17,
+    "question": "uses an engine for operating system emulation. Docker isan open platform that uses OS-level virtualization to deliver software in packages (containers)",
+    "options": [],
+    "correctAnswer": "Container"
+  },
+  {
+    "id": 18,
+    "question": "Specialized software that  allows you to manage your containers. If a user or application has elevated privileges within a container, the underlying operating system can be compromised",
+    "options": [],
+    "correctAnswer": "Kubernetes"
+  },
+  {
+    "id": 19,
+    "question": "Can be stored remotely on a server using thin client or virtual desktops. This makes it very easy to quickly create, delete, copy, archive or download configurations over a network.",
+    "options": [],
+    "correctAnswer": "User Desktop Environments"
+  },
+  {
+    "id": 20,
+    "question": "Requires high availability and storage capacity.",
+    "options": [],
+    "correctAnswer": "Desktop virtualization"
+  },
+  {
+    "id": 21,
+    "question": "Builds on virtualization by delivering computing resources such as servers, storage, databases, and applications, over the internet. Instead of owning and maintaining physical infrastructure, users can access and pay for these resources on demand",
+    "options": [],
+    "correctAnswer": "Cloud computing"
+  },
+  {
+    "id": 22,
+    "question": "This approach provides scalability, accessibility, and cost efficiency, making it essential for modern businesses and technologies that require flexibility and high availability",
+    "options": [],
+    "correctAnswer": "Cloud computing"
+  },
+  {
+    "id": 23,
+    "question": "A model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources that can be rapidly provisioned and released with minimal management effort or service provider interaction",
+    "options": [],
+    "correctAnswer": "Cloud computing"
+  },
+  {
+    "id": 24,
+    "question": "Ownership (You own and manage)",
+    "options": [
+      "Cloud"
+    ],
+    "correctAnswer": "On Premise"
+  },
+  {
+    "id": 25,
+    "question": "Location (Local data centers)",
+    "options": [
+      "Cloud"
+    ],
+    "correctAnswer": "On Premise"
+  },
+  {
+    "id": 26,
+    "question": "Cost Type (One-time upfront cost)",
+    "options": [
+      "Cloud"
+    ],
+    "correctAnswer": "On Premise"
+  },
+  {
+    "id": 27,
+    "question": "Scalability (Limited and slow )",
+    "options": [
+      "Cloud"
+    ],
+    "correctAnswer": "On Premise"
+  },
+  {
+    "id": 28,
+    "question": "Maintenance (Your IT team)",
+    "options": [
+      "Cloud"
+    ],
+    "correctAnswer": "On Premise"
+  },
+  {
+    "id": 29,
+    "question": "Access (Local network)",
+    "options": [
+      "Cloud"
+    ],
+    "correctAnswer": "On Premise"
+  },
+  {
+    "id": 30,
+    "question": "Ownership (Provider owns, you rent)",
+    "options": [
+      "On Premise"
+    ],
+    "correctAnswer": "Cloud"
+  },
+  {
+    "id": 31,
+    "question": "Location (Remote data centers (internetbased))",
+    "options": [
+      "On Premise"
+    ],
+    "correctAnswer": "Cloud"
+  },
+  {
+    "id": 32,
+    "question": "Cost Type (Ongoing pay-as-you-use)",
+    "options": [
+      "On Premise"
+    ],
+    "correctAnswer": "Cloud"
+  },
+  {
+    "id": 33,
+    "question": "Scalability (Fast and flexible )",
+    "options": [
+      "On Premise"
+    ],
+    "correctAnswer": "Cloud"
+  },
+  {
+    "id": 34,
+    "question": "Maintenance (Cloud provider)",
+    "options": [
+      "On Premise"
+    ],
+    "correctAnswer": "Cloud"
+  },
+  {
+    "id": 35,
+    "question": "Access (Internet / Anywhere access)",
+    "options": [
+      "On Premise"
+    ],
+    "correctAnswer": "Cloud"
+  },
+  {
+    "id": 36,
+    "question": "Users can access computing resources automatically without requiring human interaction with the service provider.",
+    "options": [],
+    "correctAnswer": "On-Demand Self-Service"
+  },
+  {
+    "id": 37,
+    "question": "Cloud services are available over the internet and accessible from various devices like smartphones, tablets, and laptops",
+    "options": [],
+    "correctAnswer": "Broad Network Access"
+  },
+  {
+    "id": 38,
+    "question": "Resources are pooled and shared among multiple users, dynamically assigned and reassigned according to demand.",
+    "options": [],
+    "correctAnswer": "Resource Pooling"
+  },
+  {
+    "id": 39,
+    "question": "Resources can be quickly scaled up or down to meet user needs.",
+    "options": [],
+    "correctAnswer": "Rapid Elasticity"
+  },
+  {
+    "id": 40,
+    "question": "Easily adaptable to different workloads. Businesses can scale resources up or down based on traffic or needs.",
+    "options": [],
+    "correctAnswer": "Scalability"
+  },
+  {
+    "id": 41,
+    "question": "Cloud systems are designed to ensure continuous\navailability and minimal downtime, often backed by multiple data centers.",
+    "options": [],
+    "correctAnswer": "High Availability"
+  },
+  {
+    "id": 42,
+    "question": "Cloud providers offer various security features such as encryption, identity management, and compliance certifications, though security is a shared responsibility.",
+    "options": [],
+    "correctAnswer": "Security"
+  },
+  {
+    "id": 43,
+    "question": "The umbrella term for Anything as a service",
+    "options": [],
+    "correctAnswer": "XaaS"
+  },
+  {
+    "id": 44,
+    "question": "Allows users to access application software and databases. Cloud providers manage the infrastructure while users store data on the cloud provider’s servers.",
+    "options": [],
+    "correctAnswer": "SaaS"
+  },
+  {
+    "id": 45,
+    "question": "Provides virtualized computing resources over the Internet. The provider hosts the hardware, software, servers and storage components.",
+    "options": [],
+    "correctAnswer": "IaaS"
+  },
+  {
+    "id": 46,
+    "question": "Lets an organization remotely access the development tools and services used to deliver such applications, on a subscription basis.",
+    "options": [],
+    "correctAnswer": "PaaS"
+  },
+  {
+    "id": 47,
+    "question": "Offers ready-made backend features such as databases, authentication, and server management so developers can focus on building the frontend of mobile or web apps.",
+    "options": [],
+    "correctAnswer": "BaaS"
+  },
+  {
+    "id": 48,
+    "question": "Delivers AI tools and frameworks like machine learning, chatbots, and analytics via the cloud, without needing inhouse expertise.",
+    "options": [],
+    "correctAnswer": "AIaaS"
+  },
+  {
+    "id": 49,
+    "question": "Provides cloud-based security services such as antivirus protection, data encryption, authentication, and threat monitoring.",
+    "options": [],
+    "correctAnswer": "SECaaS"
+  },
+  {
+    "id": 50,
+    "question": "The three primary cloud delivery models",
+    "options": [],
+    "correctAnswer": "SaaS, PaaS and IaaS"
+  },
+  {
+    "id": 51,
+    "question": "Is completely intertwined and inseparable with cloud computing. Cloud platforms provide the scalable storage, computing power, and flexible infrastructure needed to collect, process, and analyze massive volumes of data efficiently",
+    "options": [],
+    "correctAnswer": "Big Data"
+  },
+  {
+    "id": 52,
+    "question": "Applications rely on cloud services to handle the information generated from diverse sources",
+    "options": [],
+    "correctAnswer": "Big Data"
+  },
+  {
+    "id": 53,
+    "question": "Cloud computing enables organizations to process and store data without investing heavily in physical hardware, while big data analytics leverages these cloud resources to extract insights, detect patterns, and support data-driven decision-making",
+    "options": [],
+    "correctAnswer": "True"
+  },
+  {
+    "id": 54,
+    "question": "Defined by several key characteristics, often summarized as the “V’s”",
+    "options": [],
+    "correctAnswer": "Big Data"
+  },
+  {
+    "id": 55,
+    "question": "Refers to the massive amount of data generated from sources",
+    "options": [],
+    "correctAnswer": "Volume"
+  },
+  {
+    "id": 56,
+    "question": "The amount of data",
+    "options": [],
+    "correctAnswer": "Volume"
+  },
+  {
+    "id": 57,
+    "question": "The speed at which data is created, collected,\nand processed",
+    "options": [],
+    "correctAnswer": "Velocity"
+  },
+  {
+    "id": 58,
+    "question": "The speed in data",
+    "options": [],
+    "correctAnswer": "Velocity"
+  },
+  {
+    "id": 59,
+    "question": "The diversity of data types, including structured, semi-structured, and unstructured",
+    "options": [],
+    "correctAnswer": "Variety"
+  },
+  {
+    "id": 60,
+    "question": "The diversity of data",
+    "options": [],
+    "correctAnswer": "Variety"
+  },
+  {
+    "id": 61,
+    "question": "The trustworthiness, accuracy, and quality of the data, which affects reliability of insights",
+    "options": [],
+    "correctAnswer": "Veracity"
+  },
+  {
+    "id": 62,
+    "question": "The accuracy of data",
+    "options": [],
+    "correctAnswer": "Veracity"
+  },
+  {
+    "id": 63,
+    "question": "The potential to extract meaningful insights and actionable intelligence from data",
+    "options": [],
+    "correctAnswer": "Value"
+  },
+  {
+    "id": 64,
+    "question": "The insights from data",
+    "options": [],
+    "correctAnswer": "Value"
+  },
+  {
+    "id": 65,
+    "question": "The process of scrambling data so that unauthorized people cannot easily read it",
+    "options": [],
+    "correctAnswer": "Encryption"
+  },
+  {
+    "id": 66,
+    "question": "When enabling encryption, readable data is called",
+    "options": [],
+    "correctAnswer": "Plaintext"
+  },
+  {
+    "id": 67,
+    "question": "When enabling encryption, encrypted version is called",
+    "options": [],
+    "correctAnswer": "Ciphertext"
+  },
+  {
+    "id": 68,
+    "question": "Converts the plaintext readable message to ciphertext, which is the unreadable, disguised message. Decryption reverses the process",
+    "options": [],
+    "correctAnswer": "Encryption"
+  },
+  {
+    "id": 69,
+    "question": "Requires a key, which plays a critical role in encrypting and decrypting a message. The person possessing the key can decrypt the ciphertext to plaintext",
+    "options": [],
+    "correctAnswer": "Encryption"
+  },
+  {
+    "id": 70,
+    "question": "Uses the same pre-shared key to encrypt and decrypt data, a method also known as private key encryption.",
+    "options": [],
+    "correctAnswer": "Symmetric encryption algorithms"
+  },
+  {
+    "id": 71,
+    "question": "is a symmetric encryption algorithm that has a fixed block size of 128 bits with a key size of 128, 192, or 256 bits.",
+    "options": [],
+    "correctAnswer": "Advance Encryption Standard"
+  },
+  {
+    "id": 72,
+    "question": "Uses one key for encryption that is different from the key used for decryption",
+    "options": [],
+    "correctAnswer": "Asymmetric encryption algorithms"
+  },
+  {
+    "id": 73,
+    "question": "Encryption that include Rivest-Shamir-Adleman (RSA), Diffie-Hellman, EIGamal, and Elliptic curve cryptography (ECC).",
+    "options": [],
+    "correctAnswer": "Asymmetric encryption algorithms"
+  },
+  {
+    "id": 74,
+    "question": "A tool that ensures data integrity by taking binary data (like the message) and producing a fixed-length representation called the hash value (like a message digest).",
+    "options": [],
+    "correctAnswer": "Hashing"
+  },
+  {
+    "id": 75,
+    "question": "In cybersecurity refers to the process of managing who is allowed to access specific resources, systems, or data within an organization. It ensures that only authorized users can view or modify sensitive information, reducing the risk of data breaches and insider threats",
+    "options": [],
+    "correctAnswer": "Access control"
+  },
+  {
+    "id": 76,
+    "question": "Verifies a user’s identity through passwords, biometrics, or multi-factor authentication",
+    "options": [],
+    "correctAnswer": "Authentication"
+  },
+  {
+    "id": 77,
+    "question": "Determines what actions the authenticated user is allowed to perform",
+    "options": [],
+    "correctAnswer": "Authorization"
+  },
+  {
+    "id": 78,
+    "question": "Assigns permissions based on a User’s job roles and responsibilities",
+    "options": [],
+    "correctAnswer": "Role-based Access Control"
+  },
+  {
+    "id": 79,
+    "question": "Uses predefined rules set by admin, often applied in government",
+    "options": [],
+    "correctAnswer": "Mandatory Access Control"
+  },
+  {
+    "id": 80,
+    "question": "Allows resource owners to decide who can access their resources",
+    "options": [],
+    "correctAnswer": "Discretionary Access Control"
+  },
+  {
+    "id": 81,
+    "question": "Makes decisions based on user attributes and contextual factors",
+    "options": [],
+    "correctAnswer": "Attribute-Based Access Control"
+  },
+  {
+    "id": 82,
+    "question": "Grants or restricts access to networ kbased on specific periods or days",
+    "options": [],
+    "correctAnswer": "Time-Based Access Control"
+  },
+  {
+    "id": 83,
+    "question": "regulates entry to physical spaces such as\nbuildings, server rooms, or data centers. It uses mechanisms like security guards,\nlocks, key cards, and biometric scanners to ensure that only authorized individuals\ncan access sensitive or restricted areas.",
+    "options": [],
+    "correctAnswer": "Physical access control"
+  },
+  {
+    "id": 84,
+    "question": "Focuses on regulating access to digital\nresources such as computer systems, databases, and networks. It relies on\nauthentication and authorization processes that may include passwords, multi-factor\nauthentication, user permissions, and encryption ensures that only legitimate users can access or modify data according to their assigned privileges",
+    "options": [],
+    "correctAnswer": "Logical access control"
+  },
+  {
+    "id": 85,
+    "question": "Focuses on verifying user identities and controlling their access to systems and resources.",
+    "options": [],
+    "correctAnswer": "IAM"
+  },
+  {
+    "id": 86,
+    "question": "Manages and monitors devices attempting to connect to a network.",
+    "options": [],
+    "correctAnswer": "NAC"
+  },
+  {
+    "id": 87,
+    "question": "Based on the concept of “never trust, always verify.” Every user, device, and connection must be continuously verified.",
+    "options": [],
+    "correctAnswer": "ZTP"
+  },
+  {
+    "id": 88,
+    "question": "the process of creating, maintaining, and controlling user\naccounts within an organization’s information systems to ensure secure and efficient\naccess to resources. It includes activities such as adding new users, assigning\nappropriate permissions, updating account details, and removing accounts that are\nno longer needed.",
+    "options": [],
+    "correctAnswer": "Account management"
+  },
+  {
+    "id": 89,
+    "question": "enforces the principle of least privilege, ensuring that users have only the access necessary to perform their\nduties. This is especially important because cybercriminals often target privileged\naccounts, which are the most powerful accounts in an organization with elevated,\nunrestricted access to systems.",
+    "options": [],
+    "correctAnswer": "Account management"
+  },
+  {
+    "id": 90,
+    "question": "rules configured to limit\nfolder or file access for an individual or a group. Users should be limited to only the\nresources they need on a computer system or network. For example, they should\nnot be able to access all files on a server if they only need access to a single folder.",
+    "options": [],
+    "correctAnswer": "Permision"
+  },
+  {
+    "id": 91,
+    "question": "This is the principle of least privilege and closely connected to the concept of ‘need to know’ access. Limiting access to resources also prevents cybercriminals from accessing those resources if the user’s computer becomes infected.",
+    "options": [],
+    "correctAnswer": "Permision"
+  },
+  {
+    "id": 92,
+    "question": "Users can see the contents of files and folders, change and\ndelete existing files and folders, create new files and folders,\nand run programs in a folder.",
+    "options": [],
+    "correctAnswer": "Full Control"
+  },
+  {
+    "id": 93,
+    "question": "Users can change and delete existing files and folders but\ncannot create new ones",
+    "options": [],
+    "correctAnswer": "Modify"
+  },
+  {
+    "id": 94,
+    "question": "Users can see the contents of existing files and folders and\ncan run programs in a folder",
+    "options": [],
+    "correctAnswer": "Read and\nExecute"
+  },
+  {
+    "id": 95,
+    "question": "Users can create new files and folders and make changes to\nexisting files and folders.",
+    "options": [],
+    "correctAnswer": "Write"
+  },
+  {
+    "id": 96,
+    "question": "Users can see the contents of a folder and open files and\nfolders",
+    "options": [],
+    "correctAnswer": "Read"
+  },
+  {
+    "id": 97,
+    "question": "AAA meaning",
+    "options": [],
+    "correctAnswer": "Authentication Authorization and Accounting"
+  },
+  {
+    "id": 98,
+    "question": "embodies the policies, procedures, and guidelines that govern how access to information systems is managed and enforced within an organization",
+    "options": [],
+    "correctAnswer": "AAA Operations"
+  },
+  {
+    "id": 99,
+    "question": "Unlike physical or logical access controls, which focus on technical or\ntangible barriers, it define how access decisions are made,\nassigned, and monitored.",
+    "options": [],
+    "correctAnswer": "Administrative control"
+  },
+  {
+    "id": 100,
+    "question": "establish the framework that ensures all other forms of\naccess control operate consistently and securely. Examples include access approval\nworkflows, periodic access reviews, separation of duties, and the enforcement of the\nprinciple of least privilege.",
+    "options": [],
+    "correctAnswer": "Administrative control"
+  },
+  {
+    "id": 101,
+    "question": "Verifies the identity of a user or device before granting access\nto a network or system.",
+    "options": [],
+    "correctAnswer": "Authentication"
+  },
+  {
+    "id": 102,
+    "question": "Determines what resources or actions an authenticated user or\ndevice is allowed to access.",
+    "options": [],
+    "correctAnswer": "Authorization"
+  },
+  {
+    "id": 103,
+    "question": "Tracks and records user activities on a network for monitoring,\nauditing, and security analysis.",
+    "options": [],
+    "correctAnswer": "Accounting"
+  },
+  {
+    "id": 104,
+    "question": "verifies the identity of\neach user, to prevent unauthorized access. Users prove their identity with a\nusername or ID. In addition, users need to verify their identity by providing one of the\nfollowing: Something they know (such as a password), Something they have (such as a token or card) and Something they are (such as a fingerprint)",
+    "options": [],
+    "correctAnswer": "Authentication"
+  },
+  {
+    "id": 105,
+    "question": "is increasingly becoming the norm,\nthe system requires a combination of two of the above rather than just one to verify\nsomeone’s identity",
+    "options": [],
+    "correctAnswer": "Two Factor Authentication"
+  },
+  {
+    "id": 106,
+    "question": "uses at least two methods of verification, such as a password and something you have,\nfor example, a security key fob",
+    "options": [],
+    "correctAnswer": "Multi-Factor Authentication"
+  },
+  {
+    "id": 107,
+    "question": "is a system, or group of systems, that enforces an access\ncontrol policy between networks",
+    "options": [],
+    "correctAnswer": "Firewall"
+  },
+  {
+    "id": 108,
+    "question": "share some common properties such\nas being resistant to network attacks, the only transit point between internal\ncorporate networks and external networks because all traffic flows through the\n__ and they enforce the access control policy",
+    "options": [],
+    "correctAnswer": "Firewall"
+  },
+  {
+    "id": 109,
+    "question": "Firewalls also admits of some limitations. A misconfigured firewall can have serious\nconsequences for the network, such as becoming a single point of failure. The data\nfrom many applications cannot be passed over firewalls securely. Users might\nproactively search for ways around the firewall to receive blocked material, which\nexposes the network to potential attack; and network performance can slow down.",
+    "options": [],
+    "correctAnswer": "True"
+  },
+  {
+    "id": 110,
+    "question": "Also called Packet Filtering firewall, Filters traffic based on\npredefined rules for IP addresses, ports, and protocols; does\nnot track connection states",
+    "options": [],
+    "correctAnswer": "Stateless"
+  },
+  {
+    "id": 111,
+    "question": "Monitors the state of active connections and makes decisions\nbased on both rules and connection context.",
+    "options": [],
+    "correctAnswer": "Stateful"
+  },
+  {
+    "id": 112,
+    "question": "Also called Application Gateway firewall, acts as an intermediary between users and servers, filtering traffic at multiple OSI layers and hiding client identities.",
+    "options": [],
+    "correctAnswer": "Proxy"
+  },
+  {
+    "id": 113,
+    "question": "Combines traditional firewall functions with intrusion prevention, deep packet inspection, and application awareness",
+    "options": [],
+    "correctAnswer": "Next gen"
+  },
+  {
+    "id": 114,
+    "question": "Runs on individual computers or servers to protect them from internal and external threats.",
+    "options": [],
+    "correctAnswer": "Host-Based"
+  },
+  {
+    "id": 115,
+    "question": "Operates at Layer 2 to filter traffic between bridged interfaces without changing network addressing.",
+    "options": [],
+    "correctAnswer": "Transparent"
+  },
+  {
+    "id": 116,
+    "question": "Integrates multiple firewall types (example: stateful and proxy) to provide layered protection and advanced filtering.",
+    "options": [],
+    "correctAnswer": "Hybrid"
+  },
+  {
+    "id": 117,
+    "question": "The Packet Filtering (Stateless) Firewall is the most basic type, often integrated into router firewalls. It filters traffic based on Layer 3 and Layer 4 information such as IP addresses, ports, and protocols",
+    "options": [],
+    "correctAnswer": "Stateless Firewall"
+  },
+  {
+    "id": 118,
+    "question": "it simply checks packets against a rule table without considering the state of the connection. For instance, an administrator can configure the firewall to block traffic on specific ports, such as preventing a workstation from using port 25 to avoid spreading email viruses.",
+    "options": [],
+    "correctAnswer": "Stateless Firewall"
+  },
+  {
+    "id": 119,
+    "question": "specialized network security technology that complements firewalls. Functioning primarily as a passive, listen-only device",
+    "options": [],
+    "correctAnswer": "Intrusion Detection System"
+  },
+  {
+    "id": 120,
+    "question": "designed to detect potential exploits or vulnerabilities targeting applications,\nhosts, or network infrastructure. By continuously monitoring network traffic, it\nidentifies suspicious activity and generates alerts for administrators, but it lacks the\ncapability to automatically prevent or block threats",
+    "options": [],
+    "correctAnswer": "Intrusion Detection System"
+  },
+  {
+    "id": 121,
+    "question": "operates reactively rather than proactively. It analyzes packets in motion, inspects patterns, and flags anomalies, allowing security teams to investigate and respond to potential incidents. This passive monitoring approach is advantageous for detecting subtle or sophisticated threats, such as zero-day exploits or insider attacks, that may bypass traditional preventive mechanisms. However, its limitation lies in the fact that it does not actively protect the network or endpoints, leaving the system vulnerable until human intervention occur",
+    "options": [],
+    "correctAnswer": "Intrusion Detection System"
+  },
+  {
+    "id": 122,
+    "question": "By contrast, a firewall functions as a proactive gatekeeper. It actively monitors traffic\nand enforces security policies to prevent threats from escalating into incidents.\nFirewalls filter and block network traffic based on predefined rules, such as port\nnumbers, IP addresses, protocols, and application-level criteria. Unlike an IDS,\nwhich only signals potential threats, firewalls are capable of intervening in real time,\neffectively reducing exposure to attacks",
+    "options": [],
+    "correctAnswer": "True"
+  },
+  {
+    "id": 123,
+    "question": "an encrypted connection over the Internet from a device to a network. The encrypted connection helps ensure that sensitive data is safely transmitted. It prevents unauthorized people from eavesdropping on the traffic and allows the user to conduct work remotely.",
+    "options": [],
+    "correctAnswer": "Virtual Private Network"
+  },
+  {
+    "id": 124,
+    "question": "because no physical cables are involved in the connection process",
+    "options": [],
+    "correctAnswer": "Virtual"
+  },
+  {
+    "id": 125,
+    "question": "because through this connection, no one else can see your data or browsing activity.",
+    "options": [],
+    "correctAnswer": "Private"
+  },
+  {
+    "id": 126,
+    "question": "because multiple devices—your computer and the VPN server—work together to maintain an established link.",
+    "options": [],
+    "correctAnswer": "Network"
+  },
+  {
+    "id": 127,
+    "question": "Accordingly with VPN, you can (1) secure your data, (2) work from home, (3) access or stream regional content from anywhere, (4) bypass censorship and surveillance and (5) prevent ISP and third-party tracking",
+    "options": [],
+    "correctAnswer": "VPN"
+  },
+  {
+    "id": 128,
+    "question": "A VPN securely connects a device outside\nthe corporate office. These devices are known as endpoints and may be\nlaptops, tablets, or smartphones. Advances in VPN technology have allowed\nsecurity checks to be conducted on endpoints to make sure they meet a\ncertain posture before connecting.",
+    "options": [],
+    "correctAnswer": "Remote Access"
+  },
+  {
+    "id": 129,
+    "question": "A VPN that connects the corporate office to branch\noffices over the Internet. This VPNs are used when distance makes it\nimpractical to have direct network connections between these offices.\nDedicated equipment is used to establish and maintain a connection",
+    "options": [],
+    "correctAnswer": "Site-toSite"
+  },
+  {
+    "id": 130,
+    "question": "also called defense in\ndepth, is a cybersecurity strategy that uses multiple security measures at different\nlevels to protect systems, networks, and data. Instead of relying on a single\nprotective barrier, it employs a combination of defenses such as firewalls, intrusion\ndetection systems, antivirus software, access controls, and encryption.",
+    "options": [],
+    "correctAnswer": "Layered defense"
+  },
+  {
+    "id": 131,
+    "question": "Protects against malicious software and traffic anomalies, enforces network policies, and ensure survivability",
+    "options": [],
+    "correctAnswer": "Core Security"
+  },
+  {
+    "id": 132,
+    "question": "Protects network boundaries, monitors traffic entering and leaving zones, and enforces access control policies",
+    "options": [],
+    "correctAnswer": "Perimeter Security"
+  },
+  {
+    "id": 133,
+    "question": "Protects data in transit, ensures confidentiality and integrity of communications, and prevents unauthorized interception",
+    "options": [],
+    "correctAnswer": "Comms Security"
+  },
+  {
+    "id": 134,
+    "question": "Secures devices and user identities, enforces compliance policies, and protects against endpoint-based threats",
+    "options": [],
+    "correctAnswer": "Endpoint Security"
+  },
+  {
+    "id": 135,
+    "question": "It uses different types of firewalls that are combined in layers to add\ndepth to the security of an organization. Policies can be enforced between the layers\nand inside the layers. These policy enforcement points determine whether traffic is\nforwarded or discarded.",
+    "options": [],
+    "correctAnswer": "Layered defense"
+  },
+  {
+    "id": 136,
+    "question": "In contrast with a classical firewall which refers to the traditional configuration model in which firewall policy is applied on interfaces",
+    "options": [],
+    "correctAnswer": "ZPF"
+  },
+  {
+    "id": 137,
+    "question": "a configuration model in which interfaces are assigned to security zones, and firewall policy is applied to traffic moving between the zones. If an additional interface is added to the private zone, the hosts connected to the new interface in the private zone can pass traffic to all hosts on the existing interface in the same zone",
+    "options": [],
+    "correctAnswer": "ZPF"
+  },
+  {
+    "id": 138,
+    "question": "the network is segmented into zones based on trust and functionality, traffic flows between zones are explicitly defined using zone pairs, and class maps and policy maps are used to match and control specific types of traffic. By default, all traffic is denied unless explicitly permitted, ensuring a least-privilege, default-deny security posture. Policies can include inspection, logging, and specific permissions, while monitoring and testing ensure proper enforcement.",
+    "options": [],
+    "correctAnswer": "ZPF"
+  },
+  {
+    "id": 139,
+    "question": "The administrator focuses on the separation of the network into zones. Zones establish the security borders of a network.",
+    "options": [
+      "Step 2Establish policies between zones",
+      "Step 3Design the physical infrastructure",
+      "Step 4Identify subsets within zones and merge traffic requirements"
+    ],
+    "correctAnswer": "Step 1 Determine the zones"
+  },
+  {
+    "id": 140,
+    "question": "The administrator focuses on the separation of the network into zones. Zones establish the security borders of a network.",
+    "options": [
+      "Step 1 Determine the zones",
+      "Step 3Design the physical infrastructure",
+      "Step 4Identify subsets within zones and merge traffic requirements"
+    ],
+    "correctAnswer": "Step 2Establish policies between zones"
+  },
+  {
+    "id": 141,
+    "question": "After the zones have been identified, and the traffic requirements between them documented, the administrator must design the physical infrastructure. The administrator must take into account security and availability requirements when designing the physical infrastructure.",
+    "options": [
+      "Step 1 Determine the zones",
+      "Step 2Establish policies between zones",
+      "Step 4Identify subsets within zones and merge traffic requirements"
+    ],
+    "correctAnswer": "Step 3Design the physical infrastructure"
+  },
+  {
+    "id": 142,
+    "question": "For each firewall device in the design, the administrator must identify zone subsets that are connected to its interfaces and merge the traffic requirements for those zones.",
+    "options": [
+      "Step 1 Determine the zones",
+      "Step 2Establish policies between zones",
+      "Step 3Design the physical infrastructure"
+    ],
+    "correctAnswer": "Step 4Identify subsets within zones and merge traffic requirements"
+  },
+  {
+    "id": 143,
+    "question": "Information generated by security systems indicating suspicious\nactivities requiring attention or potential incident responses\nactions",
+    "options": [],
+    "correctAnswer": "Alert Data"
+  },
+  {
+    "id": 144,
+    "question": "Records describing communication sessions between endpoints, including duration, participants, protocols, and observed behavioral characteristics details",
+    "options": [],
+    "correctAnswer": "Session Data"
+  },
+  {
+    "id": 145,
+    "question": "Logs capturing discrete user or system operations, documenting actions, timestamps, resource access, and contextual information",
+    "options": [],
+    "correctAnswer": "Transaction Data"
+  },
+  {
+    "id": 146,
+    "question": "Raw network traffic records containing individual packets with headers, payloads, timing information, and communication context.",
+    "options": [],
+    "correctAnswer": "Packet Captures"
+  },
+  {
+    "id": 147,
+    "question": "Aggregated metrics summarizing system or network behavior, identifying trends, anomalies, performance patterns, and security-relevant insights.",
+    "options": [],
+    "correctAnswer": "Statistical Data"
+  },
+  {
+    "id": 148,
+    "question": "run on individual hosts and not only detects intrusions, but in the form of host-based firewalls, can also prevent intrusion. This software creates logs and stores them on the host. This can make it difficult to get a view of what is happening on hosts in the enterprise, so many host-based protections have a way to submit logs to centralized log management servers.",
+    "options": [],
+    "correctAnswer": "Host-based Intrusion detection"
+  },
+  {
+    "id": 149,
+    "question": "a popular open-source HIDS,",
+    "options": [],
+    "correctAnswer": "OSSEC"
+  },
+  {
+    "id": 150,
+    "question": "offers a HIDS for Linux that includes similar functionality. All can scale to larger enterprises",
+    "options": [],
+    "correctAnswer": "Tripwire"
+  },
+  {
+    "id": 151,
+    "question": "Microsoft Windows host logs are visible locally through",
+    "options": [],
+    "correctAnswer": "Event Viewer"
+  },
+  {
+    "id": 152,
+    "question": "These contain events logged by various applications.",
+    "options": [],
+    "correctAnswer": "Application logs"
+  },
+  {
+    "id": 153,
+    "question": "These include events regarding the operation of drivers, processes, and hardware",
+    "options": [],
+    "correctAnswer": "System logs"
+  },
+  {
+    "id": 154,
+    "question": "These record information about the installation of software, including Windows updates",
+    "options": [],
+    "correctAnswer": "Setup logs"
+  },
+  {
+    "id": 155,
+    "question": "These record events related to security, such as logon attempts and operations related to file or object management and access.",
+    "options": [],
+    "correctAnswer": "Security logs"
+  },
+  {
+    "id": 156,
+    "question": "Attackers who have gained access to a system, and\nsome types of malware, execute commands from the command-line\ninterface (CLI) rather than a GUI. Logging command line execution will\nprovide visibility into this type of incident.",
+    "options": [],
+    "correctAnswer": "Command-line logs"
+  },
+  {
+    "id": 157,
+    "question": "is an event that indicates a significant problem such as loss of data or loss of functionality. For example, if a service fails to load during startup, an ___ event is logged.",
+    "options": [],
+    "correctAnswer": "Error"
+  },
+  {
+    "id": 158,
+    "question": "an event that is not necessarily significant but may\nindicate a possible future problem. For example, when disk\nspace is low, a ____ event is logged. If an application can\nrecover from an event without loss of functionality or data, it can\ngenerally classify the event as a ___ event.",
+    "options": [],
+    "correctAnswer": "Warning"
+  },
+  {
+    "id": 159,
+    "question": "event describes the successful operation of an application, driver, or service. For example, when a network driver loads successfully, it may be appropriate to log an information event. Note that it is generally inappropriate for a desktop application to log an event each time it starts.",
+    "options": [],
+    "correctAnswer": "Information"
+  },
+  {
+    "id": 160,
+    "question": "an event that records an audited security access attempt that is successful. For example, a user’s successful attempt to log on to the system is logged as a __ ____ event",
+    "options": [],
+    "correctAnswer": "Success Audit"
+  },
+  {
+    "id": 161,
+    "question": "an event that records an audited security access attempt that fails. For example, if a user tries to access a network drive and fails, the attempt is logged as a __ ___ event.",
+    "options": [],
+    "correctAnswer": "Failure Audit"
+  },
+  {
+    "id": 162,
+    "question": "The Alerts can be classified as  The alert has been verified to be an actual security incident",
+    "options": [],
+    "correctAnswer": "True Positive"
+  },
+  {
+    "id": 163,
+    "question": "The Alerts can be classified as The alert does not indicate an actual security incident.\nBenign activity that results in a ____ ___ is sometimes referred to as a\nbenign trigger.",
+    "options": [],
+    "correctAnswer": "False Positive"
+  },
+  {
+    "id": 164,
+    "question": "An alternative situation is that an alert was not generated. The absence of an alert can be classified a No security incident has occurred. The activity is benign",
+    "options": [],
+    "correctAnswer": "True Negative"
+  },
+  {
+    "id": 165,
+    "question": "An alternative situation is that an alert was not generated. The absence of an alert can be classified a An undetected incident has occurred",
+    "options": [],
+    "correctAnswer": "False Negative"
+  },
+  {
+    "id": 166,
+    "question": "the desired type of alert. They mean that the rules that generate alerts have worked correctly.",
+    "options": [],
+    "correctAnswer": "True Positive"
+  },
+  {
+    "id": 167,
+    "question": "are not desirable. Although they do not indicate that an undetected exploit has occurred, they are costly because cybersecurity analysts must investigate false alarms; therefore, time is taken away from investigation of alerts that indicate true exploits",
+    "options": [],
+    "correctAnswer": "False Positive"
+  },
+  {
+    "id": 168,
+    "question": "are desirable. They indicate that benign normal traffic is correctly ignored, and erroneous alerts are not being issued",
+    "options": [],
+    "correctAnswer": "True Negative"
+  },
+  {
+    "id": 169,
+    "question": "are dangerous. They indicate that exploits are not being detected by the security systems that are in place. These incidents could go undetected for a long time, and ongoing data loss and damage could result.",
+    "options": [],
+    "correctAnswer": "False Negative"
+  },
+  {
+    "id": 170,
+    "question": "are those that should not trigger alerts",
+    "options": [],
+    "correctAnswer": "Benign events"
+  },
+  {
+    "id": 171,
+    "question": "indicate that some rules or other detectors need to be improved or eliminated. When true positives are suspected, a cybersecurity analyst is sometimes required to escalate the alert to a higher level for investigation",
+    "options": [],
+    "correctAnswer": "Excess benign events"
+  },
+  {
+    "id": 172,
+    "question": "Which of the following distinguishes Type 1 and Type 2 hypervisor",
+    "options": [
+      "Type 1 run with the OS while Type 2 run directly on hardware",
+      "Type 1 require guest OS, while Type 2 does not have such requirement",
+      "Type 1 hypervisor cannot perform hardware abstraction, unlike Type 2"
+    ],
+    "correctAnswer": "Type 1 hypervisor run directly on hardware, while type 2 run on Host OS"
+  },
+  {
+    "id": 173,
+    "question": "Which of the following risk is the most associated with hypervisor-level attack",
+    "options": [
+      "VM sprawl",
+      "Data leakage",
+      "Data duplication"
+    ],
+    "correctAnswer": "VM escape"
+  },
+  {
+    "id": 174,
+    "question": "Which of the following is not a benefit of virtualization",
+    "options": [
+      "Improved hardware utilization",
+      "Simplified disaster recovery",
+      "Reduced dependency on physical networking"
+    ],
+    "correctAnswer": "Elimination of all security vulnerabilities"
+  },
+  {
+    "id": 175,
+    "question": "Which is described by Type 2 hypervisor",
+    "options": [
+      "Hardware virtualization",
+      "Core systems virtualization",
+      "Hardware emulation"
+    ],
+    "correctAnswer": "Hosted virtualization"
+  },
+  {
+    "id": 176,
+    "question": "In container-based virtualization, how is isolation achieved compare to hypervisor-based virtualization",
+    "options": [
+      "Containers use hardware emulation to isolate resources on computer",
+      "Containers use separate kernel per application for stronger isolation",
+      "Containers utilize hypervisors to manage host operating systems and infra"
+    ],
+    "correctAnswer": "Containers rely on kernel-level isolationrather than hardware virtualization"
+  },
+  {
+    "id": 177,
+    "question": "In the process of encryption, the encypted version of data is called",
+    "options": [
+      "Symmetric",
+      "Hashkey",
+      "Plain text"
+    ],
+    "correctAnswer": "Cyphertext"
+  },
+  {
+    "id": 178,
+    "question": "one-way functions used to verify and ensure data integrity.",
+    "options": [
+      "Cryptography",
+      "Salting",
+      "Encryption"
+    ],
+    "correctAnswer": "Hash"
+  },
+  {
+    "id": 179,
+    "question": "Which of the following is not an asymetric encription algorithm",
+    "options": [
+      "Rivest--Shamir-Adleman",
+      "Diffie-Hellman",
+      "Elliptic curve cryptography"
+    ],
+    "correctAnswer": "Advance encryption standard"
+  },
+  {
+    "id": 180,
+    "question": "What is the foundational basis of SHA developed by NIST",
+    "options": [
+      "Cryptographic Hashing Standard",
+      "Advance Encryption Standard",
+      "Secure Encryption Standard"
+    ],
+    "correctAnswer": "Secure Hash Standard"
+  },
+  {
+    "id": 181,
+    "question": "In the proces of encryption, the readable version of data is called",
+    "options": [
+      "Symmetric",
+      "Hashkey",
+      "Cyphertext"
+    ],
+    "correctAnswer": "plaintext"
+  },
+  {
+    "id": 182,
+    "question": "what do containers share that virtual machines do not",
+    "options": [
+      "hypervisor",
+      "OS",
+      "Virtual hardware"
+    ],
+    "correctAnswer": "Kernel"
+  },
+  {
+    "id": 183,
+    "question": "Open platform that uses virtualization to deliver software in package",
+    "options": [
+      "Kubernetes",
+      "Oracle Vmware",
+      "VirtualBox"
+    ],
+    "correctAnswer": "Docker"
+  },
+  {
+    "id": 184,
+    "question": "What type of virtualization does Docker use",
+    "options": [
+      "Hardware level",
+      "Network level",
+      "Application level"
+    ],
+    "correctAnswer": "OS-level"
+  },
+  {
+    "id": 185,
+    "question": "Which tool is used to manage and scalecontainers",
+    "options": [
+      "Docker",
+      "VirtualBox",
+      "Oracle Vmware"
+    ],
+    "correctAnswer": "kubernetes"
+  },
+  {
+    "id": 186,
+    "question": "It is said to be the foundation for cloud computing",
+    "options": [
+      "OS",
+      "Big Data",
+      "Containers"
+    ],
+    "correctAnswer": "VM"
+  },
+  {
+    "id": 187,
+    "question": "Incloud computing what do you call SaaS, PaaS and IaaS",
+    "options": [
+      "Deployment Models",
+      "Distribtion Models",
+      "Development Models"
+    ],
+    "correctAnswer": "Delivery Models"
+  },
+  {
+    "id": 188,
+    "question": "Coud services are available over the internet and accessible from various devices:",
+    "options": [
+      "On-Demad Self-Services",
+      "Rapid Elasicity",
+      "High Availability"
+    ],
+    "correctAnswer": "broad network access"
+  },
+  {
+    "id": 189,
+    "question": "Which challenge is primarily addressed by cloud computing vis-à-vis on premise",
+    "options": [
+      "Reliance on local data centers",
+      "Needs to train own IT team",
+      "One-time upfront cost"
+    ],
+    "correctAnswer": "Limited and low scalibility"
+  },
+  {
+    "id": 190,
+    "question": "Which portion of resources is CSP solely responsible for IaaS",
+    "options": [
+      "Runtime",
+      "Middleware",
+      "Application"
+    ],
+    "correctAnswer": "Virtualization"
+  },
+  {
+    "id": 191,
+    "question": "Users can access resources automatically without human interaction with the CSP",
+    "options": [
+      "Rapid Elasticity",
+      "High Availability",
+      "Broad Network Access"
+    ],
+    "correctAnswer": "On-Demand Self-Service"
+  },
+  {
+    "id": 192,
+    "question": "It I concerned about being able to use big data for prediction or recommendation",
+    "options": [
+      "Variety",
+      "Veracity",
+      "Volume"
+    ],
+    "correctAnswer": "Value"
+  },
+  {
+    "id": 193,
+    "question": "Which \"V\" is challenge when firm struggle to verify authenticity of massive data",
+    "options": [
+      "value",
+      "Volume",
+      "Variety"
+    ],
+    "correctAnswer": "veracity"
+  },
+  {
+    "id": 194,
+    "question": "Which of the following best illustrate the veracity aspect of big data",
+    "options": [
+      "A retail chian extracts insight from purchase trends to improve marketing",
+      "A data warehouse stores structured, semi-structured and unstructured data",
+      "A company processes millions of social media post per second"
+    ],
+    "correctAnswer": "A dataset contains conflicting customer records that reduce analysis reliability"
+  },
+  {
+    "id": 195,
+    "question": "A data analyst is focused on transforming vast, fast-moving and diverse datasets into useful business intelligence. Which two V's of big data are most critical in this process",
+    "options": [
+      "Volume and Veracity",
+      "Variety and Volume",
+      "Volume and Value"
+    ],
+    "correctAnswer": "Velocity and Variety"
+  },
+  {
+    "id": 196,
+    "question": "It refers to diversity of big data",
+    "options": [
+      "Value",
+      "Volume",
+      "Veracity"
+    ],
+    "correctAnswer": "Variety"
+  }
+]
