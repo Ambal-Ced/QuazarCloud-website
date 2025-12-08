@@ -1,14 +1,5 @@
 [
-  {
-    "id": 70,
-    "question": "A cloud based platform hosts the SIEM-SOAR of an organization. What is the nature of cloud delivery involved?",
-    "options": [
-      "Platform as a Service",
-      "Infra as a Service",
-      "Backend as a Service"
-    ],
-    "correctAnswer": "Software as a Service"
-  },
+
   {
     "id": 1,
     "question": "What is the primary purpose of filtering packets and analyzing them?",
@@ -698,5 +689,15 @@
       "Standard"
     ],
     "correctAnswer": "Numbered"
+  },
+  {
+    "id": 70,
+    "question": "A cloud based platform hosts the SIEM-SOAR of an organization. What is the nature of cloud delivery involved?",
+    "options": [
+      "Platform as a Service",
+      "Infra as a Service",
+      "Backend as a Service"
+    ],
+    "correctAnswer": "Software as a Service"
   }
 ]
