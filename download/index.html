@@ -12,7 +12,7 @@
     <!-- Navigation -->
     <nav class="gradient-bg text-white py-4">
         <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <a href="../index.html" class="text-xl font-bold flex items-center">
                     <i class="fas fa-cloud mr-2"></i>
                     Quazar Cloud
@@ -48,17 +48,15 @@
                     </p>
                 </a>
 
-                <!--
-                <a href="your-detail-page.html" class="group bg-white shadow-lg rounded-xl p-6 border border-gray-100 hover:border-indigo-300 hover:shadow-xl transition">
+                <button id="translator-card" class="w-full text-left group bg-white shadow-lg rounded-xl p-6 border border-gray-100 hover:border-indigo-300 hover:shadow-xl transition">
                     <div class="flex items-center justify-between mb-4">
-                        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-indigo-600 transition">Project Name</h3>
-                        <span class="text-sm font-medium px-3 py-1 bg-slate-100 text-slate-700 rounded-full">Type</span>
+                        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-indigo-600 transition">Quazar Quiz Translator</h3>
+                        <span class="text-sm font-medium px-3 py-1 bg-slate-100 text-slate-700 rounded-full">Coming Soon</span>
                     </div>
                     <p class="text-gray-600">
-                        Brief description of the downloadable item goes here. Update the href above to point to the detail page you create.
+                        Tool for translating or localizing quiz content. Coming soon.
                     </p>
-                </a>
-                -->
+                </button>
             </div>
         </div>
     </main>
@@ -71,6 +69,46 @@
             </p>
         </div>
     </footer>
+    <div id="comingSoonModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 px-4">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg p-6 relative">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Quazar Quiz Translator</h3>
+            <p class="text-gray-700 leading-relaxed">
+                This app is coming soon. Stay tuned!
+            </p>
+            <button id="closeComingSoon" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="mt-6 flex justify-end">
+                <button id="okComingSoon" class="px-4 py-2 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition">Got it</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function() {
+            const translatorCard = document.getElementById('translator-card');
+            const modal = document.getElementById('comingSoonModal');
+            const closeBtn = document.getElementById('closeComingSoon');
+            const okBtn = document.getElementById('okComingSoon');
+
+            function openModal() {
+                modal.classList.remove('hidden');
+            }
+
+            function closeModal() {
+                modal.classList.add('hidden');
+            }
+
+            translatorCard?.addEventListener('click', (e) => {
+                e.preventDefault();
+                openModal();
+            });
+            closeBtn?.addEventListener('click', closeModal);
+            okBtn?.addEventListener('click', closeModal);
+            modal?.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+        })();
+    </script>
     <script src="../js/main.js"></script>
 </body>
 </html>

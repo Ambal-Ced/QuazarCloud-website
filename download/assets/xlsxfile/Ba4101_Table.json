@@ -1,0 +1,118 @@
+[
+  {
+    "id": 1,
+    "quizType": "fillInTheBlankTable",
+    "tableData": {
+      "columnHeaders": [
+        "Firewall",
+        "IDS",
+        "IPS"
+      ],
+      "rows": [
+        {
+          "rowHeader": "Function",
+          "cells": [
+            {
+              "type": "data",
+              "value": "Controls and filters traffic based on rules"
+            },
+            {
+              "type": "data",
+              "value": "Monitors and detects suspicious activity"
+            },
+            {
+              "type": "data",
+              "value": "Detects and actively blocks threats in real time"
+            }
+          ]
+        },
+        {
+          "rowHeader": "Operation",
+          "cells": [
+            {
+              "type": "data",
+              "value": "Proactive, gatekeeping"
+            },
+            {
+              "type": "data",
+              "value": "Passive, alert-based"
+            },
+            {
+              "type": "data",
+              "value": "Proactive, inline prevention"
+            }
+          ]
+        },
+        {
+          "rowHeader": "Detection",
+          "cells": [
+            {
+              "type": "data",
+              "value": "Limited to known ports, IPs, protocols, rules"
+            },
+            {
+              "type": "data",
+              "value": "Can detect anomalies, known signatures, and suspicious patterns"
+            },
+            {
+              "type": "data",
+              "value": "Similar to IDS, but can also act on them immediately"
+            }
+          ]
+        },
+        {
+          "rowHeader": "Position",
+          "cells": [
+            {
+              "type": "data",
+              "value": "Typically at network perimeter or segment boundaries"
+            },
+            {
+              "type": "data",
+              "value": "Can be at network or host level (network- based or host-based)"
+            },
+            {
+              "type": "data",
+              "value": "Inline in network path (network-based)"
+            }
+          ]
+        },
+        {
+          "rowHeader": "Automation",
+          "cells": [
+            {
+              "type": "data",
+              "value": "Automated based on rules"
+            },
+            {
+              "type": "data",
+              "value": "Mostly manual (alert-driven response)"
+            },
+            {
+              "type": "data",
+              "value": "Automated response to threats"
+            }
+          ]
+        }
+      ]
+    },
+    "answers": {
+      "0_0": "Controls and filters traffic based on rules",
+      "0_1": "Monitors and detects suspicious activity",
+      "0_2": "Detects and actively blocks threats in real time",
+      "1_0": "Proactive, gatekeeping",
+      "1_1": "Passive, alert-based",
+      "1_2": "Proactive, inline prevention",
+      "2_0": "Limited to known ports, IPs, protocols, rules",
+      "2_1": "Can detect anomalies, known signatures, and suspicious patterns",
+      "2_2": "Similar to IDS, but can also act on them immediately",
+      "3_0": "Typically at network perimeter or segment boundaries",
+      "3_1": "Can be at network or host level (network- based or host-based)",
+      "3_2": "Inline in network path (network-based)",
+      "4_0": "Automated based on rules",
+      "4_1": "Mostly manual (alert-driven response)",
+      "4_2": "Automated response to threats"
+    },
+    "wrongOptions": []
+  }
+]
