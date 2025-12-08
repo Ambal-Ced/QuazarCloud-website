@@ -192,19 +192,42 @@
             const apkText = 'This app is created to be used as a reviewer for testing your knowledge. This app and associated files do not guarantee that those questions will appear on your exam; they only help you review.';
             const jsonText = 'These files are used in Quazar Quiz and contain quiz data. Note: All quiz data in this file is taken from modules and quizzes. Answers have been AI-checked and may be at most 80% accurate. If you notice an error, edit the file yourself or message me directly.';
 
-            function loadCounts() {
-                const apk = parseInt(localStorage.getItem('quazarApkDownloadCount'), 10) || 0;
-                const json = parseInt(localStorage.getItem('quazarJsonDownloadCount'), 10) || 0;
-                counterApkEl.textContent = apk;
-                counterJsonEl.textContent = json;
-                return { apk, json };
+            function renderCounts({ apk, json }) {
+                counterApkEl.textContent = apk ?? 0;
+                counterJsonEl.textContent = json ?? 0;
             }
 
-            function saveCounts({ apk, json }) {
-                localStorage.setItem('quazarApkDownloadCount', apk);
-                localStorage.setItem('quazarJsonDownloadCount', json);
-                counterApkEl.textContent = apk;
-                counterJsonEl.textContent = json;
+            async function loadCounts() {
+                try {
+                    const res = await fetch('/api/download-counter');
+                    if (!res.ok) throw new Error('Failed to fetch counter');
+                    const data = await res.json();
+                    renderCounts({
+                        apk: data.apk ?? 0,
+                        json: data.json ?? 0
+                    });
+                } catch (error) {
+                    console.warn('Unable to load counters from server', error);
+                    renderCounts({ apk: 0, json: 0 });
+                }
+            }
+
+            async function incrementCount(type) {
+                try {
+                    const res = await fetch('/api/download-counter', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ type })
+                    });
+                    if (!res.ok) throw new Error('Failed to update counter');
+                    const data = await res.json();
+                    renderCounts({
+                        apk: data.apk ?? 0,
+                        json: data.json ?? 0
+                    });
+                } catch (error) {
+                    console.warn('Unable to update counter', error);
+                }
             }
 
             function openModal(type, href) {
@@ -234,22 +257,23 @@
                 pendingHref = null;
             }
 
-            function startDownload() {
-                if (!pendingHref) return;
+            function triggerDownload(href) {
                 const link = document.createElement('a');
-                link.href = pendingHref;
+                link.href = href;
                 link.download = '';
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
-                const counts = loadCounts();
-                if (pendingType === 'apk') {
-                    counts.apk += 1;
-                } else {
-                    counts.json += 1;
-                }
-                saveCounts(counts);
-                closeModal();
+            }
+
+            function startDownload() {
+                if (!pendingHref) return;
+                const href = pendingHref;
+                const type = pendingType;
+                incrementCount(type).finally(() => {
+                    triggerDownload(href);
+                    closeModal();
+                });
             }
 
             document.querySelectorAll('.download-link').forEach(link => {
