@@ -1,4 +1,4 @@
-import { sql } from '@vercel/postgres';
+import { createClient } from '@vercel/postgres';
 
 const TABLE = 'download_counts';
 const ALLOWED_TYPES = ['apk', 'json'];
@@ -9,30 +9,41 @@ function withCors(res) {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 }
 
-async function ensureTable() {
-  await sql`
-    CREATE TABLE IF NOT EXISTS ${sql.identifier([TABLE])} (
+async function getClient() {
+  const client = createClient({
+    connectionString: process.env.POSTGRES_URL,
+  });
+  await client.connect();
+  return client;
+}
+
+async function ensureTable(client) {
+  await client.query(`
+    CREATE TABLE IF NOT EXISTS ${TABLE} (
       id TEXT PRIMARY KEY,
       count INTEGER NOT NULL DEFAULT 0
     );
-  `;
+  `);
 }
 
 async function fetchCounts() {
-  await ensureTable();
-  const { rows } = await sql`
-    SELECT id, count
-    FROM ${sql.identifier([TABLE])}
-    WHERE id = 'apk' OR id = 'json'
-  `;
+  const client = await getClient();
+  try {
+    await ensureTable(client);
+    const { rows } = await client.query(
+      `SELECT id, count FROM ${TABLE} WHERE id = 'apk' OR id = 'json'`
+    );
 
-  const counts = { apk: 0, json: 0 };
-  for (const row of rows) {
-    if (row.id === 'apk' || row.id === 'json') {
-      counts[row.id] = Number(row.count) || 0;
+    const counts = { apk: 0, json: 0 };
+    for (const row of rows) {
+      if (row.id === 'apk' || row.id === 'json') {
+        counts[row.id] = Number(row.count) || 0;
+      }
     }
+    return counts;
+  } finally {
+    client.end().catch(() => {});
   }
-  return counts;
 }
 
 async function increment(type) {
@@ -42,13 +53,18 @@ async function increment(type) {
     throw error;
   }
 
-  await ensureTable();
-  await sql`
-    INSERT INTO ${sql.identifier([TABLE])} (id, count)
-    VALUES (${type}, 1)
-    ON CONFLICT (id) DO UPDATE
-      SET count = ${sql.identifier([TABLE])}.count + 1
-  `;
+  const client = await getClient();
+  try {
+    await ensureTable(client);
+    await client.query(
+      `INSERT INTO ${TABLE} (id, count)
+       VALUES ($1, 1)
+       ON CONFLICT (id) DO UPDATE SET count = ${TABLE}.count + 1`,
+      [type]
+    );
+  } finally {
+    client.end().catch(() => {});
+  }
 
   return fetchCounts();
 }
