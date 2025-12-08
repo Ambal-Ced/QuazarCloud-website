@@ -1,4 +1,4 @@
-import { createClient } from '@vercel/postgres';
+import { createPool } from '@vercel/postgres';
 
 const TABLE = 'download_counts';
 const ALLOWED_TYPES = ['apk', 'json'];
@@ -9,13 +9,7 @@ function withCors(res) {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 }
 
-async function getClient() {
-  const client = createClient({
-    connectionString: process.env.POSTGRES_URL,
-  });
-  await client.connect();
-  return client;
-}
+const pool = createPool({ connectionString: process.env.POSTGRES_URL });
 
 async function ensureTable(client) {
   await client.query(`
@@ -27,7 +21,7 @@ async function ensureTable(client) {
 }
 
 async function fetchCounts() {
-  const client = await getClient();
+  const client = await pool.connect();
   try {
     await ensureTable(client);
     const { rows } = await client.query(
@@ -42,7 +36,7 @@ async function fetchCounts() {
     }
     return counts;
   } finally {
-    client.end().catch(() => {});
+    client.release();
   }
 }
 
@@ -53,7 +47,7 @@ async function increment(type) {
     throw error;
   }
 
-  const client = await getClient();
+  const client = await pool.connect();
   try {
     await ensureTable(client);
     await client.query(
@@ -63,7 +57,7 @@ async function increment(type) {
       [type]
     );
   } finally {
-    client.end().catch(() => {});
+    client.release();
   }
 
   return fetchCounts();
