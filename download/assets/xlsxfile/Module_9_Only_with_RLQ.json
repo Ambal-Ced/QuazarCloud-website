@@ -1,0 +1,442 @@
+[
+    {
+      "id": 1,
+      "question": "What does HIDS stand for?",
+      "options": [
+        "Host-based Intrusion Detection Systems",
+        "Host-based Internet Detection Systems",
+        "Hardware Intrusion Detection Software",
+        "Host Intrusion Defense Service"
+      ],
+      "correctAnswer": "Host-based Intrusion Detection Systems"
+    },
+    {
+      "id": 2,
+      "question": "What is the primary function of HIDS?",
+      "options": [
+        "Detect intrusions on individual hosts",
+        "Detect network-wide intrusions",
+        "Manage firewall rules",
+        "Encrypt data transmissions"
+      ],
+      "correctAnswer": "Detect intrusions on individual hosts"
+    },
+    {
+      "id": 3,
+      "question": "Which tool is mentioned as an open-source HIDS?",
+      "options": [
+        "OSSEC",
+        "Tripwire",
+        "NSM",
+        "Event Viewer"
+      ],
+      "correctAnswer": "OSSEC"
+    },
+    {
+      "id": 4,
+      "question": "What does OSSEC provide?",
+      "options": [
+        "Robust log collection and analysis functionality",
+        "Network packet capturing",
+        "Hardware monitoring",
+        "Application debugging"
+      ],
+      "correctAnswer": "Robust log collection and analysis functionality"
+    },
+    {
+      "id": 5,
+      "question": "What is Tripwire described as?",
+      "options": [
+        "A HIDS for Linux with similar functionality",
+        "A firewall management tool",
+        "A Windows-only logging system",
+        "An encryption software"
+      ],
+      "correctAnswer": "A HIDS for Linux with similar functionality"
+    },
+    {
+      "id": 6,
+      "question": "Where can Microsoft Windows host logs be viewed?",
+      "options": [
+        "Through Event Viewer",
+        "Through Command Prompt",
+        "Through File Explorer",
+        "Through Control Panel"
+      ],
+      "correctAnswer": "Through Event Viewer"
+    },
+    {
+      "id": 7,
+      "question": "What do Application logs contain?",
+      "options": [
+        "Events logged by various applications",
+        "Events regarding the operation of drivers, processes, and hardware",
+        "Record information about the installation of software",
+        "Events related to security such as logon attempts"
+      ],
+      "correctAnswer": "Events logged by various applications"
+    },
+    {
+      "id": 8,
+      "question": "What are System logs for?",
+      "options": [
+        "Events regarding the operation of drivers, processes, and hardware",
+        "Events logged by applications",
+        "Security-related events",
+        "Installation records"
+      ],
+      "correctAnswer": "Events regarding the operation of drivers, processes, and hardware"
+    },
+    {
+      "id": 9,
+      "question": "What do Setup logs record?",
+      "options": [
+        "Information about the installation of software, including Windows updates",
+        "Application events",
+        "System operation events",
+        "Security logons"
+      ],
+      "correctAnswer": "Information about the installation of software, including Windows updates"
+    },
+    {
+      "id": 10,
+      "question": "What are Security logs about?",
+      "options": [
+        "Events related to security, such as logon attempts and operations related to file or object management and access",
+        "Hardware failures",
+        "Software installations",
+        "Application crashes"
+      ],
+      "correctAnswer": "Events related to security, such as logon attempts and operations related to file or object management and access"
+    },
+    {
+      "id": 11,
+      "question": "What might attackers often use instead of a GUI to gain access?",
+      "options": [
+        "Command-line interface (CLI)",
+        "Graphical User Interface",
+        "Web browser",
+        "File manager"
+      ],
+      "correctAnswer": "Command-line interface (CLI)"
+    },
+    {
+      "id": 12,
+      "question": "What is an Error event in Windows host logs?",
+      "options": [
+        "An event that indicates a significant problem such as loss of data or loss of functionality",
+        "An event that is not necessarily significant but may indicate a possible future problem",
+        "A successful operation description",
+        "A successful security access attempt"
+      ],
+      "correctAnswer": "An event that indicates a significant problem such as loss of data or loss of functionality"
+    },
+    {
+      "id": 13,
+      "question": "What is a Warning event?",
+      "options": [
+        "An event that may indicate a possible future problem, like low disk space",
+        "A significant problem with loss of data",
+        "A successful audit",
+        "An information about successful operation"
+      ],
+      "correctAnswer": "An event that may indicate a possible future problem, like low disk space"
+    },
+    {
+      "id": 14,
+      "question": "What does an Information event describe?",
+      "options": [
+        "The successful operation of an application, driver, or service",
+        "A failure in security access",
+        "A warning for potential issues",
+        "An error with functionality loss"
+      ],
+      "correctAnswer": "The successful operation of an application, driver, or service"
+    },
+    {
+      "id": 15,
+      "question": "What is a Success Audit?",
+      "options": [
+        "An event that records a successful audited security access attempt",
+        "A failed access attempt",
+        "An informational event",
+        "A warning event"
+      ],
+      "correctAnswer": "An event that records a successful audited security access attempt"
+    },
+    {
+      "id": 16,
+      "question": "What is a Failure Audit?",
+      "options": [
+        "An event that records a failed audited security access attempt",
+        "A successful access",
+        "An error in data loss",
+        "A setup installation record"
+      ],
+      "correctAnswer": "An event that records a failed audited security access attempt"
+    },
+    {
+      "id": 17,
+      "question": "What is a True Positive alert?",
+      "options": [
+        "The alert has been verified to be an actual security incident",
+        "The alert does not indicate an actual security incident",
+        "No security incident has occurred",
+        "An undetected incident has occurred"
+      ],
+      "correctAnswer": "The alert has been verified to be an actual security incident"
+    },
+    {
+      "id": 18,
+      "question": "What is a False Positive?",
+      "options": [
+        "The alert does not indicate an actual security incident; benign activity",
+        "A verified actual incident",
+        "Benign activity with no incident",
+        "Undetected incident"
+      ],
+      "correctAnswer": "The alert does not indicate an actual security incident; benign activity"
+    },
+    {
+      "id": 19,
+      "question": "What is a True Negative?",
+      "options": [
+        "No security incident has occurred; the activity is benign",
+        "An actual incident detected",
+        "A false alarm",
+        "An undetected incident"
+      ],
+      "correctAnswer": "No security incident has occurred; the activity is benign"
+    },
+    {
+      "id": 20,
+      "question": "What is a False Negative?",
+      "options": [
+        "An undetected incident has occurred",
+        "A detected benign activity",
+        "A verified incident",
+        "No incident at all"
+      ],
+      "correctAnswer": "An undetected incident has occurred"
+    },
+    {
+      "id": 21,
+      "question": "In a startup, if HIDS on a developer laptop blocks an unauthorized access attempt, what system is primarily working?",
+      "options": [
+        "Host-based Intrusion Detection System",
+        "Network Firewall",
+        "Cloud Access Security Broker",
+        "Email Gateway"
+      ],
+      "correctAnswer": "Host-based Intrusion Detection System"
+    },
+    {
+      "id": 22,
+      "question": "A financial company uses OSSEC and sends all logs to a central management server. What is the main benefit?",
+      "options": [
+        "Centralized log searching and real-time analysis",
+        "Local storage only",
+        "Faster internet speed",
+        "Reduced hardware costs"
+      ],
+      "correctAnswer": "Centralized log searching and real-time analysis"
+    },
+    {
+      "id": 23,
+      "question": "A healthcare startup sees 'Alert Data' in their SIEM dashboard showing suspicious login attempts. What type of security data is this?",
+      "options": [
+        "Alert Data",
+        "Session Data",
+        "Transaction Data",
+        "Statistical Data"
+      ],
+      "correctAnswer": "Alert Data"
+    },
+    {
+      "id": 24,
+      "question": "A tech company sees a Warning event about low disk space on a critical server. What does this indicate?",
+      "options": [
+        "A possible future problem that is not necessarily significant yet",
+        "Immediate data loss",
+        "Successful user login",
+        "Normal application startup"
+      ],
+      "correctAnswer": "A possible future problem that is not necessarily significant yet"
+    },
+    {
+      "id": 25,
+      "question": "An e-commerce company reviews logs showing user ID, timestamp, and purchased items. What type of security data is this?",
+      "options": [
+        "Transaction Data",
+        "Alert Data",
+        "Packet Captures",
+        "Statistical Data"
+      ],
+      "correctAnswer": "Transaction Data"
+    },
+    {
+      "id": 26,
+      "question": "A bank investigates an alert and finds it was just a legitimate admin script. How is this alert classified?",
+      "options": [
+        "False Positive",
+        "True Positive",
+        "True Negative",
+        "False Negative"
+      ],
+      "correctAnswer": "False Positive"
+    },
+    {
+      "id": 27,
+      "question": "A manufacturing company runs Tripwire on production Linux servers. What is Tripwire primarily used for?",
+      "options": [
+        "Host-based intrusion detection and file integrity monitoring",
+        "Network traffic capture",
+        "Windows event logging",
+        "Cloud cost management"
+      ],
+      "correctAnswer": "Host-based intrusion detection and file integrity monitoring"
+    },
+    {
+      "id": 28,
+      "question": "A logistics startup opens Event Viewer and checks events related to hardware drivers failing. Which log category are they viewing?",
+      "options": [
+        "System Logs",
+        "Application Logs",
+        "Security Logs",
+        "Setup Logs"
+      ],
+      "correctAnswer": "System Logs"
+    },
+    {
+      "id": 29,
+      "question": "In a fintech company, a Success Audit event is logged when an employee successfully logs into the VPN. This is recorded as?",
+      "options": [
+        "Success Audit",
+        "Failure Audit",
+        "Information event",
+        "Error event"
+      ],
+      "correctAnswer": "Success Audit"
+    },
+    {
+      "id": 30,
+      "question": "A retail chain suffers a ransomware attack that went completely undetected by their tools. What is this situation called?",
+      "options": [
+        "False Negative",
+        "True Positive",
+        "False Positive",
+        "True Negative"
+      ],
+      "correctAnswer": "False Negative"
+    },
+    {
+      "id": 31,
+      "question": "A software company uses Wireshark to collect full packets including payloads during an incident. What type of data are they collecting?",
+      "options": [
+        "Packet Captures",
+        "Session Data",
+        "Transaction Data",
+        "Alert Data"
+      ],
+      "correctAnswer": "Packet Captures"
+    },
+    {
+      "id": 32,
+      "question": "An insurance company's SOC looks at graphs showing average login attempts per hour. What type of data is this?",
+      "options": [
+        "Statistical Data",
+        "Alert Data",
+        "Transaction Data",
+        "Packet Captures"
+      ],
+      "correctAnswer": "Statistical Data"
+    },
+    {
+      "id": 33,
+      "question": "A marketing agency sees an Error event because a critical service failed to start after a reboot. This indicates?",
+      "options": [
+        "Significant problem such as loss of functionality",
+        "Just a warning",
+        "Successful operation",
+        "Normal security audit"
+      ],
+      "correctAnswer": "Significant problem such as loss of functionality"
+    },
+    {
+      "id": 34,
+      "question": "A consulting firm analyzes logs showing source IP, destination IP, ports, and duration of connections. What data type is this?",
+      "options": [
+        "Session Data",
+        "Transaction Data",
+        "Packet Captures",
+        "Alert Data"
+      ],
+      "correctAnswer": "Session Data"
+    },
+    {
+      "id": 35,
+      "question": "Attackers log into a real-estate startup server using PowerShell (CLI) instead of RDP. Which log is most likely to show clear evidence?",
+      "options": [
+        "Security Logs (especially command-line auditing enabled)",
+        "Application Logs",
+        "System Logs",
+        "Setup Logs"
+      ],
+      "correctAnswer": "Security Logs (especially command-line auditing enabled)"
+    },
+    {
+      "id": 36,
+      "question": "A pharmaceutical company confirms an alert was a real breach after investigation. This is classified as?",
+      "options": [
+        "True Positive",
+        "False Positive",
+        "True Negative",
+        "False Negative"
+      ],
+      "correctAnswer": "True Positive"
+    },
+    {
+      "id": 37,
+      "question": "A gaming company uses OSSEC in a large environment with hundreds of servers. Why do they forward all logs to a central manager?",
+      "options": [
+        "To enable fast centralized search and correlation",
+        "To save disk space on endpoints",
+        "To encrypt traffic",
+        "To comply with GDPR only"
+      ],
+      "correctAnswer": "To enable fast centralized search and correlation"
+    },
+    {
+      "id": 38,
+      "question": "In a transportation company, an employee types wrong password 5 times and a Failure Audit event is logged. What does this record?",
+      "options": [
+        "Failed audited security access attempt",
+        "Successful login",
+        "System warning",
+        "Application crash"
+      ],
+      "correctAnswer": "Failed audited security access attempt"
+    },
+    {
+      "id": 39,
+      "question": "A food-delivery startup logs an Information event every time their mobile app starts on a user phone. Is this considered good practice?",
+      "options": [
+        "No, generally inappropriate to log every startup of desktop/mobile apps",
+        "Yes, always required",
+        "Only if the app crashes",
+        "Only for payment events"
+      ],
+      "correctAnswer": "No, generally inappropriate to log every startup of desktop/mobile apps"
+    },
+    {
+      "id": 40,
+      "question": "An energy utility company has normal traffic with no incidents and no alerts triggered. This situation is?",
+      "options": [
+        "True Negative",
+        "False Negative",
+        "True Positive",
+        "False Positive"
+      ],
+      "correctAnswer": "True Negative"
+    }
+  ]
