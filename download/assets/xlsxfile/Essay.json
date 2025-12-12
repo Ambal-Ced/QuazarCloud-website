@@ -1,0 +1,20 @@
+[
+    {
+"id": 1,
+"question": "What is the importance of AAA operations in information security",
+"options": [],
+"correctAnswer": "AAA (Authentication, Authorization, Accounting) is the foundation of secure access control: it verifies identity, enforces least-privilege permissions, and records all actions for auditing, non-repudiation, and regulatory compliance, making it indispensable for protecting any information system."
+    },
+    {
+"id": 2,
+"question": "What are the peculiar characteristics or features of an ACL",
+"options": [],
+"correctAnswer": "Access Control Lists are ordered, stateless, top-down processed rule sets that use wildcard masks, are applied directionally on interfaces, stop at the first match, and end with an implicit deny, making them fast but rigid, complex, and difficult to maintain at scale."
+    },
+    {
+"id": 3,
+"question": "Discuss the cybersecurity issue with regards to the cloud computing",
+"options": [],
+"correctAnswer": "Cloud computing suffers from frequent misconfigurations, unclear shared-responsibility boundaries, limited customer visibility into provider infrastructure, easy account/API-key hijacking, data residency concerns, and economic denial-of-service attacks (“denial-of-wallet”), requiring strict IAM hygiene, continuous monitoring, and zero-trust architecture to remain secure."
+    }
+]
