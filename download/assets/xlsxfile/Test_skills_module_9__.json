@@ -1,0 +1,442 @@
+[
+    {
+    "id": 1,
+    "question": "In a scenario where a network administrator notices unusual traffic patterns on a router, but upon checking endpoint devices, finds modified registry keys only detectable via agent software on each machine—what system is likely at play, despite seeming like a network issue?",
+    "options": [
+    "Host-based Intrusion Detection System (HIDS)",
+    "Network Intrusion Detection System (NIDS)",
+    "Firewall logging",
+    "SIEM aggregation"
+    ],
+    "correctAnswer": "Host-based Intrusion Detection System (HIDS)"
+    },
+    {
+    "id": 2,
+    "question": "A developer reports slow application performance, blaming database queries, but logs reveal unauthorized file changes on the server itself, flagged by an open-source tool submitting data to a central point—what tool fits, though it appears as a performance problem?",
+    "options": [
+    "OSSEC",
+    "Wireshark",
+    "Nagios",
+    "Splunk"
+    ],
+    "correctAnswer": "OSSEC"
+    },
+    {
+    "id": 3,
+    "question": "During a cloud migration, IT suspects data leakage via external APIs, but examination shows integrity checksum changes on Linux VMs, monitored by a tool similar to OSSEC—what is this tool, misleadingly seeming cloud-related?",
+    "options": [
+    "Tripwire",
+    "CloudWatch",
+    "Azure Sentinel",
+    "VPC Flow Logs"
+    ],
+    "correctAnswer": "Tripwire"
+    },
+    {
+    "id": 4,
+    "question": "A user complains of email delays, pointing to server overload, but admin finds security events like failed logons in a viewer tool on Windows—what viewer is used, though it mimics email server logs?",
+    "options": [
+    "Event Viewer",
+    "Exchange Admin Center",
+    "Task Manager",
+    "Performance Monitor"
+    ],
+    "correctAnswer": "Event Viewer"
+    },
+    {
+    "id": 5,
+    "question": "Support team investigates app crashes, assuming code bugs, but logs show events from various programs in a specific category—what log type, despite seeming application-specific?",
+    "options": [
+    "Application logs",
+    "Crash dumps",
+    "Debug traces",
+    "Memory logs"
+    ],
+    "correctAnswer": "Application logs"
+    },
+    {
+    "id": 6,
+    "question": "Hardware upgrade causes boot issues, thought to be driver conflicts, but records detail software installation failures including updates—what log captures this, masquerading as hardware logs?",
+    "options": [
+    "Setup logs",
+    "BIOS logs",
+    "Firmware logs",
+    "Kernel logs"
+    ],
+    "correctAnswer": "Setup logs"
+    },
+    {
+    "id": 7,
+    "question": "Compliance audit flags access control gaps, seeming policy-based, but events reveal file management operations and logons—what log type exposes this, though it looks like ACL reports?",
+    "options": [
+    "Security logs",
+    "Policy logs",
+    "Audit trails",
+    "Compliance reports"
+    ],
+    "correctAnswer": "Security logs"
+    },
+    {
+    "id": 8,
+    "question": "Pen tester simulates web attacks, but gains entry via scripted commands avoiding graphical tools—what interface is preferred, despite appearing as web vulnerability?",
+    "options": [
+    "Command-line interface (CLI)",
+    "Graphical User Interface (GUI)",
+    "API endpoint",
+    "Web console"
+    ],
+    "correctAnswer": "Command-line interface (CLI)"
+    },
+    {
+    "id": 9,
+    "question": "System outage blamed on power failure, but event indicates significant functionality loss like service startup fail—what event type, though it seems environmental?",
+    "options": [
+    "Error",
+    "Power event",
+    "Outage alert",
+    "Critical failure"
+    ],
+    "correctAnswer": "Error"
+    },
+    {
+    "id": 10,
+    "question": "Storage alerts for full drives thought from user files, but event hints at possible future issue without immediate significance—what type, mimicking storage monitoring?",
+    "options": [
+    "Warning",
+    "Capacity alert",
+    "Threshold breach",
+    "Usage warning"
+    ],
+    "correctAnswer": "Warning"
+    },
+    {
+    "id": 11,
+    "question": "Routine maintenance logs successful driver operations, assumed part of update scripts, but event describes normal app/service success—what type, despite script logs?",
+    "options": [
+    "Information",
+    "Maintenance log",
+    "Update success",
+    "Script output"
+    ],
+    "correctAnswer": "Information"
+    },
+    {
+    "id": 12,
+    "question": "Access granted to shared folder, thought group policy, but event records audited security success—what type, seeming policy enforcement?",
+    "options": [
+    "Success Audit",
+    "Policy application",
+    "Group access",
+    "Permission grant"
+    ],
+    "correctAnswer": "Success Audit"
+    },
+    {
+    "id": 13,
+    "question": "Failed VPN connection blamed on network, but event logs audited security failure attempt—what type, though it appears connectivity issue?",
+    "options": [
+    "Failure Audit",
+    "Network error",
+    "Connection fail",
+    "VPN log"
+    ],
+    "correctAnswer": "Failure Audit"
+    },
+    {
+    "id": 14,
+    "question": "SIEM dashboard shows suspicious spikes, seeming anomaly detection, but data is information requiring attention on potential incidents—what type, despite SIEM?",
+    "options": [
+    "Alert Data",
+    "Anomaly logs",
+    "Spike reports",
+    "Dashboard alerts"
+    ],
+    "correctAnswer": "Alert Data"
+    },
+    {
+    "id": 15,
+    "question": "Traffic analysis reveals long connections, thought DDoS, but records detail endpoints, duration, protocols—what data type, mimicking attack logs?",
+    "options": [
+    "Session Data",
+    "DDoS metrics",
+    "Connection logs",
+    "Flow data"
+    ],
+    "correctAnswer": "Session Data"
+    },
+    {
+    "id": 16,
+    "question": "Database queries log user actions like timestamps and access, assumed SQL traces, but it's discrete operations info—what type, despite DB logs?",
+    "options": [
+    "Transaction Data",
+    "Query logs",
+    "SQL traces",
+    "Access records"
+    ],
+    "correctAnswer": "Transaction Data"
+    },
+    {
+    "id": 17,
+    "question": "Forensic tool captures full traffic, thought network sniffer, but includes payloads, timing for individual packets—what type, seeming capture tool?",
+    "options": [
+    "Packet Captures",
+    "Sniffer data",
+    "Traffic dumps",
+    "Wire data"
+    ],
+    "correctAnswer": "Packet Captures"
+    },
+    {
+    "id": 18,
+    "question": "Analytics show behavior summaries, assumed ML models, but aggregated metrics on system/network—what data type, despite analytics?",
+    "options": [
+    "Statistical Data",
+    "ML outputs",
+    "Behavior summaries",
+    "Metric aggregates"
+    ],
+    "correctAnswer": "Statistical Data"
+    },
+    {
+    "id": 19,
+    "question": "Alert verifies actual breach, thought simulation, but confirmed incident—what classification, mimicking drill?",
+    "options": [
+    "True Positive",
+    "Drill alert",
+    "Simulation positive",
+    "Verified false"
+    ],
+    "correctAnswer": "True Positive"
+    },
+    {
+    "id": 20,
+    "question": "Benign activity flags alert, assumed real threat, but no incident—what type, though it seems positive?",
+    "options": [
+    "False Positive",
+    "Threat flag",
+    "Benign threat",
+    "Positive false"
+    ],
+    "correctAnswer": "False Positive"
+    },
+    {
+    "id": 21,
+    "question": "No alert on normal operations, thought detection gap, but benign with no incident—what classification, despite seeming miss?",
+    "options": [
+    "True Negative",
+    "Detection gap",
+    "Normal miss",
+    "Negative true"
+    ],
+    "correctAnswer": "True Negative"
+    },
+    {
+    "id": 22,
+    "question": "Breach occurs undetected, assumed secure, but incident without alert—what type, mimicking security?",
+    "options": [
+    "False Negative",
+    "Secure miss",
+    "Undetected positive",
+    "Negative false"
+    ],
+    "correctAnswer": "False Negative"
+    },
+    {
+    "id": 23,
+    "question": "Startup deploys monitoring for API calls, but agents detect host changes centrally—what system, seeming API security?",
+    "options": [
+    "Host-based Intrusion Detection System (HIDS)",
+    "API gateway",
+    "WAF logs",
+    "Cloud monitoring"
+    ],
+    "correctAnswer": "Host-based Intrusion Detection System (HIDS)"
+    },
+    {
+    "id": 24,
+    "question": "Fintech firm sees transaction slowdowns, but logs collect robustly for analysis on server—what tool, despite transaction focus?",
+    "options": [
+    "OSSEC",
+    "Transaction monitor",
+    "Payment gateway",
+    "Blockchain logger"
+    ],
+    "correctAnswer": "OSSEC"
+    },
+    {
+    "id": 25,
+    "question": "Healthcare app updates fail, thought version conflict, but records show installation issues—what logs, mimicking app store?",
+    "options": [
+    "Setup logs",
+    "App update logs",
+    "Version conflicts",
+    "Deployment records"
+    ],
+    "correctAnswer": "Setup logs"
+    },
+    {
+    "id": 26,
+    "question": "E-commerce site hack via script, assumed XSS, but used non-graphical commands—what preferred, though web attack?",
+    "options": [
+    "Command-line interface (CLI)",
+    "XSS payload",
+    "Script injection",
+    "Web shell"
+    ],
+    "correctAnswer": "Command-line interface (CLI)"
+    },
+    {
+    "id": 27,
+    "question": "Server reboot loops, blamed firmware, but event shows loss of functionality on startup—what type, seeming hardware?",
+    "options": [
+    "Error",
+    "Firmware error",
+    "Boot loop",
+    "Reboot event"
+    ],
+    "correctAnswer": "Error"
+    },
+    {
+    "id": 28,
+    "question": "Memory leaks suspected in app, but event indicates potential future problem like low space—what type, despite leak?",
+    "options": [
+    "Warning",
+    "Memory alert",
+    "Leak warning",
+    "Resource issue"
+    ],
+    "correctAnswer": "Warning"
+    },
+    {
+    "id": 29,
+    "question": "Backup success logged, thought storage report, but describes successful operation—what type, mimicking backup?",
+    "options": [
+    "Information",
+    "Backup success",
+    "Storage log",
+    "Report info"
+    ],
+    "correctAnswer": "Information"
+    },
+    {
+    "id": 30,
+    "question": "Login audit passes, assumed auth server, but records successful access attempt—what type, seeming auth log?",
+    "options": [
+    "Success Audit",
+    "Auth pass",
+    "Login record",
+    "Access grant"
+    ],
+    "correctAnswer": "Success Audit"
+    },
+    {
+    "id": 31,
+    "question": "Failed access to database, thought permission, but audited failure—what type, despite DB error?",
+    "options": [
+    "Failure Audit",
+    "Permission deny",
+    "DB failure",
+    "Access error"
+    ],
+    "correctAnswer": "Failure Audit"
+    },
+    {
+    "id": 32,
+    "question": "Anomaly in user behavior, seeming ML alert, but suspicious activities requiring response—what data, mimicking anomaly?",
+    "options": [
+    "Alert Data",
+    "Behavior anomaly",
+    "ML alert",
+    "User flag"
+    ],
+    "correctAnswer": "Alert Data"
+    },
+    {
+    "id": 33,
+    "question": "Long VPN sessions, thought tunneling issue, but records protocols and duration—what data, despite VPN logs?",
+    "options": [
+    "Session Data",
+    "VPN tunnels",
+    "Connection duration",
+    "Tunnel logs"
+    ],
+    "correctAnswer": "Session Data"
+    },
+    {
+    "id": 34,
+    "question": "Payment records with timestamps, assumed ledger, but discrete access info—what data, mimicking finance?",
+    "options": [
+    "Transaction Data",
+    "Ledger entries",
+    "Payment logs",
+    "Finance records"
+    ],
+    "correctAnswer": "Transaction Data"
+    },
+    {
+    "id": 35,
+    "question": "Full traffic dump in investigation, thought forensic image, but packets with payloads—what data, seeming disk image?",
+    "options": [
+    "Packet Captures",
+    "Forensic dumps",
+    "Image captures",
+    "Disk packets"
+    ],
+    "correctAnswer": "Packet Captures"
+    },
+    {
+    "id": 36,
+    "question": "Trend graphs on usage, assumed dashboard, but aggregated behavior metrics—what data, despite graphs?",
+    "options": [
+    "Statistical Data",
+    "Trend graphs",
+    "Usage metrics",
+    "Dashboard stats"
+    ],
+    "correctAnswer": "Statistical Data"
+    },
+    {
+    "id": 37,
+    "question": "Verified hack alert, thought hoax, but actual incident—what class, mimicking prank?",
+    "options": [
+    "True Positive",
+    "Hoax positive",
+    "Verified hoax",
+    "Prank alert"
+    ],
+    "correctAnswer": "True Positive"
+    },
+    {
+    "id": 38,
+    "question": "Legit script flags alert, assumed malware, but benign—what class, though seems threat?",
+    "options": [
+    "False Positive",
+    "Malware flag",
+    "Benign threat",
+    "Positive false"
+    ],
+    "correctAnswer": "False Positive"
+    },
+    {
+    "id": 39,
+    "question": "Normal ops no alert, thought blind spot, but benign no incident—what class, despite spot?",
+    "options": [
+    "True Negative",
+    "Blind spot",
+    "Normal negative",
+    "Negative true"
+    ],
+    "correctAnswer": "True Negative"
+    },
+    {
+    "id": 40,
+    "question": "Undetected data theft, assumed encrypted safe, but incident no alert—what class, mimicking safe?",
+    "options": [
+    "False Negative",
+    "Encrypted miss",
+    "Safe negative",
+    "Negative false"
+    ],
+    "correctAnswer": "False Negative"
+    }
+    ]
