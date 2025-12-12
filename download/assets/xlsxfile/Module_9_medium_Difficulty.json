@@ -1,0 +1,442 @@
+[
+    {
+      "id": 1,
+      "question": "An organization deploys agents on endpoints that monitor file integrity changes, system calls, and registry modifications in real time. Despite the agents also forwarding logs to a central servers, which term MOST accurately classifies this solution?",
+      "options": [
+        "Host-based Intrusion Detection System (HIDS)",
+        "Network-based Intrusion Prevention System (NIPS)",
+        "Endpoint Detection and Response (EDR)",
+        "Security Information and Event Management (SIEM)"
+      ],
+      "correctAnswer": "Host-based Intrusion Detection System (HIDS)"
+    },
+    {
+      "id": 2,
+      "question": "During a penetration test, the tester notices that OSSEC agents are installed on all Linux servers. Which capability will make detection of their post-exploitation activity MOST difficult?",
+      "options": [
+        "File integrity monitoring with real-time alerts",
+        "Active response that blocks attacker IP via iptables",
+        "Rootkit detection module using kernel checks",
+        "Centralized log correlation only (no local blocking)"
+      ],
+      "correctAnswer": "Active response that blocks attacker IP via iptables"
+    },
+    {
+      "id": 3,
+      "question": "A security analyst sees the following OSSEC alert: 'Integrity checksum changed' for /etc/passwd, but the change was performed by an approved patch management system. This alert should be classified as:",
+      "options": [
+        "False Positive",
+        "True Positive",
+        "True Negative",
+        "Benign True Positive"
+      ],
+      "correctAnswer": "False Positive"
+    },
+    {
+      "id": 4,
+      "question": "Tripwire Enterprise is deployed in an environment. After a ransomware outbreak, investigators discover that critical system files were modified two hours before Tripwire reported the change. What is the MOST likely explanation?",
+      "options": [
+        "Tripwire database was running in 'audit-only' mode with delayed scans",
+        "Attackers disabled the Tripwire agent service",
+        "Tripwire was configured with a 3-hour polling interval",
+        "The ransomware used kernel-level rootkit to hide changes"
+      ],
+      "correctAnswer": "Tripwire was configured with a 3-hour polling interval"
+    },
+    {
+      "id": 5,
+      "question": "In Windows Event Viewer, an event with Event ID 4624 (Logon Type 3 followed immediately by Event ID 4625 from the same source IP is observed. Without additional context, this pattern is MOST indicative of:",
+      "options": [
+        "Pass-the-Hash attack",
+        "Brute-force or password-spray attempt",
+        "Kerberoasting",
+        "Valid service account logon"
+      ],
+      "correctAnswer": "Brute-force or password-spray attempt"
+    },
+    {
+      "id": 6,
+      "question": "An attacker uses PowerShell Empire and disables Windows Script Host logging via registry. Which Windows log will still MOST likely contain evidence of the PowerShell execution?",
+      "options": [
+        "Microsoft-Windows-PowerShell/Operational",
+        "Windows PowerShell (classic)",
+        "Security log (Event ID 4688 with command line auditing disabled)",
+        "System log"
+      ],
+      "correctAnswer": "Microsoft-Windows-PowerShell/Operational"
+    },
+    {
+      "id": 7,
+      "question": "A company receives thousands of 'Low disk space' warnings daily. After tuning, they are gone. Two weeks later a server crashes due to full disk. This is an example of:",
+      "options": [
+        "Alert fatigue leading to False Negative",
+        "True Negative becoming False Negative",
+        "Desensitization causing missed True Positive",
+        "Proper alerting hygiene"
+      ],
+      "correctAnswer": "Alert fatigue leading to False Negative"
+    },
+    {
+      "id": 8,
+      "question": "During an incident, the red team executes 'net localgroup administrators hacker /add' on a compromised workstation. With default auditing settings, where will this exact command line appear?",
+      "options": [
+        "Nowhere – command line auditing is disabled by default",
+        "Security log Event ID 4688 with full command line",
+        "Security log Event ID 4624 only",
+        "System log"
+      ],
+      "correctAnswer": "Nowhere – command line auditing is disabled by default"
+    },
+    {
+      "id": 9,
+      "question": "An analyst sees 200+ Event ID 4625 (failed logons from a single external IP in 5 minutes, followed by a successful 4624. The successful logon is from the SAME IP. This is classically known as:",
+      "options": [
+        "Successful brute-force attack",
+        "Valid user locking themselves out then succeeding",
+        "Password spraying",
+        "Impossible without account lockout policy"
+      ],
+      "correctAnswer": "Successful brute-force attack"
+    },
+    {
+      "id": 10,
+      "question": "Which scenario represents a True Negative with the HIGHEST operational impact if misclassified?",
+      "options": [
+        "Legitimate nightly backup traffic not triggering IPS",
+        "Normal user failed logon not generating alert",
+        "Scheduled vulnerability scan not blocked",
+        "Admin running approved script without alert"
+      ],
+      "correctAnswer": "Legitimate nightly backup traffic not triggering IPS"
+    },
+    {
+      "id": 11,
+      "question": "A fintech startup deploys OSSEC but forgets to enable active response. An attacker runs Mimikatz. OSSEC will:",
+      "options": [
+        "Detect and log the activity but take no blocking action",
+        "Automatically kill the Mimikatz process",
+        "Block the attacker IP at the host firewall",
+        "Remain completely silent"
+      ],
+      "correctAnswer": "Detect and log the activity but take no blocking action"
+    },
+    {
+      "id": 12,
+      "question": "In a hospital environment, OSSEC triggers on HIPAA-regulated file access by an approved nurse during normal hours. This is:",
+      "options": [
+        "False Positive (expected behavior)",
+        "True Positive requiring investigation",
+        "Compliance violation",
+        "File integrity monitoring failure"
+      ],
+      "correctAnswer": "False Positive (expected behavior)"
+    },
+    {
+      "id": 13,
+      "question": "A manufacturing company uses Tripwire only in 'monitor mode' for PCI scope systems. An attacker modifies a configuration file. Tripwire will:",
+      "options": [
+        "Report the change during next scan cycle only",
+        "Immediately block the change",
+        "Kill the attacker process",
+        "Send real-time alert and revert file"
+      ],
+      "correctAnswer": "Report the change during next scan cycle only"
+    },
+    {
+      "id": 14,
+      "question": "Event ID 1102 (Security log cleared) appears with no corresponding user activity in the logs. This is MOST commonly indicative of:",
+      "options": [
+        "Attacker covering tracks after privilege escalation",
+        "Scheduled log maintenance task",
+        "Domain controller replication issue",
+        "Antivirus full scan"
+      ],
+      "correctAnswer": "Attacker covering tracks after privilege escalation"
+    },
+    {
+      "id": 15,
+      "question": "A retail company sees thousands of Informational events for 'Service started'. They disable that rule to reduce noise. A critical service fails to start after patching. No alert is generated. This is:",
+      "options": [
+        "Self-inflicted False Negative via over-tuning",
+        "True Negative",
+        "Vendor bug in HIDS",
+        "Expected behavior"
+      ],
+      "correctAnswer": "Self-inflicted False Negative via over-tuning"
+    },
+    {
+      "id": 16,
+      "question": "An attacker uses living-off-the-land binaries (LOLBins) like certutil.exe to download malware. Why do many HIDS generate False Positives on this binary?",
+      "options": [
+        "certutil.exe is also used legitimately for certificate tasks",
+        "HIDS cannot detect LOLBins at all",
+        "certutil.exe is signed by Microsoft",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "id": 17,
+      "question": "During a red team engagement, the team successfully disables Sysmon logging by deleting the service via sc delete. What will still capture evidence of this action on a properly configured system?",
+      "options": [
+        "Security log Event ID 4657 (registry value modified) and 7045 (new service installed/deleted)",
+        "Nothing – once Sysmon is gone, no logging",
+        "Application log only",
+        "OSSEC file integrity monitoring"
+      ],
+      "correctAnswer": "Security log Event ID 4657 (registry value modified) and 7045 (new service installed/deleted)"
+    },
+    {
+      "id": 18,
+      "question": "A pharmaceutical company’s SIEM shows 'Statistical Data' with a sudden 800% spike in failed RDP logons from China. This is most likely represents:",
+      "options": [
+        "Ongoing password-spraying or brute-force campaign",
+        "Misconfigured application",
+        "Legitimate users on business trip",
+        "DDoS on port 3389"
+      ],
+      "correctAnswer": "Ongoing password-spraying or brute-force campaign"
+    },
+    {
+      "id": 19,
+      "question": "Which of the following would generate a Transaction Data log entry in a banking environment?",
+      "options": [
+        "Customer transfers $10,000 from savings to checking at 14:32:11",
+        "Admin logs into core banking server",
+        "Firewall drops port 22 packet",
+        "Average daily transactions graph"
+      ],
+      "correctAnswer": "Customer transfers $10,000 from savings to checking at 14:32:11"
+    },
+    {
+      "id": 20,
+      "question": "An energy company has no alerts for 6 months despite known APT activity in their sector. Their detection efficacy is best described as:",
+      "options": [
+        "High rate of False Negatives",
+        "Perfect True Negative record",
+        "Excellent tuning",
+        "Zero trust achieved"
+      ],
+      "correctAnswer": "High rate of False Negatives"
+    },
+    {
+      "id": 21,
+      "question": "A gaming company deploys OSSEC HIDS on 500 servers but routes all logs to a manager that is offline for maintenance. During the outage, a server is compromised. Will the local agent still detect it?",
+      "options": [
+        "Yes – local rules and detection work independently",
+        "No – all detection requires the manager",
+        "Only file integrity monitoring works",
+        "Only rootcheck works"
+      ],
+      "correctAnswer": "Yes – local rules and detection work independently"
+    },
+    {
+      "id": 22,
+      "question": "Why do attackers prefer CLI over GUI during privilege escalation on Windows hosts?",
+      "options": [
+        "CLI activity is less likely to be logged when auditing is poorly configured",
+        "GUI generates more forensic evidence",
+        "CLI is faster",
+        "Both A and B are correct"
+      ],
+      "correctAnswer": "Both A and B are correct"
+    },
+    {
+      "id": 23,
+      "question": "A logistics company sees Packet Captures showing full credit card numbers in clear text over port 80. This directly violates:",
+      "options": [
+        "PCI DSS Requirement 4.1",
+        "GDPR Article 32",
+        "HIPAA Security Rule",
+        "SOX 404"
+      ],
+      "correctAnswer": "PCI DSS Requirement 4.1"
+    },
+    {
+      "id": 24,
+      "question": "An insurance company’s SOC disables all 'Information' level events to reduce noise. A critical patch fails silently. This is an example of:",
+      "options": [
+        "Trading security for visibility",
+        "Proper alert prioritization",
+        "Risk acceptance",
+        "Compliance achievement"
+      ],
+      "correctAnswer": "Trading security for visibility"
+    },
+    {
+      "id": 25,
+      "question": "During an incident, analysts see Session Data showing a connection from Russia to an internal database server on port 1433 lasting 8 hours with 4.2 GB transferred. This is MOST consistent with:",
+      "options": [
+        "Data exfiltration",
+        "Legitimate DBA maintenance",
+        "DDoS",
+        "VPN tunnel"
+      ],
+      "correctAnswer": "Data exfiltration"
+    },
+    {
+      "id": 26,
+      "question": "A healthcare startup receives a True Positive alert for unauthorized access to PHI. The accessed files were encrypted at rest. Impact is:",
+      "options": [
+        "Still a reportable breach in most jurisdictions",
+        "No breach because data was encrypted",
+        "Only if attacker has the key",
+        "Depends on state law"
+      ],
+      "correctAnswer": "Still a reportable breach in most jurisdictions"
+    },
+    {
+      "id": 27,
+      "question": "Which Windows log type is CLEARED when Event ID 1102 occurs?",
+      "options": [
+        "Security log only",
+        "All logs",
+        "Application and System",
+        "Only the log from which the event originated"
+      ],
+      "correctAnswer": "Security log only"
+    },
+    {
+      "id": 28,
+      "question": "An e-commerce company uses only statistical baselines. An attacker performs a low-and-slow data theft of 100 records per day for 90 days. This attack will MOST likely be:",
+      "options": [
+        "Missed (False Negative)",
+        "Detected as True Positive",
+        "Flagged as anomaly",
+        "Blocked by WAF"
+      ],
+      "correctAnswer": "Missed (False Negative)"
+    },
+    {
+      "id": 29,
+      "question": "A red team uses rundll32.exe with a malicious DLL. Default OSSEC rules will trigger on this because:",
+      "options": [
+        "rundll32 is not in the default whitelist and behaves suspiciously",
+        "rundll32 is always malicious",
+        "DLL loading is blocked",
+        "Windows blocks it natively"
+      ],
+      "correctAnswer": "rundll32 is not in the default whitelist and behaves suspiciously"
+    },
+    {
+      "id": 30,
+      "question": "Which of the following is the MOST dangerous False Negative scenario?",
+      "options": [
+        "Zero-day ransomware evading all HIDS/EDR",
+        "Legitimate admin script flagged",
+        "Backup job running at odd hours",
+        "Patch Tuesday reboots"
+      ],
+      "correctAnswer": "Zero-day ransomware evading all HIDS/EDR"
+    },
+    {
+      "id": 31,
+      "question": "An analyst sees Event ID 4648 (explicit credentials used). This is MOST commonly associated with:",
+      "options": [
+        "RunAs or scheduled task using alternate credentials",
+        "Pass-the-Ticket",
+        "Golden ticket",
+        "Normal interactive logon"
+      ],
+      "correctAnswer": "RunAs or scheduled task using alternate credentials"
+    },
+    {
+      "id": 32,
+      "question": "A manufacturing plant uses Tripwire in 'block mode'. An approved change ticket is executed but blocked. This is:",
+      "options": [
+        "Change management process failed to update baseline",
+        "Tripwire is misconfigured",
+        "Attacker intercepted the change",
+        "All are possible"
+      ],
+      "correctAnswer": "Change management process failed to update baseline"
+    },
+    {
+      "id": 33,
+      "question": "Why is 'Success Audit' for Event ID 4624 often ignored in large environments?",
+      "options": [
+        "Generates massive volume with low signal-to-noise",
+        "Only failed logons matter",
+        "Success means no issue",
+        "Microsoft recommends disabling it"
+      ],
+      "correctAnswer": "Generates massive volume with low signal-to-noise"
+    },
+    {
+      "id": 34,
+      "question": "An attacker uses covenant C2 over DNS tunneling. Which data type is MOST likely to detect this?",
+      "options": [
+        "Packet Captures showing long DNS TXT records",
+        "Session Data only",
+        "Transaction logs",
+        "Statistical Data spike"
+      ],
+      "correctAnswer": "Packet Captures showing long DNS TXT records"
+    },
+    {
+      "id": 35,
+      "question": "A company claims 'zero alerts = secure environment'. This belief is:",
+      "options": [
+        "Classic indicator of dangerous False Negative rate",
+        "Correct if using next-gen AI EDR",
+        "Acceptable under zero-trust",
+        "Proof of perfect tuning"
+      ],
+      "correctAnswer": "Classic indicator of dangerous False Negative rate"
+    },
+    {
+      "id": 36,
+      "question": "In Event Viewer, which appears FIRST when an attacker clears the Security log?",
+      "options": [
+        "Event ID 1102 itself is not logged if log is already cleared",
+        "Event ID 1102 is logged before clearing",
+        "Event ID 104 (log cleared) from old API",
+        "Nothing – clearing prevents logging"
+      ],
+      "correctAnswer": "Event ID 1102 itself is not logged if log is already cleared"
+    },
+    {
+      "id": 37,
+      "question": "A startup logs every mobile app start as Information event. After 6 months, storage costs explode. This violates:",
+      "options": [
+        "Principle of least logging / data minimization",
+        "GDPR directly",
+        "PCI retention requirements",
+        "No regulation – more logs = better"
+      ],
+      "correctAnswer": "Principle of least logging / data minimization"
+    },
+    {
+      "id": 38,
+      "question": "An analyst sees 4624 Logon Type 10 (RemoteInteractive) from an internal IP to a domain controller. This is:",
+      "options": [
+        "Highly anomalous – DCs should not accept RDP",
+        "Normal if admin uses RDP",
+        "Expected for Remote Desktop Gateway",
+        "Impossible"
+      ],
+      "correctAnswer": "Highly anomalous – DCs should not accept RDP"
+    },
+    {
+      "id": 39,
+      "question": "Why do many mature SOCs accept a small number of False Positives but never tolerate False Negatives?",
+      "options": [
+        "False Negatives mean undetected real attacks",
+        "False Positives cost analyst time",
+        "Compliance cares only about detection rate",
+        "Both A and B"
+      ],
+      "correctAnswer": "Both A and B"
+    },
+    {
+      "id": 40,
+      "question": "Final exam trap question: An organization has perfect detection (0 False Negatives) but 10,000 False Positives per day. Their security posture is best described as:",
+      "options": [
+        "Operationally crippled despite theoretical perfection",
+        "World-class detection capability",
+        "Ready for zero trust",
+        "Compliant with all frameworks"
+      ],
+      "correctAnswer": "Operationally crippled despite theoretical perfection"
+    }
+  ]
