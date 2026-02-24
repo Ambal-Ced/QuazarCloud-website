@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio v2 — Layout preview</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    html, body { font-family: system-ui, -apple-system, sans-serif; background: #fafafa; color: #1f2937; height: 100%; line-height: 1.5; }
+    body { display: flex; }
+
+    .sidebar { width: 160px; flex-shrink: 0; padding: 1.25rem 0.75rem; background: #fff; border-right: 1px solid #e5e7eb; display: flex; flex-direction: column; gap: 0.25rem; }
+    .sidebar-logo { font-size: 1rem; font-weight: 700; color: #111; margin-bottom: 1rem; }
+    .sidebar a { display: block; padding: 0.4rem 0.5rem; font-size: 0.875rem; color: #4b5563; text-decoration: none; border-radius: 6px; }
+    .sidebar a:hover { background: #f3f4f6; color: #111; }
+
+    .main { flex: 1; overflow: auto; padding: 2rem 2.5rem 3rem; max-width: 52rem; }
+    .section { margin-bottom: 3rem; }
+    .section-label { font-size: 0.75rem; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .section h2 { font-size: 1.5rem; font-weight: 600; color: #111; margin-bottom: 0.5rem; }
+    .section .subtitle { font-size: 0.95rem; color: #6b7280; margin-bottom: 1rem; }
+    .section p { font-size: 0.95rem; color: #4b5563; margin-bottom: 0.75rem; }
+    img { display: block; max-width: 100%; height: auto; object-fit: cover; }
+
+    .hero { display: grid; grid-template-columns: 220px 1fr; gap: 2rem; align-items: center; }
+    .hero h1 { font-size: 1.75rem; font-weight: 700; color: #111; margin-bottom: 0.5rem; }
+    .hero .tagline { font-size: 0.9rem; color: #6b7280; margin-bottom: 1rem; }
+    .hero-desc { margin-bottom: 1rem; }
+    .hero .btn { display: inline-block; padding: 0.5rem 1rem; background: #2563eb; color: #fff; font-size: 0.875rem; font-weight: 500; text-decoration: none; border-radius: 8px; }
+    .hero .btn:hover { background: #1d4ed8; }
+    .hero-img { width: 220px; height: 220px; border-radius: 50%; }
+    .about-top { display: grid; grid-template-columns: 200px 1fr; gap: 1.5rem; align-items: start; margin-bottom: 1rem; }
+    .about-img { width: 200px; height: 200px; border-radius: 12px; }
+    .show-more-bar { display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem 1rem; background: #22d3ee; border-radius: 8px; cursor: pointer; margin-bottom: 0; border: none; max-width: 280px; }
+    .show-more-bar:hover { background: #06b6d4; }
+    .show-more-bar .dot { width: 10px; height: 10px; border-radius: 50%; background: #111; }
+    .show-more-text { overflow: hidden; transition: max-height 0.3s ease; }
+    .show-more-text.is-hidden { max-height: 0; opacity: 0; margin: 0; padding: 0; visibility: hidden; }
+    .show-more-text.is-open { max-height: 500px; opacity: 1; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; visibility: visible; }
+    .show-more-text.is-open p { margin-bottom: 0.75rem; }
+    .about-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .about-card { display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: #fff; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); text-decoration: none; color: inherit; transition: box-shadow 0.2s; }
+    .about-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.1); }
+    .about-card-icon { width: 48px; height: 48px; flex-shrink: 0; border-radius: 12px; background: #dcfce7; color: #16a34a; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; }
+    .about-card-text { flex: 1; min-width: 0; }
+    .about-card-title { font-size: 1rem; font-weight: 700; color: #111; margin-bottom: 0.25rem; line-height: 1.3; }
+    .about-card-desc { font-size: 0.875rem; color: #6b7280; line-height: 1.4; margin: 0; }
+    .about-note { font-size: 0.8rem; color: #9ca3af; margin-top: 1rem; font-style: italic; }
+    .section3-intro { margin-bottom: 1.25rem; }
+    .section3-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .section3-cols .col { text-align: center; padding: 1rem; background: #fff; border-radius: 8px; border: 1px solid #e5e7eb; }
+    .section3-cols .icon { width: 48px; height: 48px; margin: 0 auto 0.75rem; background: #e5e7eb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #6b7280; }
+    .section3-cols .col p { margin-bottom: 0.35rem; font-size: 0.875rem; }
+    .exp-list { display: flex; flex-direction: column; gap: 2rem; }
+    .exp-item { display: grid; grid-template-columns: 200px 1fr; gap: 1.5rem; align-items: center; }
+    .exp-item.reverse { grid-template-columns: 1fr 200px; }
+    .exp-item.reverse .exp-img { order: 2; }
+    .exp-item.reverse .exp-text { order: 1; }
+    .exp-img { width: 200px; height: 140px; border-radius: 8px; object-fit: cover; }
+    .exp-text h3 { font-size: 1.1rem; font-weight: 600; color: #111; margin-bottom: 0.35rem; }
+    .exp-text p { font-size: 0.9rem; color: #4b5563; margin: 0; line-height: 1.5; }
+    .section5-list { display: flex; flex-direction: column; gap: 1rem; }
+    .section5-item { display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: #fff; border-radius: 8px; border: 1px solid #e5e7eb; }
+    .section5-item img { width: 80px; height: 80px; border-radius: 8px; flex-shrink: 0; }
+    .section5-item .text { flex: 1; }
+    .section5-item .text strong { display: block; margin-bottom: 0.25rem; font-size: 0.95rem; }
+    .section5-item .text p { margin: 0; font-size: 0.875rem; }
+    .section6-img { width: 100%; max-height: 280px; object-fit: cover; border-radius: 8px; }
+    @media (max-width: 640px) {
+      body { flex-direction: column; }
+      .sidebar { width: 100%; flex-direction: row; flex-wrap: wrap; border-right: none; border-bottom: 1px solid #e5e7eb; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-img { margin: 0 auto; }
+      .about-top { grid-template-columns: 1fr; }
+      .about-img { margin: 0 auto; }
+      .exp-item, .exp-item.reverse { grid-template-columns: 1fr; }
+      .exp-item.reverse .exp-img, .exp-item.reverse .exp-text { order: unset; }
+      .exp-img { width: 100%; height: 160px; }
+      .about-cards { grid-template-columns: 1fr; }
+      .section3-cols { grid-template-columns: 1fr; }
+      .section5-item { flex-direction: column; }
+      .section5-item img { width: 100%; height: 160px; }
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-logo" id="sidebar-logo">Lorem.</div>
+    <a href="#section1" id="sidebar-nav1">Home</a>
+    <a href="#section2" id="sidebar-nav2">About</a>
+    <a href="#section3" id="sidebar-nav3">Projects</a>
+    <a href="#section4" id="sidebar-nav4">Experience</a>
+    <a href="#section5" id="sidebar-nav5">Credentials</a>
+    <a href="#section6" id="sidebar-nav6">Resume</a>
+  </aside>
+  <main class="main">
+    <section class="section" id="section1">
+      <p class="section-label">Hero</p>
+      <div class="hero">
+        <img src="placeholder.jpg" alt="" class="hero-img" id="section1-image1">
+        <div>
+          <h1 id="section1-textplacebox1">Lorem ipsum dolor sit amet</h1>
+          <p class="tagline">Consectetur adipiscing elit · Sed do eiusmod</p>
+          <div class="hero-desc" id="section1-textplacebox2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <a href="#section6" class="btn" id="section1-button1">View resume</a>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="section2">
+      <p class="section-label">About</p>
+      <h2 id="section2-textplacebox1">About me</h2>
+      <p class="subtitle" id="section2-textplacebox2">Quick links below. Click Show more for full text.</p>
+      <div class="about-top">
+        <img src="placeholder.jpg" alt="" class="about-img" id="section2-image1">
+        <div class="about-cards">
+          <a href="#section2" class="about-card" id="section2-card1">
+            <span class="about-card-icon" id="section2-icon1" aria-hidden="true">👤</span>
+            <div class="about-card-text">
+              <div class="about-card-title">About & Contact</div>
+              <p class="about-card-desc">Learn more about my journey and get in touch</p>
+            </div>
+          </a>
+          <a href="#section3" class="about-card" id="section2-card2">
+            <span class="about-card-icon" id="section2-icon2" aria-hidden="true">&lt;/&gt;</span>
+            <div class="about-card-text">
+              <div class="about-card-title">Skills & Projects</div>
+              <p class="about-card-desc">Check out my skills and software development projects</p>
+            </div>
+          </a>
+          <a href="#section4" class="about-card" id="section2-card3">
+            <span class="about-card-icon" id="section2-icon3" aria-hidden="true">💼</span>
+            <div class="about-card-text">
+              <div class="about-card-title">Experience</div>
+              <p class="about-card-desc">My professional journey and achievements</p>
+            </div>
+          </a>
+          <a href="#section5" class="about-card" id="section2-card4">
+            <span class="about-card-icon" id="section2-icon4" aria-hidden="true">📜</span>
+            <div class="about-card-text">
+              <div class="about-card-title">Credentials</div>
+              <p class="about-card-desc">View my certificates and credentials</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button type="button" class="show-more-bar" id="section2-showmore" aria-expanded="false" aria-controls="section2-text">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </button>
+      <div class="show-more-text is-hidden" id="section2-text" role="region">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+      </div>
+      <p class="about-note">Planned: image stays fixed while text scrolls (not implemented here).</p>
+    </section>
+    <section class="section" id="section3">
+      <p class="section-label">Projects</p>
+      <p class="section3-intro" id="section3-textplacebox1">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div class="section3-cols">
+        <div class="col">
+          <div class="icon" id="section3-icon1">ICON</div>
+          <p id="section3-textplacebox2">Lorem ipsum dolor sit amet.</p>
+          <p id="section3-textplacebox3">Consectetur adipiscing elit sed do.</p>
+        </div>
+        <div class="col">
+          <div class="icon" id="section3-icon2">ICON</div>
+          <p id="section3-textplacebox4">Eiusmod tempor incididunt ut labore.</p>
+          <p id="section3-textplacebox5">Dolore magna aliqua ut enim.</p>
+        </div>
+        <div class="col">
+          <div class="icon" id="section3-icon3">ICON</div>
+          <p id="section3-textplacebox6">Minim veniam quis nostrud.</p>
+          <p id="section3-textplacebox7">Exercitation ullamco laboris nisi.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="section4">
+      <p class="section-label">Experience</p>
+      <h2>Work & roles</h2>
+      <div class="exp-list">
+        <div class="exp-item">
+          <img src="placeholder.jpg" alt="" class="exp-img" id="section4-image1">
+          <div class="exp-text" id="section4-text1">
+            <h3>Lorem Ipsum Company</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+        </div>
+        <div class="exp-item reverse">
+          <img src="placeholder.jpg" alt="" class="exp-img" id="section4-image2">
+          <div class="exp-text" id="section4-text2">
+            <h3>Dolor Sit Amet Inc.</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <img src="placeholder.jpg" alt="" class="exp-img" id="section4-image3">
+          <div class="exp-text" id="section4-text3">
+            <h3>Eiusmod Tempor Ltd.</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="section5">
+      <p class="section-label">Credentials</p>
+      <h2>Certificates & credentials</h2>
+      <div class="section5-list">
+        <div class="section5-item">
+          <img src="placeholder.jpg" alt="" id="section5-image1">
+          <div class="text" id="section5-textplacebox1">
+            <strong>Lorem Ipsum Company</strong>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="section5-item">
+          <img src="placeholder.jpg" alt="" id="section5-image2">
+          <div class="text" id="section5-textplacebox2">
+            <strong>Dolor Sit Amet Inc.</strong>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="section5-item">
+          <img src="placeholder.jpg" alt="" id="section5-image3">
+          <div class="text" id="section5-textplacebox3">
+            <strong>Eiusmod Tempor Ltd.</strong>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="section6">
+      <p class="section-label">Resume</p>
+      <h2>Resume & contact</h2>
+      <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <img src="placeholder.jpg" alt="" class="section6-img" id="section6-image1">
+      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+  </main>
+  <script>
+    function initShowMore(btnId, textId) {
+      var btn = document.getElementById(btnId);
+      var text = document.getElementById(textId);
+      if (!btn || !text) return;
+      btn.addEventListener('click', function () {
+        var open = text.classList.toggle('is-open');
+        text.classList.toggle('is-hidden', !open);
+        btn.setAttribute('aria-expanded', open);
+      });
+    }
+    initShowMore('section2-showmore', 'section2-text');
+  </script>
+</body>
+</html>
