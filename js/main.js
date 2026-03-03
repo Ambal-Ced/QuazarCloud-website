@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const portfolioCard = document.getElementById('portfolio-card');
     if (portfolioCard) {
         portfolioCard.addEventListener('click', function() {
-            window.location.href = 'portfolio/index.html';
+            window.location.href = 'portfolio/dist/index.html';
         });
     }
 
